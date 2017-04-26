@@ -1,6 +1,10 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { MdlModule } from '@angular-mdl/core';
+import { FormsModule } from '@angular/forms';
+import { MdlSelectModule } from '@angular-mdl/select';
+import { MdlDatePickerModule } from '@angular-mdl/datepicker';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -8,6 +12,12 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+       imports: [
+        MdlModule,
+        FormsModule,
+        MdlSelectModule,
+        MdlDatePickerModule
+      ]
     }).compileComponents();
   }));
 

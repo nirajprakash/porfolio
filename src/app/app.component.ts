@@ -1,10 +1,18 @@
 import { Component } from '@angular/core';
+import { MdlDialogService } from '@angular-mdl/core';
+import { MdlDatePickerService } from '@angular-mdl/datepicker/datepicker.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app works!';
+
+
+  constructor(
+    private dialogService: MdlDialogService,
+    private datePicker: MdlDatePickerService) { }
+
 }
