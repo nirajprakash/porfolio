@@ -1,0 +1,15 @@
+
+.np-layout-content{
+    margin-top: 45px;
+ padding: 8px 32px 8px 40px;
+}
+
+@media screen and (max-width: $resXS) {
+  .np-layout-content {
+    padding: 8px 20px;
+  }
+}
+
+.np-layout-primary{
+    background: $color-primary;
+}

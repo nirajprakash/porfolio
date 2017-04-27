@@ -5,7 +5,8 @@ import * as moment from 'moment';
 
 @Component({
     selector: 'profile-view',
-    templateUrl: './profile.component.html'
+    templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent {
     constructor(

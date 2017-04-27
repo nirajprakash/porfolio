@@ -2,10 +2,10 @@
 
 @import "~@angular-mdl/core/scss/color-definitions";
 
-//$color-primary: $palette-light_green-500;
-$color-primary: $palette-grey-50;
-$color-primary-dark: $palette-light_green-700;
-$color-accent: $palette-amber-A200;
+$color-primary: $palette-purple-500;
+//$color-primary: $palette-grey-50;
+$color-primary-dark: $palette-purple-700;
+$color-accent: $palette-green-A200;
 $color-primary-contrast: $color-dark-contrast;
 $color-accent-contrast: $color-dark-contrast;
 
@@ -14,3 +14,6 @@ $color-accent-contrast: $color-dark-contrast;
 @import '~@angular-mdl/popover/popover';
 @import '~@angular-mdl/select/select';
 @import '~@angular-mdl/datepicker/datepicker';
+
+
+@import 'app/app.component.scss';
