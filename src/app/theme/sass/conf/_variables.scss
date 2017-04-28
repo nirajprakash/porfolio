@@ -11,3 +11,12 @@ $resMin: 320px;
 $assets-root: 'assets/';
 $images-root: $assets-root + 'img/';
 $fonts-root: $assets-root + 'fonts/';
+
+$font-thin: 100;
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$font-bolder: 500;
+$font-ultraBold: 900;
+
+$np-primary-color : unquote("rgb(#{$color-primary})");

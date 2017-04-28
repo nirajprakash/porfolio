@@ -5,7 +5,6 @@ body .demo-blog {
 .profile-card {
   max-width: 900px;
   padding: 0;
-  display: flex;
   width: 100%;
   margin: 0 auto;
   flex-shrink: 0;
@@ -14,4 +13,111 @@ body .demo-blog {
   max-width: 100%;
 
 }
+.profile-card-content{
+  width: 100%;
+}
+
+.profile-card .profile-bottom{
+  width: 100%;
+
+}
+/**
+.profile-card .social{
+  list-style: none;
+  float: left;
+  padding: 0;
+
+  
+}
+
+.profile-card .social li{
+  list-style: none;
+  float: left;
+
+}
+
+*/
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; 
+  }
+  
+.social li {
+    display: inline-block;
+    margin: 5px 15px; 
+}
+
+.social li button .socialicon{
+        font-size: 20px;
+        display: block;
+}
+
+.social li button {
+      width: 45px;
+      height: 45px;
+ }
+
+ @media (max-width: 767px) {
+  .social li {
+    margin-left: 5px;
+    margin-right: 5px; 
+  }
+  .social li button {
+      width: 35px;
+      height: 35px; 
+  }
+  /*
+  .social li a, .social li a .socialicon {
+        line-height: 35px; 
+  }
+  */
+  .social li button .socialicon {
+        font-size: 17px; 
+  } 
+}
+
+/**
+ * 6.3 - Social
+ */
+/*
+.social li a {
+      width: 45px;
+      height: 45px;
+      position: relative;
+      display: inline-block;
+      background-color: transparent;
+      -webkit-transition: -webkit-transition, background-color 0.25s linear 0s;
+      -moz-transition: -moz-transition, background-color 0.25s linear 0s;
+      transition: transition, background-color 0.25s linear 0s;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+      .social li a:hover {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.1); }
+      .social li a, .social li a .socialicon {
+        line-height: 45; }
+      .social li a .socialicon {
+        color: #fff;
+        font-size: 20px;
+        line-height: 45px;
+        display: block; }
+
+@media (max-width: 767px) {
+  .social li {
+    margin-left: 5px;
+    margin-right: 5px; }
+    .social li a {
+      width: 35px;
+      height: 35px; }
+      .social li a, .social li a .socialicon {
+        line-height: 35px; }
+      .social li a .socialicon {
+        font-size: 17px; } }
+        */
 
