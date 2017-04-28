@@ -15,8 +15,22 @@ $fonts-root: $assets-root + 'fonts/';
 $font-thin: 100;
 $font-light: 300;
 $font-normal: 400;
-$font-bold: 700;
-$font-bolder: 500;
+$font-bold: 600;
+$font-bolder: 700;
 $font-ultraBold: 900;
 
 $np-primary-color : unquote("rgb(#{$color-primary})");
+
+
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+$font-28: 28px;
+$font-32: 32px;
+$font-36: 36px;
+
+$font-open-sans: 'Open Sans', sans-serif;
+$font-comfortaa: 'Comfortaa', cursive;
