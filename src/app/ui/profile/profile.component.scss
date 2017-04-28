@@ -2,13 +2,6 @@ body .demo-blog {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-.profile-card {
-  max-width: 900px;
-  padding: 0;
-  width: 100%;
-  margin: 0 auto;
-  flex-shrink: 0;
-}
 
 /*
 
@@ -20,6 +13,12 @@ body .demo-blog {
 
 .profile-card{
 
+ max-width: 900px;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+  
   .profile-card-content{
     padding: 57px 50px 15px 50px;
   }
@@ -182,6 +181,47 @@ body .demo-blog {
   } 
 }
 
+.profile-sub-card{
+
+ max-width: 900px;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+  text-align: center;
+
+  .profile-action{
+    margin: 0;
+    
+    border-bottom: 1px solid #dedede;
+
+    button{
+      margin: 12px 20px;
+    }
+
+  }
+
+  p{
+    padding: 12px 32px;
+  }
+}
+
+ @media (max-width: 767px) {
+
+.profile-sub-card{
+  .profile-action{
+    button{
+      margin: 5px 5px;
+    }
+
+    
+  }
+  
+  p{
+    padding: 12px 12px;
+  }
+}
+ }
 /**
  * 6.3 - Social
  */
