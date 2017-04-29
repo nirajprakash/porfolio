@@ -2,7 +2,11 @@
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-.text-color-default{
+.text-color-dark{
     color: $default-item-text-color;
+}
+
+.text-color-default{
+   color: $list-supporting-text-text-color;
 }
 

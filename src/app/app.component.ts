@@ -5,12 +5,12 @@ import * as moment from 'moment';
 //import 'style-loader!./app.component.scss';
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'//,
-  // styleUrls: ['./app.component.scss']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 
-
+ title = 'Solution';
   constructor(
     private dialogService: MdlDialogService,
     private datePicker: MdlDatePickerService) { }
