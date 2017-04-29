@@ -1,7 +1,15 @@
 
+.np-layout-ribbon{
+width: 100%;
+    height: 40vh;
+    flex-shrink: 0;
+}
+.np-layout-overlap-40vh{
+  margin-top: -40vh;
+
+}
 .np-layout-content{
-    margin-top: 45px;
- padding: 8px 32px 8px 40px;
+ padding: 64px 32px 8px 40px;
 }
 
 @media screen and (max-width: $resXS) {

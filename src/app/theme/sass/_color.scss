@@ -12,3 +12,12 @@
 .color-red{
     color: unquote("rgb(#{$palette-red-A700;})");
 }
+
+.back-color-primary{
+    background-color:  $np-color-primary;
+
+}
+
+.back-color-white{
+    background-color: white;
+}

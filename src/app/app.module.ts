@@ -19,8 +19,9 @@ import { ProfileModule } from './ui/profile/profile.module';
 const routes:  Routes = [
   { path: '', redirectTo: '/sample', pathMatch: 'full'},
   { path: 'sample', loadChildren: './ui/sample/sample.module#SampleModule' },
-  { path: 'profile', loadChildren: './ui/profile/profile.module#ProfileModule' }
-  //{ path: 'sample', loadChildren: ()=> SampleModule }
+  { path: 'profile', loadChildren: './ui/profile/profile.module#ProfileModule' },
+  { path: 'home', loadChildren: './ui/home/home.module#HomeModule' }
+//{ path: 'sample', loadChildren: ()=> SampleModule }
 ];
 const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true, enableTracing: true });
 @NgModule({
@@ -36,6 +37,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash:
     MdlDatePickerModule,
     SampleModule,
     ProfileModule,
+    
     rootRouting
   ],
   providers: [],
