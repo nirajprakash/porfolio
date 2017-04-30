@@ -6,8 +6,13 @@
     color: $np-color-accent;
 }
 .color-primary{
-    color: $np-color-primary;
+    color: $np-color-primary ;
 }
+
+.color-important-primary{
+    color: $np-color-primary !important;
+}
+
 
 .color-blue{
     color: unquote("rgb(#{$palette-blue-400;})");

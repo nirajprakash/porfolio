@@ -9,15 +9,21 @@ main {
   flex-direction: row;
 }
 
-.main-header .mdl-navigation__link {
+
+.main-header{
+  background-color: white;
+}
+
+.main-header-row .mdl-navigation__link {
     display: inline-block;
-    height: 60px;
+    height: 61px;
     line-height: 68px;
+    color: #757575;
     background-color: transparent !important;
-    border-bottom: 4px solid transparent;
+    border-bottom: 3px solid transparent;
   }
-.main-header .is-active{
-      border-bottom: 4px solid #fff;
+.main-header-row .is-active{
+      border-bottom: 3px solid #000;
 }
 
 .main-footer {

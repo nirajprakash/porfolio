@@ -9,7 +9,9 @@
 .text-color-default{
    color: $list-supporting-text-text-color;
 }
-
+.text-color-important-default{
+   color: $list-supporting-text-text-color !important;
+}
 .text-color-primary-light{
     color: $np-color-primary-50;
 }
