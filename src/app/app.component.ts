@@ -10,7 +10,7 @@ import * as moment from 'moment';
 })
 export class AppComponent {
 
- title = 'Solution';
+ title = 'Niraj Prakash';
   constructor(
     private dialogService: MdlDialogService,
     private datePicker: MdlDatePickerService) { }

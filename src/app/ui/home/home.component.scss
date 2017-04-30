@@ -193,12 +193,25 @@ body .demo-blog {
         text-align: center;
         max-width: 248px;
         margin: 4px auto;
+        background:rgba(255,255,255,0);
 
         
            
         .socialicon{
-            margin: 12px 0 20px 0;
+            margin: 20px 0 18px 0;
             font-size: 24px;
+        }
+
+
+        button{
+            
+            margin: 14px 0 16px 0;
+
+        }
+
+
+        mdl-icon{            
+            font-size: 12px;
         }
         
 
@@ -210,7 +223,14 @@ body .demo-blog {
         p{
             font-size:10px;
         }
-        
+
+        &:hover{
+            background:rgba(255,255,255,1);
+            border-radius: 2px;
+            color: rgba(0,0,0,0.54);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }
+
     }
 
 }
