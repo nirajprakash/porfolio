@@ -1,60 +1,78 @@
-<p>
-    <button mdl-button mdl-button-type="fab" mdl-colored="primary" mdl-ripple (click)="dialog.show()">
-        <mdl-icon>edit</mdl-icon>
-      </button>
-</p>
+<div class="np-layout-ribbon back-color-primary"></div>
+<div class=" np-layout-overlap-40vh">
+    <div class="np-layout-content">
+    <div class="profile np-container back-color-white" mdl-shadow="2">
 
-<mdl-dialog #dialog>
-    <h3 class="mdl-dialog__title">Edit User</h3>
-    <div class="mdl-dialog__content">
-        <mdl-textfield type="text" label="Username" [(ngModel)]="editedUsername" floating-label autofocus></mdl-textfield>
+        <div class="mdl-grid profile-content">
+
+            <div class="mdl-cell mdl-cell--6-col-tablet mdl-cell--4-col">
+                <div class="profile-info text-color-dark">
+                    <!--h4 class="font-comfortaa font-bolder text-shadow">Hey!</h4-->
+                    <h4 class="font-comfortaa font-bolder text-shadow">
+                        <!--span class="font-light">I'm </span-->Niraj Prakash</h4>
+                    <!--h6 class="font-open-sans text-shadow"> App &amp; web developer</h6-->
+                    <h6 class="font-open-sans font-bold font-10">Android &amp; Full Stack Developer</h6>
+                </div>
+
+
+            </div>
+            <div class="profile-detail mdl-cell mdl-cell--12-col">
+
+                <p class="text-color-default font-open-sans font-14">Hello! I’m Robert Smith. Senior Web Developer specializing in front end development. Experienced with all
+                    stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages
+                    including JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
+
+
+            </div>
+        </div>
+        <div class="profile-bottom np-layout-primary">
+            <ul class="social">
+                <li>
+                    <button mdl-button mdl-button-type="icon">
+                        <i class="icon-github-circled socialicon white"></i>
+                    </button>
+                </li>
+                <li>
+                    <button mdl-button mdl-button-type="icon">
+                        <i class="icon-bitbucket socialicon white"></i>
+                    </button>
+                </li>
+                <li>
+                    <button mdl-button mdl-button-type="icon">
+                        <i class="icon-linkedin socialicon white"></i>
+                    </button>
+                </li>
+                <li>
+                    <button mdl-button mdl-button-type="icon">
+                        <i class="icon-instagram socialicon white"></i>
+                    </button>
+                </li>
+                <li>
+                    <button mdl-button mdl-button-type="icon">
+                        <i class="icon-behance socialicon white"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="mdl-dialog__actions">
-        <button mdl-button (click)="dialog.close()" mdl-button-type="raised" mdl-colored="primary" mdl-ripple>Save</button>
-        <button mdl-button (click)="dialog.close()" mdl-button-type="raised" mdl-ripple>Cancel</button>
     </div>
-</mdl-dialog>
+    <div class="np-padding-v-8 np-margin-top-32">
 
-<p>
-    <button mdl-button mdl-button-type="raised" mdl-colored="accent" mdl-ripple (click)="test()">
-        Alert
-      </button>
-</p>
+        <div class="profile-action font-open-sans">
+            <button mdl-button mdl-button-type="raised" mdl-colored="primary" mdl-ripple>
+    <span class="font-open-sans font-12">See Portfolio</span>
+  </button>
 
-<p>
-    <mdl-icon mdl-badge="1" mdl-badge-overlap>account_box</mdl-icon>
-</p>
+            <button mdl-button mdl-colored="primary" mdl-ripple>
+    <span class="font-open-sans font-12 font-bold">Download CV</span>
+  </button>
+        </div>
 
-<p>
-    <mdl-spinner single-color active></mdl-spinner>
-</p>
+    </div>
 
-<p>
-    <mdl-textfield type="text" label="Text..." [(ngModel)]="text3" floating-label></mdl-textfield>
-</p>
-
-<p>
-    <mdl-checkbox [mdl-ripple]="true" [(ngModel)]="checkbox1"> Checkbox </mdl-checkbox>
-</p>
-
-<p>
-    <mdl-radio name="group1" value="1" [(ngModel)]="radioOption" mdl-ripple>Value 1</mdl-radio>
-    <mdl-radio name="group1" value="2" [(ngModel)]="radioOption" mdl-ripple>Value 2</mdl-radio>
-</p>
-
-<p>
-    <mdl-switch [(ngModel)]="checkbox1" mdl-ripple>Option 1</mdl-switch>
-</p>
-
-<p>
-    <mdl-select floating-label [(ngModel)]="otherCountryCode" label="Country">
-        <mdl-option *ngFor="let c of countries" [value]="c.code">{{c.name}}</mdl-option>
-    </mdl-select>
-</p>
-
-<p>
-    <button mdl-button (click)="pickADate($event)" mdl-button-type="icon" mdl-ripple>
-        <mdl-icon>event</mdl-icon>
-      </button>
-    <span>{{ selectedDate?.format('LL') }}</span>
-</p>
+    <div class="service back-color-primary">
+        <div class="title">
+            
+        </div>
+    </div>
+</div>
