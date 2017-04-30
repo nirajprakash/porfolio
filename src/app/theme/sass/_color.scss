@@ -5,6 +5,9 @@
 .color-accent{
     color: $np-color-accent;
 }
+.color-primary{
+    color: $np-color-primary;
+}
 
 .color-blue{
     color: unquote("rgb(#{$palette-blue-400;})");
@@ -20,4 +23,8 @@
 
 .back-color-white{
     background-color: white;
+}
+
+.back-color-grey{
+    background-color: $np-color-back-grey;
 }

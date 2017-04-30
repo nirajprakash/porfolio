@@ -191,9 +191,8 @@ body .demo-blog {
 }
     .service-block{
         text-align: center;
-        max-width: 248px;
+        max-width: 212px;
         margin: 4px auto;
-        background:rgba(255,255,255,0);
 
         
            
@@ -211,25 +210,25 @@ body .demo-blog {
 
 
         mdl-icon{            
-            font-size: 12px;
+            font-size: 14px;
         }
         
 
         h6{
-            font-size: 14px;
-            margin: 0;
+            font-size: 12px;
+            margin: 0 10px 0;
             line-height: 1.2;
         }
         p{
             font-size:10px;
         }
 
-        &:hover{
+       /* &:hover{
             background:rgba(255,255,255,1);
             border-radius: 2px;
             color: rgba(0,0,0,0.54);
             box-shadow: 0 2px 4px rgba(0,0,0,0.15);
-        }
+        }*/
 
     }
 
