@@ -64,29 +64,6 @@ body .demo-blog {
     }
 
   }
-  .profile-detail ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: left; 
-
-    li {
-    display: inherit;
-
-    padding: 5px 5px 5px 0px;
-    &::before{
-      display: table;
-    }
-    
-      .content{
-        display: block;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 20px;
-      } 
-    }
-
-  }
   
 }
 
@@ -100,8 +77,8 @@ body .demo-blog {
     .profile-photo {
     padding-right: 0;
     margin-bottom: 30px; 
-  } 
-}
+    } 
+  }
 }
 @media (max-width: 767px) {
  .profile{
@@ -115,6 +92,25 @@ body .demo-blog {
  }
 }
 
+.profile-action{
+    margin: 40px auto;
+    flex-shrink: 0;
+    text-align: center;
+
+    button{
+      margin: 12px 20px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+.profile-action{
+  button{
+      margin: 5px 5px;
+    }
+  }
+}
 
 /**.profile-card-content{
   width: 100%;
@@ -145,7 +141,7 @@ body .demo-blog {
   padding: 0;
   list-style: none;
   text-align: center; 
-  }
+}
   
 .social li {
     display: inline-block;
@@ -153,8 +149,8 @@ body .demo-blog {
 }
 
 .social li button .socialicon{
-        font-size: 20px;
-        display: block;
+   font-size: 20px;
+   display: block;
 }
 
 .social li button {
@@ -181,24 +177,42 @@ body .demo-blog {
   } 
 }
 
-.profile-action{
-    margin: 40px auto;
-    flex-shrink: 0;
+.service{
+
+    .title{
+        padding: 28px 0 28px 0;
+        text-align: center;
+    }
+
+.service-list-item{
+
     text-align: center;
-
-    button{
-      margin: 12px 20px;
-    }
-
+    
 }
+    .service-block{
+        text-align: center;
+        max-width: 248px;
+        margin: 4px auto;
 
-@media (max-width: 767px) {
+        
+           
+        .socialicon{
+            margin: 12px 0 20px 0;
+            font-size: 24px;
+        }
+        
 
-.profile-action{
-  button{
-      margin: 5px 5px;
+        h6{
+            font-size: 14px;
+            margin: 0;
+            line-height: 1.2;
+        }
+        p{
+            font-size:10px;
+        }
+        
     }
-  }
+
 }
 
 /**

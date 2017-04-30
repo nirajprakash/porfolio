@@ -19,9 +19,9 @@ $font-bold: 600;
 $font-bolder: 700;
 $font-ultraBold: 900;
 
-$np-color-primary : unquote("rgb(#{$color-primary})");
-
-$np-color-accent : unquote("rgb(#{$color-accent})");
+$np-color-primary : unquote("rgb(#{$color-primary})") !default;
+$np-color-primary-50 : white !default;
+$np-color-accent : unquote("rgb(#{$color-accent})") !default;
 
 
 $font-10: 10px;

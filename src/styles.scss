@@ -9,6 +9,8 @@ $color-accent: $palette-green-A200;
 $color-primary-contrast: $color-dark-contrast;
 $color-accent-contrast: $color-dark-contrast;
 
+$np-color-primary-50: unquote("rgb(#{$palette-purple-50})") !default;
+
 @import '~@angular-mdl/core/scss/material-design-lite';
 
 @import '~@angular-mdl/popover/popover';
@@ -17,3 +19,4 @@ $color-accent-contrast: $color-dark-contrast;
 
 
 @import 'app/theme/theme';
+ 
