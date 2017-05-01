@@ -105,18 +105,57 @@
             <nav class="mdl-navigation mdl-layout--large-screen-only">
                 <a class="mdl-navigation__link"  routerLink="/home" routerLinkActive="indicator-primary-important np-text-color-important-primary">Home</a>
                 <a class="mdl-navigation__link" routerLink="/portfolio" routerLinkActive="indicator-primary-important np-text-color-important-primary">Portfolio</a>
-                <a class="mdl-navigation__link" routerLink="/profile" routerLinkActive="indicator-primary-important np-text-color-important-primary">About/Contact</a>
+                <a class="mdl-navigation__link" routerLink="/profile" routerLinkActive="indicator-primary-important np-text-color-important-primary">About</a>
+                <a class="mdl-navigation__link" routerLink="/contantme" routerLinkActive="indicator-primary-important np-text-color-important-primary">Contact</a>
             </nav>
         </mdl-layout-header-row>
     </mdl-layout-header>
 
-    <mdl-layout-drawer class="mdl-layout--small-screen-only">
-        <nav class="mdl-navigation">
-            <a class="mdl-navigation__link">Home</a>
-            <a class="mdl-navigation__link">Portfolio</a>
-            <a class="mdl-navigation__link">About/Contact</a>
+     <mdl-layout-drawer class="np-drawer np-color-primary np-text-color-primary-light">
+        <header class="nav-header np-shadow-inner">
+            <div class="mdl-layout-spacer"></div>
+            <div class="nav-avatar-container">
+            <img src="/assets/img/avatar.jpg" class="nav-avatar">
+            </div>
+            <div class="np-text-align-center">
+                <h6 class="nav-title np-font-comfortaa">Niraj Prakash</h6>
+                <p class="nav-subtitle np-font-open-sans np-font-light np-font-12">Android &amp; Full Stack Developer</p>
+            </div>
+        </header>
+
+        <nav class="np-navigation mdl-navigation np-font-open-sans np-font-light np-color-white mdl-color-text--grey-800">
+            <a class="mdl-navigation__link np-selector-text-grey-to-primary"><mdl-icon class="np-margin-right-24 np-font-20">explore</mdl-icon>Home</a>
+            <a class="mdl-navigation__link np-selector-text-grey-to-primary"><mdl-icon class="np-margin-right-24 np-font-20">create</mdl-icon>Portfolio</a>
+            <a class="mdl-navigation__link np-selector-text-grey-to-primary"><mdl-icon class="np-margin-right-24 np-font-20">work</mdl-icon>About</a>
+            <a class="mdl-navigation__link np-selector-text-grey-to-primary"><mdl-icon class="np-margin-right-24 np-font-20">report</mdl-icon>Contact</a>
+            <div class="mdl-layout-spacer"></div>
+            <div class="nav-bottom">
+                <ul class="social">
+                    <li>
+                        <button mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
+                        <i class="icon-github-circled socialicon"></i>
+                    </button>
+                    </li>
+                    <li>
+                        <button mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
+                        <i class="icon-bitbucket socialicon"></i>
+                    </button>
+                    </li>
+                    <li>
+                        <button mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
+                        <i class="icon-linkedin socialicon"></i>
+                    </button>
+                    </li>
+                    <li>
+                        <button mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
+                        <i class="icon-instagram socialicon"></i>
+                    </button>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </mdl-layout-drawer>
+
 
     <mdl-layout-content>
         <div class="main-content">
