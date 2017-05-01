@@ -1,0 +1,19 @@
+
+
+.np-underline-small-primary{
+    position: relative;
+    padding-bottom: 12px;
+
+          &:after {
+
+              content: '';
+              position:absolute;
+              bottom:0;
+              left: 30%;
+              right: 30%;
+              height: 2px;
+              background:$np-color-primary;
+              display:block;
+          
+        }
+}
