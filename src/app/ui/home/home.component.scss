@@ -1,6 +1,3 @@
-body .demo-blog {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-}
 
 
 /*
@@ -71,24 +68,24 @@ body .demo-blog {
 @media (max-width: 992px) {
   
   .profile {
-  .profile-content {
-    padding: 50px 40px 15px 40px; 
-  }
+    .profile-content {
+      padding: 50px 40px 15px 40px; 
+    }
     .profile-photo {
-    padding-right: 0;
-    margin-bottom: 30px; 
+      padding-right: 0;
+      margin-bottom: 30px; 
     } 
   }
 }
 @media (max-width: 767px) {
  .profile{
    .section-about {
-    padding-top: 0; 
-  }
+      padding-top: 0; 
+    }
 
-  .profile-content {
-      padding: 30px 20px 15px 20px; 
-  }
+    .profile-content {
+        padding: 30px 20px 15px 20px; 
+    }
  }
 }
 
@@ -175,6 +172,7 @@ body .demo-blog {
   .social li button .socialicon {
         font-size: 17px; 
   } 
+
 }
 
 .service{
@@ -184,28 +182,21 @@ body .demo-blog {
         text-align: center;
     }
 
-.service-list-item{
-
-    text-align: center;
-    
-}
+    .service-list-item{
+        text-align: center;
+    }
     .service-block{
         text-align: center;
         max-width: 212px;
         margin: 4px auto;
-
-        
            
         .socialicon{
             margin: 20px 0 18px 0;
             font-size: 24px;
         }
 
-
         button{
-            
             margin: 14px 0 16px 0;
-
         }
 
 
@@ -219,6 +210,7 @@ body .demo-blog {
             margin: 0 10px 0;
             line-height: 1.2;
         }
+
         p{
             font-size:10px;
         }
