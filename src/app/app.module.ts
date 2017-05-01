@@ -20,7 +20,8 @@ const routes:  Routes = [
   { path: '', redirectTo: '/sample', pathMatch: 'full'},
   { path: 'sample', loadChildren: './ui/sample/sample.module#SampleModule' },
   { path: 'profile', loadChildren: './ui/profile/profile.module#ProfileModule' },
-  { path: 'home', loadChildren: './ui/home/home.module#HomeModule' }
+  { path: 'home', loadChildren: './ui/home/home.module#HomeModule' },
+  { path: 'portfolio', loadChildren: './ui/portfolio/portfolio.module#PortfolioModule' }
 //{ path: 'sample', loadChildren: ()=> SampleModule }
 ];
 const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true, enableTracing: true });

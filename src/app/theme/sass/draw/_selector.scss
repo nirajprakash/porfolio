@@ -1,0 +1,6 @@
+.np-selector-text-grey-to-primary{
+    color: $np-color-grey-dark;
+    &:hover{
+        color: $np-color-primary !important;
+    }
+}

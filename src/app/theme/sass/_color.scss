@@ -2,34 +2,29 @@
     color: white;
 }
 
-.color-accent{
-    color: $np-color-accent;
+.np-color-accent{
+    background: $np-color-accent;
 }
-.color-primary{
-    color: $np-color-primary ;
-}
-
-.color-important-primary{
-    color: $np-color-primary !important;
+.np-color-primary{
+    background: $np-color-primary ;
 }
 
-
-.color-blue{
-    color: unquote("rgb(#{$palette-blue-400;})");
-}
-.color-red{
-    color: unquote("rgb(#{$palette-red-A700;})");
+.np-color-important-primary{
+    background: $np-color-primary !important;
 }
 
-.back-color-primary{
-    background-color:  $np-color-primary;
 
+.np-color-blue{
+    background: unquote("rgb(#{$palette-blue-400;})");
+}
+.np-color-red{
+    background: unquote("rgb(#{$palette-red-A700;})");
 }
 
-.back-color-white{
+.np-color-white{
     background-color: white;
 }
 
-.back-color-grey{
+.np-color-grey{
     background-color: $np-color-back-grey;
 }

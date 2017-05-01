@@ -1,3 +1,9 @@
 .indicator-primary-important{
     border-bottom: 3px solid $np-color-primary !important;
 }
+
+.np-shadow-inner{
+    -webkit-box-shadow: inset 0px -10px 37px -1px rgba(0,0,0,0.13);
+-moz-box-shadow: inset 0px -10px 37px -1px rgba(0,0,0,0.13);
+box-shadow: inset 0px -10px 37px -1px rgba(0,0,0,0.13);
+}

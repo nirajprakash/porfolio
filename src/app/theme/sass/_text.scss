@@ -1,18 +1,34 @@
-.text-shadow{
+.np-text-shadow{
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-.text-color-dark{
-    color: $default-item-text-color;
+.np-text-color-dark{
+    color: $np-color-grey-dark;
 }
 
-.text-color-default{
-   color: $list-supporting-text-text-color;
+.np-text-color-default{
+   color: $np-color-grey-default;
 }
-.text-color-important-default{
-   color: $list-supporting-text-text-color !important;
+.np-text-color-important-default{
+   color: $np-color-grey-default !important;
 }
-.text-color-primary-light{
+
+.np-text-color-primary-light{
     color: $np-color-primary-50;
 }
 
+.np-text-color-accent{
+    color: $np-color-accent;
+}
+.np-text-color-primary{
+    color: $np-color-primary ;
+}
+
+.np-text-color-important-primary{
+    color: $np-color-primary !important;
+}
+
+
+.np-text-align-center{
+    text-align: center;
+}

@@ -99,13 +99,13 @@
     <mdl-layout-header class="main-header">
         <mdl-layout-header-row class="main-header-row">
 
-            <mdl-layout-title class="color-primary font-open-sans">{{title}}</mdl-layout-title>
+            <mdl-layout-title class="np-text-color-primary np-font-open-sans">{{title}}</mdl-layout-title>
             <mdl-layout-spacer></mdl-layout-spacer>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link"  routerLink="/home" routerLinkActive="indicator-primary-important color-important-primary">Home</a>
-                <a class="mdl-navigation__link" routerLink="/portfolio" routerLinkActive="indicator-primary-important color-important-primary">Portfolio</a>
-                <a class="mdl-navigation__link" routerLink="/profile" routerLinkActive="indicator-primary-important color-important-primary">About/Contact</a>
+                <a class="mdl-navigation__link"  routerLink="/home" routerLinkActive="indicator-primary-important np-text-color-important-primary">Home</a>
+                <a class="mdl-navigation__link" routerLink="/portfolio" routerLinkActive="indicator-primary-important np-text-color-important-primary">Portfolio</a>
+                <a class="mdl-navigation__link" routerLink="/profile" routerLinkActive="indicator-primary-important np-text-color-important-primary">About/Contact</a>
             </nav>
         </mdl-layout-header-row>
     </mdl-layout-header>
@@ -133,7 +133,7 @@
     </div-->
 </mdl-layout>
 <div *ngIf="mainLayout.isSmallScreen" class="mdl-layout__drawer-button" mdl-ripple  (click)="mainLayout.toggleDrawer()">
-    <mdl-icon class="text-color-dark">&#xE5D2;</mdl-icon>
+    <mdl-icon class="np-text-color-dark">&#xE5D2;</mdl-icon>
 </div>
 <!--button mdl-button *ngIf="mainLayout.isSmallScreen" class="mdl-layout__drawer-button"  mdl-button-type="fab"  mdl-ripple (click)="mainLayout.toggleDrawer()">
         <mdl-icon>&#xE5D2;</mdl-icon>
