@@ -1,150 +1,88 @@
-footer{
-  max-width: 900px;
-  margin: auto;
 
-  .mdl-mini-footer__link-list{
-    margin: 0 auto;
-  }
-  .social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center; 
-}
-  
-.social li {
-    display: inline-block;
-    margin: 5px 15px; 
-}
+/****************************
+ *                         SERVICE
+ */
 
-.social li button .socialicon{
-   font-size: 20px;
-   display: block;
-}
 
-.social li button {
-      width: 45px;
-      height: 45px;
-}
+.technology{
 
- @media (max-width: 767px) {
-  .social li {
-    margin-left: 5px;
-    margin-right: 5px; 
-  }
-  .social li button {
-      width: 35px;
-      height: 35px; 
-  }
-  /*
-  .social li a, .social li a .socialicon {
-        line-height: 35px; 
-  }
-  */
-  .social li button .socialicon {
-        font-size: 17px; 
-  } 
+    .title{
+        padding: 28px 0 28px 0;
+        text-align: center;
 
-}
-}
+        /*h6{
+          position: relative;
 
-@media (max-width: 767px){
-footer{
-
-  
-    .mdl-mini-footer__right-section{
-      margin: auto;
+          &:after {
+              content: '';
+              position:absolute;
+              bottom:0;
+              left: 30%;
+              right: 30%;
+              height: 2px;
+              background:red;
+              display:block;
+          }
+        }*/
     }
-    .mdl-mini-footer__left-section{
-      margin: auto;
+
+    .technology-list-item{
+        text-align: center;
     }
-  }
-}
+    .technology-block{
+        text-align: center;
+        max-width: 192px;
+        margin: 4px auto;
 
 
+    .technology-logo-container{
+        height: 56px;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+    }
+    .technology-logo {
+      display: block;
+      max-height: 48px;
+      margin: 0 auto;
+        min-width: 10%;
+        border-radius: 28px;
+    }
+           
+        .socialicon{
+            margin: 20px 0 18px 0;
+            font-size: 24px;
+        }
+
+        button{
+            margin: 8px 0 16px 0;
+        }
 
 
-.footer-content{
-  margin: auto;
-  align-items: center;
-  flex-flow: row wrap;
-  max-width: 900px;
-  justify-content: space-between;
+        mdl-icon{            
+            font-size: 14px;
+        }
+        
 
-  .footer-link-list{
-    margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center; 
-  li {
-    display: inline-block;
-    margin: 6px 8px;
-     
-}
-  }
-.footer-left-section{
-    order: 0;
+        h6{
+            font-size: 12px;
+            margin: 0 10px 4px;
+            line-height: 1.2;
+        }
 
-  }
-  .footer-right-section{
-    order: 1;
+        p{
+          line-height: 1.3;
+            margin: 0 10px 0;
+            font-size:10px;
+        }
 
-  }
-  
-   .social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center; 
-}
-  
-.social li {
-    display: inline-block;
-    margin: 4px 6px; 
-}
+       /* &:hover{
+            background:rgba(255,255,255,1);
+            border-radius: 2px;
+            color: rgba(0,0,0,0.54);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }*/
 
-.social li button .socialicon{
-   font-size: 18px;
-   display: block;
-}
+    }
 
-.social li button {
-      width: 40px;
-      height: 40px;
-}
-}
-
- @media (max-width: 767px) {
-
-   .footer-content{
-  
-  
-.footer-left-section{
-    margin: auto;
-
-  }
-  .footer-right-section{
-    margin: auto;
-
-  }
-  .social li {
-    margin-left: 4px;
-    margin-right: 4px; 
-  }
-  .social li button {
-    font-size: 14px;
-      width: 32px;
-      height: 32px; 
-  }
-  /*
-  .social li a, .social li a .socialicon {
-        line-height: 35px; 
-  }
-  */
-  .social li button .socialicon {
-        font-size: 16px; 
-  } 
-
-}
- 
 }
