@@ -1,0 +1,66 @@
+[
+    {
+        "id": "101",
+        "name": "Angular",
+        "detail":"Platform for building mobile and desktop web applications...",
+        "logo":"assets/img/angular.png",
+        "link":"https://angular.io/",
+        "tab": "front-end"
+    },
+    {
+        "id": "102",
+        "name": "AngularJs",
+        "detail":"A structural framework for dynamic web applications...",
+        "logo":"assets/img/angularjs-logo.png",
+        "link":"https://angularjs.org/",
+        "tab": "front-end"
+    },
+    {
+        "id": "103",
+        "name": "Glide",
+        "detail":"Image loading framework for Android...",
+        "logo":"assets/img/glide.png",
+        "link":"https://github.com/bumptech/glide/releases/tag/v3.7.0",
+        "tab": "front-end"
+    },
+    {
+        "id": "104",
+        "name": "Retrofit",
+        "detail":"Http client for Android and Java...",
+        "logo":"assets/img/square.png",
+        "link":"http://square.github.io/retrofit/",
+        "tab": "front-end"
+    },
+    {
+        "id": "112",
+        "name": "NodeJs",
+        "detail":"Server-side JavaScript environment...",
+        "logo":"assets/img/nodejs.png",
+        "link":"https://nodejs.org/",
+        "tab": "back-end"
+    },
+    {
+        "id": "131",
+        "name": "MaterializeCss",
+        "detail":"Responsive CSS framework based on Material Design by Google ..",
+        "logo":"assets/img/materialize.png",
+        "link":"http://materializecss.com/",
+        "tab": "design"
+    },
+    {
+        "id": "132",
+        "name": "Sass",
+        "detail":"CSS extension language...",
+        "logo":"assets/img/sass.png",
+        "link":"http://sass-lang.com/",
+        "tab": "design"
+    },
+    {
+        "id": "133",
+        "name": "MDL",
+        "detail":"library for web developers based on Google's Material Design Philosophy...",
+        "logo":"assets/img/getmdl.png",
+        "link":"https://getmdl.io/",
+        "tab": "design"
+    }
+]

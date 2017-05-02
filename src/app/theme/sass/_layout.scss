@@ -12,12 +12,21 @@ width: 100%;
  padding: 64px 32px 8px 40px;
 }
 
-  .np-container{
+.np-container{
     max-width: $resM;
     width: 100%;
   margin: 0 auto;
   flex-shrink: 0;
 }
+
+.np-container-large{
+  max-width: $resL;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+
 
 @media screen and (max-width: $resXS) {
   .np-layout-content {

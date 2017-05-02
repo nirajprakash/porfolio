@@ -7,11 +7,11 @@ import * as moment from 'moment';
 import { ServiceWindow, ServicePortfolioApi, ModelTechnology } from './../../services'
 
 @Component({
-    selector: 'portfolio-view',
-    templateUrl: './portfolio.component.html',
-    styleUrls: ['./portfolio.component.scss']
+    selector: 'np-technology-view',
+    templateUrl: './technology.component.html',
+    styleUrls: ['./technology.component.scss']
 })
-export class PortfolioComponent implements OnInit {
+export class TechnologyComponent implements OnInit {
 
     returnUrl: string;
 

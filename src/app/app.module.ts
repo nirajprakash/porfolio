@@ -15,7 +15,7 @@ import { MdlDatePickerModule } from '@angular-mdl/datepicker';
 import { SampleModule } from './ui/sample/sample.module';
 
 import { ProfileModule } from './ui/profile/profile.module';
-
+import {ServicePortfolioApi, ServiceWindow} from './services';
 const routes:  Routes = [
   { path: '', redirectTo: '/sample', pathMatch: 'full'},
   { path: 'sample', loadChildren: './ui/sample/sample.module#SampleModule' },
@@ -37,11 +37,10 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash:
     MdlSelectModule,
     MdlDatePickerModule,
     SampleModule,
-    ProfileModule,
-    
+    ProfileModule,    
     rootRouting
   ],
-  providers: [],
+  providers: [ServicePortfolioApi,ServiceWindow],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

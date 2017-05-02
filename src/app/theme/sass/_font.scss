@@ -39,3 +39,20 @@
  .np-font-10{
     font-size: $font-10;
  }
+
+ .np-font-tab{
+font-size: $font-12;
+ }
+
+
+@media (max-width: $resM) {
+ .np-font-tab{
+     font-size: $font-10;
+ }
+}
+
+@media (max-width: $resS) {
+ .np-font-tab{
+     font-size: $font-8;
+ }
+}
