@@ -87,7 +87,10 @@ body .demo-blog {
         margin-left: 0px;
         margin-right: 2px; 
     }
-
+    .social li button{
+        width: 32px;
+        height: 32px;        
+    }
     .social li button .socialicon{
         font-size: 14px;
         display: block;

@@ -3,3 +3,56 @@
  *                         SERVICE
  */
 
+div {
+  background: #e6ecee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+code {
+  max-width: 20rem;
+  background: #263238;
+  color: #eff;
+  padding: 1rem 3rem;
+  margin: 1rem;
+  position: relative;
+  border-radius: 0.25rem;
+  counter-reset: step;
+  counter-increment: step 0;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  outline: none;
+}
+code:focus {
+  background: #2e3d44;
+}
+code p {
+  position: relative;
+  margin: 0.2rem;
+  font-family: monospace;
+  display: block;
+  white-space: pre;
+}
+code p::before {
+  position: absolute;
+  top: 0;
+  left: -1.75rem;
+  color: #50646d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  content: counter(step);
+  counter-increment: step;
+}
+code p:focus::before {
+  color: #f00;
+}
