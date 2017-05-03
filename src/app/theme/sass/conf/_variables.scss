@@ -20,6 +20,7 @@ $font-bolder: 700;
 $font-ultraBold: 900;
 
 $np-color-primary : unquote("rgb(#{$color-primary})") !default;
+$np-color-primary-dark : unquote("rgb(#{$color-primary-dark})") !default;
 $np-color-primary-50 : white !default;
 $np-color-back-grey : #dfdfdf !default;
 $np-color-grey-default: $list-supporting-text-text-color;

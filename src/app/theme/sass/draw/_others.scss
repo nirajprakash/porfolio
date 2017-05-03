@@ -17,3 +17,20 @@
           
         }
 }
+
+.np-underline-small-primary_all{
+    position: relative;
+    padding-bottom: 12px;
+
+          &:after {
+
+              content: '';
+              position:absolute;
+              bottom:0;
+              left: 0%;
+              height: 2px;
+              background:$np-color-primary;
+              display:block;
+          
+        }
+}

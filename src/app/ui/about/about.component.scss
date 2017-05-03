@@ -1,0 +1,114 @@
+body .demo-blog {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+
+/*
+
+.profile-card  img{
+  max-width: 100%;
+
+}
+*/
+
+  /*.avatar-container{
+      box-shadow: inset 0px 0px 156px 0px rgba(0,0,0,0.4);
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      margin: 0 auto;
+      padding: 2px;
+     
+      /*
+      img {
+        width: 96px;
+        height: 96px;
+        border-radius: 48px;
+      }
+      *
+
+  }*/
+
+
+.about-card{
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    flex-shrink: 0;
+    
+    .about-card-content{
+        padding: 24px;
+    }
+    
+    .avatar-container{
+        margin: 16px auto;
+        img {
+            width:100%;  
+            max-width: 96px;
+            height: auto;
+            border-radius: 100%;
+        }
+    }
+
+    .about-info{
+        color: #3d4451;
+
+        h4,h6{
+            margin: 0;
+            line-height: 1.1;
+        }
+        p{
+            font-size:10px;
+        }
+    }
+
+    .about-subheader{
+        margin: 4px 0px 2px 0px;
+        p{
+            line-height: 1.4;
+            margin: 2px 0px 0px 0px;
+        }
+    }
+
+    .about-detail{
+        p{
+            margin: 0;
+        }
+    }
+
+
+    .social {
+        margin: 2px 0;
+        padding: 0;
+        list-style: none; 
+    }
+    
+    .social li {
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 2px; 
+    }
+
+    .social li button .socialicon{
+        font-size: 14px;
+        display: block;
+    }
+
+}
+
+ /*@media (max-width: 767px) {
+  /*.social li button {
+      width: 36px;
+      height: 36px; 
+  }*/
+  /*
+  .social li a, .social li a .socialicon {
+        line-height: 35px; 
+  }
+  *
+  .social li button .socialicon {
+        font-size: 14px; 
+  } 
+}*/
+
+
+

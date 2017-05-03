@@ -7,3 +7,12 @@
     -moz-box-shadow: inset 0px -10px 37px -1px rgba(0,0,0,0.13);
     box-shadow: inset 0px -10px 37px -1px rgba(0,0,0,0.13);
 }
+
+.np-gradient-primary-vertical{
+
+    background: linear-gradient(to bottom, $np-color-primary-dark, $np-color-primary);
+}
+
+.np-shadow-decent{
+    box-shadow: 2px 4px 20px 0px rgba(156,202,240,0.3ch);
+}

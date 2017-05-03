@@ -13,15 +13,14 @@ import { MdlDatePickerModule } from '@angular-mdl/datepicker';
 
 
 import { SampleModule } from './ui/sample/sample.module';
-
-import { ProfileModule } from './ui/profile/profile.module';
 import {ServicePortfolioApi, ServiceWindow} from './services';
 const routes:  Routes = [
-  { path: '', redirectTo: '/sample', pathMatch: 'full'},
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'sample', loadChildren: './ui/sample/sample.module#SampleModule' },
   { path: 'profile', loadChildren: './ui/profile/profile.module#ProfileModule' },
   { path: 'home', loadChildren: './ui/home/home.module#HomeModule' },
-  { path: 'portfolio', loadChildren: './ui/portfolio/portfolio.module#PortfolioModule' }
+  { path: 'portfolio', loadChildren: './ui/portfolio/portfolio.module#PortfolioModule' },
+  { path: 'about', loadChildren: './ui/about/about.module#AboutModule' }
 //{ path: 'sample', loadChildren: ()=> SampleModule }
 ];
 const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true, enableTracing: true });
@@ -36,8 +35,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash:
     MdlModule,
     MdlSelectModule,
     MdlDatePickerModule,
-    SampleModule,
-    ProfileModule,    
+    SampleModule,   
     rootRouting
   ],
   providers: [ServicePortfolioApi,ServiceWindow],
