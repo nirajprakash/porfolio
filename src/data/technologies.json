@@ -17,6 +17,14 @@
     },
     {
         "id": "103",
+        "name": "Polymer",
+        "detail":"A JavaScript library for building web applications using custom HTML elements...",
+        "logo":"assets/img/polymer.png",
+        "link":"https://www.polymer-project.org/",
+        "tab": "front-end"
+    },
+    {
+        "id": "111",
         "name": "Glide",
         "detail":"Image loading framework for Android...",
         "logo":"assets/img/glide.png",
@@ -24,19 +32,52 @@
         "tab": "front-end"
     },
     {
-        "id": "104",
+        "id": "112",
         "name": "Retrofit",
         "detail":"Http client for Android and Java...",
         "logo":"assets/img/square.png",
         "link":"http://square.github.io/retrofit/",
         "tab": "front-end"
     },
+
     {
-        "id": "112",
+        "id": "121",
         "name": "NodeJs",
         "detail":"Server-side JavaScript environment...",
         "logo":"assets/img/nodejs.png",
         "link":"https://nodejs.org/",
+        "tab": "back-end"
+    },
+    {
+        "id": "122",
+        "name": "HapiJs",
+        "detail":"A framework for building applications and services...",
+        "logo":"assets/img/hapi.png",
+        "link":"https://hapijs.com/",
+        "tab": "back-end"
+    },
+    {
+        "id": "123",
+        "name": "ObjectionJs",
+        "detail":"An ORM for Node.js...",
+        "logo":"assets/img/objectionjs.png",
+        "link":"http://vincit.github.io/objection.js/",
+        "tab": "back-end"
+    },
+    {
+        "id": "124",
+        "name": "Express",
+        "detail":"Web Application framework for Node.js...",
+        "logo":"assets/img/express.png",
+        "link":"https://expressjs.com/",
+        "tab": "back-end"
+    },
+    {
+        "id": "125",
+        "name": "Sequelize",
+        "detail":"An ORM for Node.js...",
+        "logo":"assets/img/sequelize.png",
+        "link":"http://docs.sequelizejs.com/",
         "tab": "back-end"
     },
     {
