@@ -11,257 +11,179 @@ body .demo-blog {
 }
 */
 
-.profile-card{
-
- max-width: 900px;
-  padding: 0;
-  width: 100%;
-  margin: 0 auto;
-  flex-shrink: 0;
-  
-  .profile-card-content{
-    padding: 57px 50px 15px 50px;
-  }
-  .profile-photo {
-      padding-right: 5%;
-      margin-bottom: 10px;
-  }
-
-  .profile-photo img{
-    width: 100%;
-    display: block;
-  }
-
-  .profile-info{
-    color: #3d4451;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid #dedede;
-
-    h4,h6{
-      margin: 0;
-      line-height: 1.1;
-    }
-    p{
-      font-size:10px;
-    }
-  }
-  .profile-detail{
-    p{
-      margin: 5px 0px 5px 0px;
-      .icon{
-        float: left;
-        font-size: 20px;
-        line-height: 1.1;
+  /*.avatar-container{
+      box-shadow: inset 0px 0px 156px 0px rgba(0,0,0,0.4);
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      margin: 0 auto;
+      padding: 2px;
+     
+      /*
+      img {
+        width: 96px;
+        height: 96px;
+        border-radius: 48px;
       }
-      
-      .content{
-        margin-left: 8px;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 1.2;
-      } 
-    }
+      *
 
-  }
-  .profile-detail ul{
-    margin: 0;
+  }*/
+
+
+.about-card{
     padding: 0;
-    list-style: none;
-    text-align: left; 
-
-    li {
-    display: inherit;
-
-    padding: 5px 5px 5px 0px;
-    &::before{
-      display: table;
+    width: 100%;
+    margin: 0 auto 64px;
+    flex-shrink: 0;
+    
+    .about-card-content{
+        padding: 24px;
     }
     
-      .content{
-        display: block;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 20px;
-      } 
+    .avatar-container{
+        margin: 16px auto;
+        img {
+            width:100%;  
+            max-width: 96px;
+            height: auto;
+            border-radius: 100%;
+        }
     }
 
-  }
-  
-}
+    .about-info{
+        color: #3d4451;
+
+        h4,h6{
+            margin: 0;
+            line-height: 1.1;
+        }
+        p{
+            font-size:10px;
+        }
+    }
+
+    .about-subheader{
+        margin: 4px 0px 2px 0px;
+        p{
+            line-height: 1.4;
+            margin: 2px 0px 0px 0px;
+        }
+    }
+
+    .about-detail{
+        p{
+            margin: 0;
+        }
+    }
 
 
-@media (max-width: 992px) {
-  
-  .profile-card {
-  .profile-card-content {
-    padding: 50px 40px 15px 40px; 
-  }
-    .profile-photo {
-    padding-right: 0;
-    margin-bottom: 30px; 
-  } 
-}
-}
-@media (max-width: 767px) {
- .profile-card {
-   .section-about {
-    padding-top: 0; 
-  }
-
-  .profile-card-content {
-      padding: 30px 20px 15px 20px; 
-  }
- }
-}
-
-
-/**.profile-card-content{
-  width: 100%;
-}
-
-.profile-card .profile-bottom{
-  width: 100%;
-
-}
-/**
-.profile-card .social{
-  list-style: none;
-  float: left;
-  padding: 0;
-
-  
-}
-
-.profile-card .social li{
-  list-style: none;
-  float: left;
-
-}
-
-*/
-.social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center; 
-  }
-  
-.social li {
-    display: inline-block;
-    margin: 5px 15px; 
-}
-
-.social li button .socialicon{
-        font-size: 20px;
+    .social {
+        margin: 2px 0;
+        padding: 0;
+        list-style: none; 
+    }
+    
+    .social li {
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 2px; 
+    }
+    .social li button{
+        width: 32px;
+        height: 32px;        
+    }
+    .social li button .socialicon{
+        font-size: 14px;
         display: block;
+    }
+
 }
 
-.social li button {
-      width: 45px;
-      height: 45px;
-}
-
- @media (max-width: 767px) {
-  .social li {
-    margin-left: 5px;
-    margin-right: 5px; 
-  }
-  .social li button {
-      width: 35px;
-      height: 35px; 
-  }
+ /*@media (max-width: 767px) {
+  /*.social li button {
+      width: 36px;
+      height: 36px; 
+  }*/
   /*
   .social li a, .social li a .socialicon {
         line-height: 35px; 
   }
-  */
+  *
   .social li button .socialicon {
-        font-size: 17px; 
+        font-size: 14px; 
   } 
-}
+}*/
 
-.profile-sub-card{
 
- max-width: 900px;
-  padding: 0;
-  width: 100%;
-  margin: 0 auto;
-  flex-shrink: 0;
-  text-align: center;
-
-  .profile-action{
-    margin: 0;
-    
-    border-bottom: 1px solid #dedede;
-
-    button{
-      margin: 12px 20px;
-    }
-
-  }
-
-  p{
-    padding: 12px 32px;
-  }
-}
-
- @media (max-width: 767px) {
-
-.profile-sub-card{
-  .profile-action{
-    button{
-      margin: 5px 5px;
-    }
-
-    
-  }
-  
-  p{
-    padding: 12px 12px;
-  }
-}
- }
-/**
- * 6.3 - Social
+/****************************
+ *                         SERVICE
  */
-/*
-.social li a {
-      width: 45px;
-      height: 45px;
-      position: relative;
-      display: inline-block;
-      background-color: transparent;
-      -webkit-transition: -webkit-transition, background-color 0.25s linear 0s;
-      -moz-transition: -moz-transition, background-color 0.25s linear 0s;
-      transition: transition, background-color 0.25s linear 0s;
-      -webkit-backface-visibility: hidden;
-      -moz-backface-visibility: hidden;
-      backface-visibility: hidden;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%; }
-      .social li a:hover {
-        text-decoration: none;
-        background-color: rgba(0, 0, 0, 0.1); }
-      .social li a, .social li a .socialicon {
-        line-height: 45; }
-      .social li a .socialicon {
-        color: #fff;
-        font-size: 20px;
-        line-height: 45px;
-        display: block; }
 
-@media (max-width: 767px) {
-  .social li {
-    margin-left: 5px;
-    margin-right: 5px; }
-    .social li a {
-      width: 35px;
-      height: 35px; }
-      .social li a, .social li a .socialicon {
-        line-height: 35px; }
-      .social li a .socialicon {
-        font-size: 17px; } }
-        */
+
+.service{
+
+    .title{
+        padding: 28px 0 28px 0;
+        text-align: center;
+
+        /*h6{
+          position: relative;
+
+          &:after {
+              content: '';
+              position:absolute;
+              bottom:0;
+              left: 30%;
+              right: 30%;
+              height: 2px;
+              background:red;
+              display:block;
+          }
+        }*/
+    }
+
+    .service-list-item{
+        text-align: center;
+    }
+    .service-block{
+        text-align: center;
+        max-width: 212px;
+        margin: 4px auto;
+           
+        .socialicon{
+            margin: 20px 0 18px 0;
+            font-size: 24px;
+        }
+
+        button{
+            margin: 14px 0 16px 0;
+        }
+
+
+        mdl-icon{            
+            font-size: 14px;
+        }
+        
+
+        h6{
+            font-size: 12px;
+            margin: 0 10px 0;
+            line-height: 1.2;
+        }
+
+        p{
+            font-size:10px;
+        }
+
+       /* &:hover{
+            background:rgba(255,255,255,1);
+            border-radius: 2px;
+            color: rgba(0,0,0,0.54);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }*/
+
+    }
+
+}
+
+
 
