@@ -7,6 +7,14 @@
 
 }
 */
+.wall-frame{
+  background: rgba(0,0,0,0.4);
+}
+.top-wall{
+  background: url("http://localhost:4200/assets/img/3f12541.jpg") no-repeat center center;
+  
+    background-size: cover;
+}
 
 .code{
   min-height: 300px;

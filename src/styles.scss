@@ -2,14 +2,14 @@
 
 @import "~@angular-mdl/core/scss/color-definitions";
 
-$color-primary: 95,38,137;
+$color-primary: 39,186,190;
 //$color-primary: $palette-grey-50;
-$color-primary-dark: 76,30,109;
+$color-primary-dark: 31,148,152;
 $color-accent: $palette-blue-700;
 $color-primary-contrast: $color-dark-contrast;
 $color-accent-contrast: $color-dark-contrast;
 
-$np-color-primary-50: #efe9f3 !default;
+$np-color-primary-50: #e9f8f8 !default;
 $np-color-back-grey:  unquote("rgb(#{$palette-grey-50})");
 $np-color-back-grey-dark: unquote("rgb(#{$palette-grey-700})");
 $np-color-back-grey-dark-extra: unquote("rgb(#{$palette-grey-800})");

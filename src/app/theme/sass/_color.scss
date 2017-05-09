@@ -13,6 +13,10 @@
     background: $np-color-primary !important;
 }
 
+.np-color-primary-alpha-6{
+    background: $np-color-primary-alpha-6 !important;
+    background-color: $np-color-primary-alpha-6 !important;
+}
 
 .np-color-blue{
     background: unquote("rgb(#{$palette-blue-400;})");
