@@ -2,14 +2,14 @@
 
 @import "~@angular-mdl/core/scss/color-definitions";
 
-$color-primary: $palette-blue-grey-500;
+$color-primary: 95,38,137;
 //$color-primary: $palette-grey-50;
-$color-primary-dark: $palette-blue-grey-700;
-$color-accent: $palette-teal-A700;
+$color-primary-dark: 76,30,109;
+$color-accent: $palette-blue-700;
 $color-primary-contrast: $color-dark-contrast;
 $color-accent-contrast: $color-dark-contrast;
 
-$np-color-primary-50: unquote("rgb(#{$palette-blue-grey-100})") !default;
+$np-color-primary-50: #efe9f3 !default;
 $np-color-back-grey:  unquote("rgb(#{$palette-grey-50})");
 $np-color-back-grey-dark: unquote("rgb(#{$palette-grey-700})");
 $np-color-back-grey-dark-extra: unquote("rgb(#{$palette-grey-800})");
@@ -22,3 +22,22 @@ $np-color-back-grey-dark-extra: unquote("rgb(#{$palette-grey-800})");
 
 @import 'app/theme/theme';
  
+//cyan
+//primary: 39,186,190
+//priamry-dark: 31,148,152
+//priamry-50 #e9f8f8
+
+//red
+//204, 0, 61
+//163,0,48
+//#F9E5EB
+
+//teal
+//0,122,125
+//0,97,100
+//#e5efef
+
+//purple
+//95,38,137
+//76,30,109
+//#efe9f3
