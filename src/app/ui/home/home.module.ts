@@ -30,7 +30,6 @@ const routes: ModuleWithProviders = RouterModule.forChild([
     MdlSelectModule,
     MdlDatePickerModule,
     routes
-    
   ],
   declarations: [
     HomeComponent,

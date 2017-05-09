@@ -34,3 +34,20 @@
           
         }
 }
+
+.np-underline-small-primary_start_no_padding{
+    position: relative;
+
+          &:after {
+
+              content: '';
+              position:absolute;
+              bottom:0;
+              left: 0%;
+              width: 20px;
+              height: 2px;
+              background:$np-color-primary;
+              display:block;
+          
+        }
+}

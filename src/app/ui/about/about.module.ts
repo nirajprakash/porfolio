@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about.component';
+import { ProjectComponent} from './project.component';
 
 
 import {MdlModule} from "@angular-mdl/core";
@@ -30,7 +31,8 @@ const routes: ModuleWithProviders = RouterModule.forChild([
     
   ],
   declarations: [
-    AboutComponent
+    AboutComponent,
+    ProjectComponent
   ],
   exports: []
 })
