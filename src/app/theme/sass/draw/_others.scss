@@ -51,3 +51,20 @@
           
         }
 }
+
+.np-underline-small-thin-primary_start_no_padding{
+    position: relative;
+
+          &:after {
+
+              content: '';
+              position:absolute;
+              bottom:0;
+              left: 0%;
+              width: 40px;
+              height: 1px;
+              background:$np-color-primary;
+              display:block;
+          
+        }
+}

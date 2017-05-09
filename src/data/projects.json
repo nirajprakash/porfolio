@@ -1,0 +1,38 @@
+[
+    {
+        "id": "101",
+        "name": "Speaker Identifiction System",
+        "info": "Mfcc feature extraction, LBGVQ",
+        "year":"2015",
+        "logo":"assets/img/angular.png",
+        "link":"https://angular.io/",
+        "detail":[
+            "Platform for building mobile and desktop web applications..."]
+    },
+    {
+        "id": "102",
+        "name": "Brain Computer Interface Design for EEG signal",
+        "location":"G.S. Sanyal School of Telecommunications",
+        "info": "Mfcc feature extraction, LBGVQ",
+        "year": "2014",
+        "logo":"assets/img/angular.png",
+        "link":"https://angular.io/",
+        "detail": [
+            "Designed a BCI application (in JAVA), which was used as a user-interface for computer application.",
+            "Studied EEG signals of brain, and detected eye blinks’ signal.",
+            "Blinks signal were used for controlling computer software like Adobe Reader, Microsoft PowerPoint, VLC media player."
+        ]
+    },
+    {
+        "id": "103",
+        "name": "Simulation Android App for Mechanics problems.",
+        "location":"MHRD, India",
+        "info": "OpenGLES, Box2d Physics",
+        "year": "2013",
+        "logo":"assets/img/angular.png",
+        "link":"https://angular.io/",
+        "detail":[
+            "Used openGL ES 2.0 API for 2D Graphical Simulation and BOX2D API for Physics Engine."
+        ]
+    }
+]

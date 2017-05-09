@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map'
 
 import 'rxjs/add/operator/catch';
 
-import { ModelTechnology } from './models';
+import { ModelTechnology, ModelProject } from './models';
 @Injectable()
 export class ServicePortfolioApi {
 
@@ -21,6 +21,26 @@ export class ServicePortfolioApi {
             });
 
         return this.http.request('data/technologies.json', options)
+            .map((response: Response) => {
+                let data = response.json();
+
+                if (data) {
+                    return data;
+                }
+                return Observable.throw(response || 'Server error')
+            });
+    }
+
+    getProjects(): Observable<ModelProject[]> {
+
+        let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        let options = new RequestOptions(
+            {
+                headers: headers,
+                method: "get"
+            });
+
+        return this.http.request('data/projects.json', options)
             .map((response: Response) => {
                 let data = response.json();
 
