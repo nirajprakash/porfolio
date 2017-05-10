@@ -35,7 +35,6 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash:
     MdlModule,
     MdlSelectModule,
     MdlDatePickerModule,
-    SampleModule,   
     rootRouting
   ],
   providers: [ServicePortfolioApi,ServiceWindow],
