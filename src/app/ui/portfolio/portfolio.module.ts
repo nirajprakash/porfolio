@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { FormsModule } from '@angular/forms';
-import { PortfolioComponent } from './portfolio.component';
 
+import { PortfolioComponent } from './portfolio.component';
+import { PortfolioItemComponent } from './portfolio-item.component';
 
 import {MdlModule} from "@angular-mdl/core";
 
@@ -30,7 +31,8 @@ const routes: ModuleWithProviders = RouterModule.forChild([
     
   ],
   declarations: [
-    PortfolioComponent
+    PortfolioComponent, 
+    PortfolioItemComponent
   ],
   exports: []
 })

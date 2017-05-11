@@ -1,0 +1,82 @@
+[
+    {
+        "id": "104",
+        "companyName": "Intugine",
+        "appName": "Ble Navigation Demo App",
+        "appType":"android",
+        "detail":"Bluetooth enabled app for navigaiton.",
+        "features": [
+            "Bluetooth BLE"
+            ],
+        "images":[],        
+        "colorPrimary":"#4785fe",
+        "colorPrimaryDark": "#4565a2",
+        "wall":"/assets/img/intugine_ble.png",
+        "year": "2017",
+        "logo":"/assets/img/intugine_logo.png",
+        "link":"https://intugine.com/"
+    },
+    {
+        "id": "103",
+        "companyName": "Fancymonk",
+        "appName": "Table booking & waiterless App",
+        "appType":"android",
+        "detail":"Pre-book restaurant table. Real time waiter-less order system. Integrated menu of restaurant.",
+        "features": [
+            "Near By GPS Search",
+            "Payment System RazorPay",
+            "Messaging",
+            "Faceook/Google login",
+            "FCM Notification",
+            "Google Map",
+            "Real Time"
+            ],
+        "images":[],
+        "appLink":"https://play.google.com/store/apps/details?id=com.fancymonk.customer&hl=en",
+        "colorPrimary":"#ce1e42",
+        "colorPrimaryDark":"#a41834",
+        "wall":"/assets/img/fancymonk_app-01.jpg",
+        "year": "2016-2017",
+        "logo":"/assets/img/ic_fancy_monk_white_128.png",
+        "link":"https://fancymonk.com/"
+    },
+    {
+        "id": "102",
+        "companyName": "Fancymonk",
+        "appName": "waiterless Manager App",
+        "appType":"web",
+        "detail":"Real time waiter-less system for restaurant manager. ",
+        "features": [
+            "Messaging",
+            "FCM Notification",
+            "Google Map",
+            "Real Time"
+            ],
+        "images":[],       
+        "colorPrimary":"#009688",
+        "colorPrimaryDark":"#00796B",
+        "wall":"/assets/img/fancymonk_app.png",
+        "year": "2017",
+        "logo":"/assets/img/ic_fancy_monk_white_128.png",
+        "link":"https://fancymonk.com/"
+    },
+    {
+        "id": "101",
+        "companyName": "Fancymonk",
+        "appName": "Restaurant Manager App",
+        "appType":"android",
+        "detail":"Restaurant Manager app for restaurant. ",
+        "features": [
+            "Google Map",
+            "Account Manager"
+            ],
+        "images":[],        
+        "colorPrimary":"#009688",
+        "colorPrimaryDark":"#00796B",
+        "wall":"/assets/img/fancymonk_app.png",
+        "year": "2016",
+        "logo":"/assets/img/ic_fancy_monk_white_128.png",
+        "link":"https://fancymonk.com/"
+    }
+
+]

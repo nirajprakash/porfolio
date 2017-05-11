@@ -1,0 +1,32 @@
+
+            <div class="np-border-2 np-hover-card-up info-card  card-product  np-margin-bottom-32" *ngFor="let portfolio of _mPortfolioList; let i = index">
+                <div class="np-flex-container product"  >
+                    <div class="product-info np-flex-column np-flex-wrapper np-text-color-white" [style.background]="portfolio.colorPrimary">
+                        <div class="heading np-margin-bottom-12">
+                            <h4 class="np-font-comfortaa np-font-14 np-font-light">{{portfolio.appName}}</h4>
+                        </div>
+                        <div class="product-detail np-margin-bottom-20">
+                            <p class="np-font-open-sans np-font-12 np-font-light np-padding-left-16">{{portfolio.appName}}</p>
+                        </div>
+                        <div class="product-features">
+                            <h6 class="np-font-comfortaa np-font-14 np-font-light">Features</h6>
+                            <ul class="np-list-vertical np-font-open-sans np-font-12 np-font-light np-padding-left-16" >
+                                <li *ngFor="let feature of portfolio.features; let j = index">{{feature}}</li>
+                            </ul>
+                        </div>
+                        <div class="product-link">
+                            <button mdl-button mdl-ripple *ngIf="portfolio.appType=='android' && portfolio.appLink"  (click)="onClickOpenlink(portfolio.appLink)">Play Store</button>
+                        </div>
+                        <mdl-layout-spacer></mdl-layout-spacer>
+                        <div class="product-company">
+                            <img src="{{portfolio.logo}}"/>
+                            <h4 class="np-font-comfortaa np-font-14 np-font-light">{{portfolio.companyName}}</h4>
+                        </div>
+                    </div>
+                    <div class="np-color-white product-canvas">
+                        <div class="avatar np-flex-container">
+                            <img src="{{portfolio.wall}}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
