@@ -42,7 +42,8 @@
                 width: 100%;
                 img{
                     max-height: 500px;
-                    height: 100%;
+                    height: auto;
+                    max-width:100%;
                     width:auto;
                     margin: auto;
                 }
