@@ -20,7 +20,8 @@ const routes:  Routes = [
   { path: 'profile', loadChildren: './ui/profile/profile.module#ProfileModule' },
   { path: 'home', loadChildren: './ui/home/home.module#HomeModule' },
   { path: 'portfolio', loadChildren: './ui/portfolio/portfolio.module#PortfolioModule' },
-  { path: 'about', loadChildren: './ui/about/about.module#AboutModule' }
+  { path: 'about', loadChildren: './ui/about/about.module#AboutModule' },
+  { path: 'contact', loadChildren: './ui/contact/contact.module#ContactModule' }
 //{ path: 'sample', loadChildren: ()=> SampleModule }
 ];
 const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true, enableTracing: true });

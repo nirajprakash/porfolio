@@ -1,0 +1,154 @@
+<!--div class="mdl-grid">
+  <mdl-card class="form-development-card mdl-cell mdl-cell--12-col mdl-card" mdl-shadow= "2">
+    <mdl-card-supporting-text class="auto-margin">
+      <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+      <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col form-group">
+            <mdl-textfield type="text" label="name" class="form-control" id="name"
+                   required
+                   [(ngModel)]="_mRequestProject.name" name="name"
+                   #name="ngModel" floating-label>
+                   </mdl-textfield>
+            <div [hidden]="name.valid || name.pristine"
+                 class="alert alert-danger">
+              Name is required
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col form-group">
+            <mdl-textfield type="text" label="Company name" class="form-control" id="company"
+                   [(ngModel)]="_mRequestProject.company" name="company" floating-label>
+                   </mdl-textfield>
+          </div>
+
+          <div class="mdl-cell mdl-cell--6-col form-group">
+            <mdl-textfield type="text" label="email" class="form-control" id="email"
+                   [(ngModel)]="_mRequestProject.email" name="email" floating-label>
+                   </mdl-textfield>
+          </div>
+
+          <div class="mdl-cell mdl-cell--6-col form-group">
+            <mdl-textfield type="text" label="mobile" class="form-control" id="mobile"
+                   [(ngModel)]="_mRequestProject.mobile" name="mobile" floating-label>
+                   </mdl-textfield>
+          </div>
+      
+          <div class="mdl-cell mdl-cell--6-col form-group">
+            <mdl-select floating-label [(ngModel)]="_mRequestProject.type" placeholder="type"  name="type">
+              <mdl-option [value]><em>-- Project Type (*Required) --</em></mdl-option>
+              <mdl-option *ngFor="let projectType of projectTypes" [value]="projectType">{{projectType}}</mdl-option>
+            </mdl-select>
+          </div>
+
+          <div class="mdl-cell mdl-cell--6-col form-group">
+            <mdl-select floating-label [(ngModel)]="_mRequestProject.budget" placeholder="Approx budget"  name="budget">
+              <mdl-option [value]><em>--  Budget (*Required) --</em></mdl-option>
+              <mdl-option *ngFor="let budget of projectBudgets" [value]="budget">{{budget}}</mdl-option>
+            </mdl-select>
+          </div>
+
+          
+            <mdl-textfield type="text" label="Detail about app..." class="form-control mdl-cell mdl-cell--12-col form-group" id="detail"
+                   [(ngModel)]="_mRequestProject.detail" name="detail"
+                   rows="3" floating-label>
+                   </mdl-textfield>
+         
+
+          <-div class="form-group">
+            <mdl-textfield label="Detail about app..." [(ngModel)]="project.detail" rows="3" maxrows="3" floating-label></mdl-textfield>
+          </div->
+           <div class="form-development-action mdl-cell mdl-cell--12-col">
+            <span>(We will connect back in 1 working day.)</span> 
+            <mdl-layout-spacer></mdl-layout-spacer> 
+            <a>Submit <button mdl-button mdl-button-type="mini-fab" type="submit" class="btn btn-success" mdl-colored="accent"><mdl-icon>send</mdl-icon></button></a>
+          </div>
+        </div>
+       
+      </form>
+      
+    </mdl-card-supporting-text>
+
+  </mdl-card>
+    
+</div-->
+
+<div class="np-layout-content">
+    <div class="np-container-large">
+        <div class="np-shadow-card-up">
+            <div class="np-flex-container contact">
+                <div class="contact-form np-flex-column np-flex-wrapper np-color-white">
+
+                    <div class="heading np-margin-bottom-12 np-padding-left-16">
+                        <h4 class="np-font-comfortaa np-font-14 np-font-light">Send me a message</h4>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <mdl-textfield type="text" label="Name..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a name!" [(ngModel)]="text4"
+                                floating-label></mdl-textfield>
+                        </div>
+                        <!--div class="mdl-cell mdl-cell--6-col">
+                            <mdl-textfield type="text" label="Mobile (optional)..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a number!"
+                                [(ngModel)]="text4" floating-label></mdl-textfield>
+                        </div-->
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <mdl-textfield type="text" label="Email..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not an Email!" [(ngModel)]="text4"
+                                floating-label></mdl-textfield>
+                        </div>
+
+                        <!--div class="mdl-cell mdl-cell--6-col">
+                            <mdl-textfield type="text" label="Company Name..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not an Email!" [(ngModel)]="text4"
+                                floating-label></mdl-textfield>
+                        </div-->
+                        <div class="mdl-cell mdl-cell--6-col">
+                            <mdl-textfield label="Message..." [(ngModel)]="text4" rows="3" maxrows="3" floating-label></mdl-textfield>
+                        </div>
+                    </div>
+                    <mdl-layout-spacer></mdl-layout-spacer>
+                    <div class="contact-form-submit  np-flex-row np-flex-wrapper np-padding-left-16">
+                        <h4 class="np-font-comfortaa np-font-14 np-font-light np-align-vertical-middle">(We will connect back in 1 working day.)</h4>
+                        <button mdl-button mdl-button-type="mini-fab" type="submit" class="btn btn-success" mdl-colored="primary"><mdl-icon class="np-font-14">send</mdl-icon></button>
+                    </div>
+                </div>
+
+                <div class="contact-me np-color-primary-dark np-flex-column np-flex-wrapper np-text-color-white">
+                    <div class="heading np-margin-bottom-12 np-padding-left-16">
+                        <h4 class="np-font-comfortaa np-font-14 np-font-light">Contact Me</h4>
+                    </div>
+                    <div class="info">
+                        <ul class="np-list-vertical  np-padding-left-16">
+                            <li>
+                                <mdl-icon class="np-text-color-primary-light np-align-vertical-middle ">location_on</mdl-icon>
+                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple>Koramagala, Bangalore</button>
+                            </li>
+                            <li>
+                                <mdl-icon class="np-align-vertical-middle np-text-color-primary-light">phonelink_ring</mdl-icon>
+                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple>+91-821 786 2643</button>
+                            </li>
+                            <li>
+                                <mdl-icon class="np-align-vertical-middle np-text-color-primary-light">mail_outline</mdl-icon>
+                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple>nirajprakash13@gmail.com</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <mdl-layout-spacer></mdl-layout-spacer>
+                    <div class="contact-social">
+                        <h4 class="np-font-comfortaa np-font-14 np-font-light np-padding-left-16">Find me on</h4>
+                        <ul class="social">
+                            <li>
+                                <button mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-github-circled socialicon"></i></button>
+                            </li>
+                            <li>
+                                <button mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-bitbucket socialicon"></i></button>
+                            </li>
+                            <li>
+                                <button mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-linkedin socialicon"></i></button>
+                            </li>
+                            <li>
+                                <button mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-instagram socialicon"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

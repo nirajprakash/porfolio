@@ -1,0 +1,122 @@
+/*
+.auto-margin {
+	margin: auto;
+}
+
+.form-development-title{
+  text-align: center;
+  color: white;
+
+}
+
+.form-development-action{
+	height: 64px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+*/
+
+
+
+.contact{
+        flex-flow: row wrap;
+        align-items: stretch;
+
+}
+
+.contact-form{
+    min-width: 300px;
+    
+        padding: 24px;
+    flex-grow: 1;
+    .heading{
+        h4{
+            margin: 0;
+        }
+    }
+
+    .contact-form-submit{
+        h4{
+            flex-grow: 1;
+            margin: 0;
+            display: inline-block;
+        }
+        button{
+        }
+    }
+}
+
+.contact-me{
+    padding: 24px;
+    .heading{
+        h4{
+            margin: 0;
+        }
+    }
+    .info{
+        ul{
+            margin: 0;
+        }
+        ul>li{
+            min-height: 48px;
+            mdl-icon{
+                    font-size: 16px;   
+            }
+            button{
+                text-transform: none;
+            }
+        }
+    }
+
+    .contact-social{
+        h4{
+            margin: 0;
+        }
+
+        .social {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center; 
+
+            li {
+                display: inline-block;
+                margin: 5px auto; 
+
+                button .socialicon{
+                    font-size: 12px;
+                    display: block;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 660px) {
+    
+.contact{
+ flex-flow: row nowrap;
+
+}
+    .contact-me{
+        min-width: 232px;
+
+    }
+}
+@media screen and (max-width: 660px) {
+    .contact{
+        flex-flow: row wrap;
+    }
+    .contact-me{
+        padding: 20px;
+        flex-grow: 1;
+        order:0;
+    }
+
+    .contact-form{
+        order: 1;
+        padding: 20px;
+    }
+}

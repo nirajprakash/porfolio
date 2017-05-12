@@ -6,7 +6,7 @@
         "appType":"android",
         "detail":"Bluetooth enabled app for navigaiton.",
         "features": [
-            "Bluetooth BLE"
+            "Bluetooth low energy"
             ],
         "images":[],        
         "colorPrimary":"#4785fe",

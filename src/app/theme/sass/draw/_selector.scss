@@ -4,3 +4,10 @@
         color: $np-color-primary !important;
     }
 }
+
+.np-selector-text-primary-light-to-white{
+    color: $np-color-primary-light;
+    &:hover{
+        color: white !important;
+    }
+}
