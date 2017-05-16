@@ -27,12 +27,12 @@ const routes: ModuleWithProviders = RouterModule.forChild([
     MdlModule,
     MdlSelectModule,
     MdlDatePickerModule,
-    routes
+    //routes
     
   ],
   declarations: [
       ContactComponent
   ],
-  exports: []
+  exports: [ContactComponent]
 })
 export class ContactModule {}

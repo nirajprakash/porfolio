@@ -11,11 +11,14 @@ import { MdlModule } from '@angular-mdl/core';
 import { MdlSelectModule } from '@angular-mdl/select';
 import { MdlDatePickerModule } from '@angular-mdl/datepicker';
 
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
+
 
 import { SampleModule } from './ui/sample/sample.module';
 import {ServicePortfolioApi, ServiceWindow} from './services';
 const routes:  Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: '', redirectTo: '/footer', pathMatch: 'full'},
+  { path: 'footer', loadChildren: './ui/footer/footer.module#FooterModule' },
   { path: 'sample', loadChildren: './ui/sample/sample.module#SampleModule' },
   { path: 'profile', loadChildren: './ui/profile/profile.module#ProfileModule' },
   { path: 'home', loadChildren: './ui/home/home.module#HomeModule' },
@@ -36,7 +39,9 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash:
     MdlModule,
     MdlSelectModule,
     MdlDatePickerModule,
-    rootRouting
+    rootRouting,
+    Ng2PageScrollModule.forRoot()
+        
   ],
   providers: [ServicePortfolioApi,ServiceWindow],
   bootstrap: [AppComponent]

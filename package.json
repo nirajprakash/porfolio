@@ -27,6 +27,8 @@
     "core-js": "^2.4.1",
     "mdn-polyfills": "^2.2.0",
     "moment": "^2.18.1",
+    "ng2-page-scroll": "^4.0.0-beta.7",
+    "ng2-simple-page-scroll": "^2.0.0",
     "rxjs": "^5.1.0",
     "web-animations-js": "^2.2.5",
     "zone.js": "^0.8.4"
