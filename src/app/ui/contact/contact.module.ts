@@ -10,6 +10,8 @@ import {MdlModule} from "@angular-mdl/core";
 
 import { MdlSelectModule } from '@angular-mdl/select';
 import { MdlDatePickerModule } from '@angular-mdl/datepicker';
+ import { NguiMapModule} from '@ngui/map';
+
 // import {SharedModule} from '../../shared'
 
 const routes: ModuleWithProviders = RouterModule.forChild([
@@ -27,6 +29,7 @@ const routes: ModuleWithProviders = RouterModule.forChild([
     MdlModule,
     MdlSelectModule,
     MdlDatePickerModule,
+    NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyAIK-MMxtpi_mc0imfl4pcO5vO3U8UBD9U'})
     //routes
     
   ],
