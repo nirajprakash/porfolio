@@ -1,6 +1,8 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, ElementRef, ViewChild} from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 import { MdlDialogService } from '@angular-mdl/core';
+import { MdlLayoutComponent} from '@angular-mdl/core';
+
 import { MdlDatePickerService } from '@angular-mdl/datepicker/datepicker.service';
 import * as moment from 'moment';
 
@@ -17,9 +19,9 @@ import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ng2-pag
 export class OnepageComponent {
 
     title = 'Niraj Prakash';
-    constructor(
-        private pageScrollService: PageScrollService,
-        @Inject(DOCUMENT) private document: any) { }
+
+ @ViewChild('mainLayout')
+  public mainLayout:MdlLayoutComponent;
 
 
     idNavHome: number = 101;
@@ -27,6 +29,16 @@ export class OnepageComponent {
     idNavAbout: number = 103;
     idNavContanct: number = 104;
 
+    
+    constructor(
+        private pageScrollService: PageScrollService,
+        @Inject(DOCUMENT) private document: any) { }
+
+    onClickNavDrawer(id:number){
+        this.onClickNav(id);
+        this.mainLayout.closeDrawer();
+
+    }
 
     onClickNav(id: number) {
         console.log("clickNav: ", id);
@@ -40,19 +52,19 @@ export class OnepageComponent {
                     break;
                 case this.idNavPortfolio:
                     // code...
-                    console.log("click Home", this.document);
+                    console.log("click Portfolio", this.document);
                     let pageScrollInstancePortfolio: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#portfolio');
                     this.pageScrollService.start(pageScrollInstancePortfolio);
                     break;
                 case this.idNavAbout:
                     // code...
-                    console.log("click Home", this.document);
+                    console.log("click About", this.document);
                     let pageScrollInstanceAbout: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#about');
                     this.pageScrollService.start(pageScrollInstanceAbout);
                     break;
                 case this.idNavContanct:
                     // code...
-                    console.log("click Home", this.document);
+                    console.log("click Contact", this.document);
                     let pageScrollInstanceContact: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#contact');
                     this.pageScrollService.start(pageScrollInstanceContact);
                     break;

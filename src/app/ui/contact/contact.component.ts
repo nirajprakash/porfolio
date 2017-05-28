@@ -24,6 +24,10 @@ export class ContactComponent {
   public _mMapOptions = {
     draggable: true,
     gestureHandling: false,
+    scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
     styles: [{
       "featureType": "all",
       "elementType": "all",
