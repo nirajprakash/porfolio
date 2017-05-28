@@ -71,7 +71,7 @@
     
 </div-->
 
-<div class="np-layout-content np-padding-bottom-32">
+<div class="np-layout-content np-padding-bottom-32" #contactContainer>
     <div class="np-container-large">
         <div class="np-shadow-card">
             <div class="np-flex-container contact">
@@ -117,15 +117,18 @@
                         <ul class="np-list-vertical  np-padding-left-16">
                             <li>
                                 <mdl-icon class="np-text-color-primary-light np-align-vertical-middle ">location_on</mdl-icon>
-                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple>Koramagala, Bangalore</button>
+                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple [mdl-tooltip]="_mLocateOnMap"
+                                    (click)="onClickBtn(idBtnGPS)">Koramagala, Bangalore</button>
                             </li>
                             <li>
                                 <mdl-icon class="np-align-vertical-middle np-text-color-primary-light">phonelink_ring</mdl-icon>
-                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple>+91-821 786 2643</button>
+                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple [mdl-tooltip]="_mCopyToClipboard"
+                                    clipboard="{{_mContactMobile}}" (clipboardCopy)="onCopied(_mContactMobile)">+91-821 786 2643</button>
                             </li>
                             <li>
                                 <mdl-icon class="np-align-vertical-middle np-text-color-primary-light">mail_outline</mdl-icon>
-                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple>nirajprakash13@gmail.com</button>
+                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple [mdl-tooltip]="_mCopyToClipboard"
+                                    clipboard="{{_mContactEmail}}" (clipboardCopy)="onCopied(_mContactEmail)">nirajprakash13@gmail.com</button>
                             </li>
                         </ul>
                     </div>
@@ -154,9 +157,8 @@
 </div>
 
 <div id="map-section">
-    <ngui-map [options]="_mMapOptions"  disableDefaultUI="true" zoom="13"
-  center="12.937700, 77.632453" styles="_mMapStyles">
-   <marker position="12.937700, 77.632453">
-   </marker>
-   </ngui-map>
+    <ngui-map [options]="_mMapOptions" disableDefaultUI="true" zoom="13" center="12.937700, 77.632453">
+        <marker position="12.937700, 77.632453">
+        </marker>
+    </ngui-map>
 </div>

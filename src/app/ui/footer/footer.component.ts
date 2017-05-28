@@ -4,7 +4,7 @@ import { MdlDatePickerService } from '@angular-mdl/datepicker/datepicker.service
 import * as moment from 'moment';
 
 @Component({
-    selector: 'foot-view',
+    selector: 'footer-view',
     templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })

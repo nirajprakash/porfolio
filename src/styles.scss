@@ -22,6 +22,8 @@ $np-color-back-grey-dark-extra: unquote("rgb(#{$palette-grey-800})");
 
 
 @import 'app/theme/theme';
+
+@import 'app/theme/mdl-fix';
  
 //cyan
 //primary: 39,186,190

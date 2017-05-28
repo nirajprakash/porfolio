@@ -3,19 +3,19 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { FormsModule } from '@angular/forms';
-import { FooterComponent } from './footer.component';
+import { OnepageComponent } from './onepage.component';
 
 import {MdlModule} from "@angular-mdl/core";
 
 import { MdlSelectModule } from '@angular-mdl/select';
 import { MdlDatePickerModule } from '@angular-mdl/datepicker';
-//import {AboutModule, HomeModule,PortfolioModule, ContactModule} from './../index';
+import {AboutModule, HomeModule,PortfolioModule, ContactModule, FooterModule} from './../index';
 // import {SharedModule} from '../../shared'
 
 const routes: ModuleWithProviders = RouterModule.forChild([
   {
     path: '',
-    component: FooterComponent
+    component: OnepageComponent
   }
 ]);
 
@@ -26,17 +26,18 @@ const routes: ModuleWithProviders = RouterModule.forChild([
     MdlModule,
     MdlSelectModule,
     MdlDatePickerModule,
-    //AboutModule,
-    //HomeModule,
-    //PortfolioModule,
-    //ContactModule,
-    //routes
+    AboutModule,
+    HomeModule,
+    PortfolioModule,
+    ContactModule,
+    FooterModule,
+    routes
     
   ],
   declarations: [
-    FooterComponent,
+    OnepageComponent,
     
   ],
-  exports: [FooterComponent]
+  exports: []
 })
-export class FooterModule {}
+export class OnepageModule {}

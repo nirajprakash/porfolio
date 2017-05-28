@@ -15,9 +15,10 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 
 import { SampleModule } from './ui/sample/sample.module';
-import {ServicePortfolioApi, ServiceWindow} from './services';
+import {ServicePortfolioApi, ServiceWindow, ServiceClipboard} from './services';
 const routes:  Routes = [
-  { path: '', redirectTo: '/footer', pathMatch: 'full'},
+  { path: '', redirectTo: '/onepage', pathMatch: 'full'},
+  { path: 'onepage', loadChildren: './ui/onepage/onepage.module#OnepageModule' },
   { path: 'footer', loadChildren: './ui/footer/footer.module#FooterModule' },
   { path: 'sample', loadChildren: './ui/sample/sample.module#SampleModule' },
   { path: 'profile', loadChildren: './ui/profile/profile.module#ProfileModule' },
@@ -43,7 +44,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash:
     Ng2PageScrollModule.forRoot()
         
   ],
-  providers: [ServicePortfolioApi,ServiceWindow],
+  providers: [ServicePortfolioApi,ServiceWindow,ServiceClipboard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
