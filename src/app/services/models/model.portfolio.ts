@@ -5,8 +5,10 @@ export class ModelPortfolio{
     public detail: string;
     public features: string[];
     public images: string[];
+    public hasVideo: boolean;
     public appLink: string;
     public colorPrimary: string;
+    public colorPrimaryLight: string;
     public colorPrimaryDark: string;
     public wall: string;
     public logo: string;

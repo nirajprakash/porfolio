@@ -8,8 +8,10 @@
         "features": [
             "Bluetooth low energy"
             ],
-        "images":[],        
+        "images":[],       
+        "hasVideo":false,   
         "colorPrimary":"#4785fe",
+        "colorPrimaryLight":"#7ea9fe",
         "colorPrimaryDark": "#4565a2",
         "wall":"/assets/img/intugine_ble.jpg",
         "year": "2017",
@@ -31,9 +33,11 @@
             "Google Map",
             "Real Time"
             ],
-        "images":[],
+        "images":[],  
+        "hasVideo":true,
         "appLink":"https://play.google.com/store/apps/details?id=com.fancymonk.customer&hl=en",
         "colorPrimary":"#ce1e42",
+        "colorPrimaryLight":"#eba5b3",
         "colorPrimaryDark":"#a41834",
         "wall":"/assets/img/fancymonk_app-01.jpg",
         "year": "2016-2017",
@@ -52,8 +56,10 @@
             "Google Map",
             "Real Time"
             ],
-        "images":[],       
+        "images":[],        
+        "hasVideo":false, 
         "colorPrimary":"#009688",
+        "colorPrimaryLight":"#7fcac3",
         "colorPrimaryDark":"#00796B",
         "wall":"/assets/img/fancymonk_waiterless.jpg",
         "year": "2017",
@@ -71,7 +77,9 @@
             "Account Manager"
             ],
         "images":[],        
+        "hasVideo":true,
         "colorPrimary":"#009688",
+        "colorPrimaryLight":"#7fcac3",
         "colorPrimaryDark":"#00796B",
         "wall":"/assets/img/fancymonk_manager.jpg",
         "year": "2016",

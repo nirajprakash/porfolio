@@ -26,6 +26,11 @@
             <div class="avatar np-flex-container">
                 <img src="{{portfolio.wall}}" />
             </div>
+             <div *ngIf="portfolio.hasVideo==true" class="play-container np-shadow-card np-flex-container np-flex-align-end np-flex-justify-content-right">
+                <div class="play-controller np-shadow-card-thin np-border-4 np-flex-align-center np-flex-justify-content"  [style.background]="portfolio.colorPrimaryLight">
+                    <mdl-icon class="play-icon np-text-color-white np-shadow-card  np-border-4 np-text-shadow-decent" [style.background]="portfolio.colorPrimary">play_arrow</mdl-icon>
+                </div>
+            </div>
         </div>
     </div>
 </div>
