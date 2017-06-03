@@ -35,6 +35,7 @@
             ],
         "images":[],  
         "hasVideo":true,
+        "videoLink":"data/video/fancymonk.mp4",
         "appLink":"https://play.google.com/store/apps/details?id=com.fancymonk.customer&hl=en",
         "colorPrimary":"#ce1e42",
         "colorPrimaryLight":"#eba5b3",

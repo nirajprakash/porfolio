@@ -1,0 +1,13 @@
+
+<div class="video">
+    <div class="action-dismiss" (click)="onCloseClick()">
+        <button mdl-button mdl-button-type="icon">
+    <mdl-icon class="np-text-color-white">clear</mdl-icon>
+  </button>
+    </div>
+    <video controls (click)="toggleVideo()" #videoPlayer>
+        <source src="{{_mVideoSource}}" type="video/mp4" />
+        Browser not supported
+    </video>
+</div>
+

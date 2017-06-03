@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 
 import { PortfolioComponent } from './portfolio.component';
 import { PortfolioItemComponent } from './portfolio-item.component';
+import { VideoDialogComponent } from './video-dialog.component';
 
 import {MdlModule} from "@angular-mdl/core";
 
@@ -32,8 +33,10 @@ const routes: ModuleWithProviders = RouterModule.forChild([
   ],
   declarations: [
     PortfolioComponent, 
-    PortfolioItemComponent
+    PortfolioItemComponent,
+    VideoDialogComponent
   ],
-  exports: [PortfolioComponent, PortfolioItemComponent]
+  entryComponents:[VideoDialogComponent],
+  exports: [PortfolioComponent, PortfolioItemComponent,VideoDialogComponent]
 })
 export class PortfolioModule {}

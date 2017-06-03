@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { MdlDialogService } from '@angular-mdl/core';
+import { MdlDialogService,MdlDialogReference } from '@angular-mdl/core';
 import { MdlDatePickerService } from '@angular-mdl/datepicker/datepicker.service';
 import * as moment from 'moment';
 
 import { ServiceWindow, ServicePortfolioApi, ModelPortfolio } from './../../services'
+
+import {VideoDialogComponent, 
+  TEST_VALUE} from './video-dialog.component';
 
 @Component({
     selector: 'portfolio-item-view',
@@ -73,6 +76,23 @@ export class PortfolioItemComponent implements OnInit {
             this._mPortfolioList = modelPortfolio;
         }
 
+    }
+
+
+    public showVideoDialog($event:MouseEvent ,videoUrl: string) {
+
+        let pDialog = this.dialogService.showCustomDialog({
+            component: VideoDialogComponent,
+            providers: [{ provide: TEST_VALUE, useValue: videoUrl }],
+            isModal: true,
+            clickOutsideToClose: true,
+            openFrom: $event,
+            enterTransitionDuration: 400,
+            leaveTransitionDuration: 400
+        });
+        pDialog.subscribe((dialogReference: MdlDialogReference) => {
+            console.log('dialog visible', dialogReference);
+        });
     }
 
 }

@@ -1,0 +1,33 @@
+.video{ 
+    position: relative;
+    video{
+        max-height: 100%;
+        max-width: 100%;
+
+        min-height: 264px;
+        height: auto;
+        width: auto;
+    }
+    .action-dismiss{
+        z-index: 1;
+        padding: 4px;
+        background: rgba(0, 0, 0, 0.2);
+        position:absolute; 
+        right: 0;
+        top: 0;
+    }
+
+    video::-internal-media-controls-download-button {
+    display:none;
+    }
+
+    video::-webkit-media-controls-enclosure {
+        overflow:hidden;
+    }
+
+    video::-webkit-media-controls-panel {
+        width: calc(100% + 30px); /* Adjust as needed */
+    }
+
+}
+
