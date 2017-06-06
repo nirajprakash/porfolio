@@ -20,33 +20,47 @@ import { DOCUMENT } from '@angular/platform-browser';
 import { Subscription } from 'rxjs/Subscription';
 
 @Directive({
-    selector: '[inpageLinkActive]',
-    exportAs: 'inpageLinkActive'
+    selector: '[npWaterfall]',
+    exportAs: 'npWaterfall'
 })
-export class InpageLinkActive implements OnChanges, OnDestroy, AfterContentInit {
+export class NpWaterfall implements OnChanges, OnDestroy, AfterContentInit {
 
 
     private classes: string[] = [];
-    private link: string;
+    private referenceLink: string;
     private _mLinkedElement;
     private document: Document;
     private scrollListener: Function;
+    private _mOffsetY:number =0;
 
 
     private _mIsActive: boolean = false;
     private _mIsActivePrev: boolean = false;
 
     @Input()
-    set inpageLinkActive(data: string[] | string) {
+    set npWaterfallActive(data: string[] | string) {
         const classes = Array.isArray(data) ? data : data.split(' ');
         this.classes = classes.filter(c => !!c);
 
     }
     @Input()
-    set inpageLink(data: string) {
+    set npWaterfallReference(data: string) {
         const link = Array.isArray(data) ? data[0] : data.split(" ")[0];
-        this.link = link;
+        this.referenceLink = link;
 
+
+    }
+
+    @Input()
+    set npWaterfall(data:number){
+        if(data!=null && Number(data))
+        {
+            this._mOffsetY = data;
+        }else{
+            this._mOffsetY = 2;
+        }
+
+        ///console.log(this._mOffsetY);
 
     }
 
@@ -62,11 +76,11 @@ export class InpageLinkActive implements OnChanges, OnDestroy, AfterContentInit 
     ngAfterContentInit(): void {
 
        // console.log('inpage: ' + this.link);
-        if (!this.link) {
+        if (!this.referenceLink) {
             return;
         }
         //this._mLinkedElement = this.el.nativeElement.querySelector(this.link);
-        this._mLinkedElement = this.document.getElementById(this.link);
+        this._mLinkedElement = this.document.getElementById(this.referenceLink);
        // console.log(this._mLinkedElement);
         if (!this._mLinkedElement) {
             return;
@@ -109,7 +123,7 @@ export class InpageLinkActive implements OnChanges, OnDestroy, AfterContentInit 
             let offsetTop = this._mLinkedElement.offsetTop;
             let offsetBottom = this._mLinkedElement.offsetHeight + offsetTop;
 
-            if (offsetTop <= positionY+2 && offsetBottom > positionY+2) {
+            if (offsetTop+ this._mOffsetY < positionY && offsetBottom > positionY) {
                 this._mIsActive = true;
                // console.log("active");
 
@@ -121,7 +135,7 @@ export class InpageLinkActive implements OnChanges, OnDestroy, AfterContentInit 
     }
 
     private update(): void {
-        if (!this.link) return;
+        if (!this.referenceLink) return;
 
         if (this._mIsActivePrev !== this._mIsActive) {
             this._mIsActivePrev =this._mIsActive;

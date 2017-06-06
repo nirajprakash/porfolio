@@ -28,6 +28,7 @@ export class OnepageComponent {
     idNavPortfolio: number = 102;
     idNavAbout: number = 103;
     idNavContanct: number = 104;
+    _mToolbarOffset: number = 20;
 
     
     constructor(

@@ -1,15 +1,15 @@
 <mdl-layout mdl-layout-no-drawer-button mdl-layout-fixed-header mdl-layout-header-seamed mdl-layout-mode="waterfall" #mainLayout="mdlLayout">
-    <mdl-layout-header class="main-header">
-        <mdl-layout-header-row class="main-header-row">
+    <mdl-layout-header class="main-header" npWaterfall="{{_mToolbarOffset}}" npWaterfallActive="np-shadow-card" npWaterfallReference="main-page">
+        <mdl-layout-header-row class="main-header-row" >
 
             <mdl-layout-title class="np-text-color-grey-dark-extra np-font-open-sans">{{title}}</mdl-layout-title>
             <mdl-layout-spacer></mdl-layout-spacer>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="np-font-open-sans mdl-navigation mdl-layout--large-screen-only">
-                <a class="np-cursor mdl-navigation__link" (click)="onClickNav(idNavHome)" routerLinkActive="indicator-primary-important np-text-color-important-primary">Home</a>
-                <a class="np-cursor mdl-navigation__link" (click)="onClickNav(idNavPortfolio)" routerLinkActive="indicator-primary-important np-text-color-important-primary">Portfolio</a>
-                <a class="np-cursor mdl-navigation__link" (click)="onClickNav(idNavAbout)" routerLinkActive="indicator-primary-important np-text-color-important-primary">About</a>
-                <a class="np-cursor mdl-navigation__link" (click)="onClickNav(idNavContanct)" routerLinkActive="indicator-primary-important np-text-color-important-primary">Contact</a>
+                <a class="np-cursor mdl-navigation__link" (click)="onClickNav(idNavHome)" inpageLink="home" inpageLinkActive="indicator-primary-important np-text-color-important-primary">Home</a>
+                <a class="np-cursor mdl-navigation__link" (click)="onClickNav(idNavPortfolio)" inpageLink="portfolio" inpageLinkActive="indicator-primary-important np-text-color-important-primary">Portfolio</a>
+                <a class="np-cursor mdl-navigation__link" (click)="onClickNav(idNavAbout)" inpageLink="about" inpageLinkActive="indicator-primary-important np-text-color-important-primary">About</a>
+                <a class="np-cursor mdl-navigation__link" (click)="onClickNav(idNavContanct)" inpageLink="contact" inpageLinkActive="indicator-primary-important np-text-color-important-primary">Contact</a>
             </nav>
         </mdl-layout-header-row>
     </mdl-layout-header>
@@ -27,10 +27,10 @@
         </header>
 
         <nav class="np-navigation mdl-navigation np-font-open-sans np-font-light np-color-white mdl-color-text--grey-800">
-            <a class="mdl-navigation__link np-selector-text-grey-to-primary" (click)="onClickNavDrawer(idNavHome)"><mdl-icon class="np-margin-right-24 np-font-20">home</mdl-icon>Home</a>
-            <a class="mdl-navigation__link np-selector-text-grey-to-primary" (click)="onClickNavDrawer(idNavPortfolio)"><mdl-icon class="np-margin-right-24 np-font-20">description</mdl-icon>Portfolio</a>
-            <a class="mdl-navigation__link np-selector-text-grey-to-primary" (click)="onClickNavDrawer(idNavAbout)"><mdl-icon class="np-margin-right-24 np-font-20">perm_identity</mdl-icon>About</a>
-            <a class="mdl-navigation__link np-selector-text-grey-to-primary" (click)="onClickNavDrawer(idNavContanct)"><mdl-icon class="np-margin-right-24 np-font-20">contacts</mdl-icon>Contact</a>
+            <a class="mdl-navigation__link np-selector-text-grey-to-primary" (click)="onClickNavDrawer(idNavHome)" inpageLink="home" inpageLinkActive="np-text-color-important-primary  mdl-color--grey-50"><mdl-icon class="np-margin-right-24 np-font-20">home</mdl-icon>Home</a>
+            <a class="mdl-navigation__link np-selector-text-grey-to-primary" (click)="onClickNavDrawer(idNavPortfolio)" inpageLink="portfolio" inpageLinkActive="np-text-color-important-primary  mdl-color--grey-50"><mdl-icon class="np-margin-right-24 np-font-20">description</mdl-icon>Portfolio</a>
+            <a class="mdl-navigation__link np-selector-text-grey-to-primary" (click)="onClickNavDrawer(idNavAbout)" inpageLink="about" inpageLinkActive="np-text-color-important-primary  mdl-color--grey-50"><mdl-icon class="np-margin-right-24 np-font-20">perm_identity</mdl-icon>About</a>
+            <a class="mdl-navigation__link np-selector-text-grey-to-primary" (click)="onClickNavDrawer(idNavContanct)" inpageLink="contact" inpageLinkActive="np-text-color-important-primary mdl-color--grey-50"><mdl-icon class="np-margin-right-24 np-font-20">contacts</mdl-icon>Contact</a>
             <div class="mdl-layout-spacer"></div>
             <div class="nav-bottom">
                 <ul class="social">
@@ -59,10 +59,10 @@
         </nav>
     </mdl-layout-drawer>
     <mdl-layout-content>
-        <div class="main-content">
+        <div class="main-content" id="main-page">
 
             <home-view id="home"></home-view>
-            <portfolio-view id="portfolio"></portfolio-view>
+            <portfolio-view id="portfolio" #portfolio></portfolio-view>
             <about-view id="about"></about-view>
             <contact-view id="contact"></contact-view>
             <footer-view id="footer"></footer-view>

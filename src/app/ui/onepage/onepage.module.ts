@@ -10,7 +10,7 @@ import {MdlModule} from "@angular-mdl/core";
 import { MdlSelectModule } from '@angular-mdl/select';
 import { MdlDatePickerModule } from '@angular-mdl/datepicker';
 import {AboutModule, HomeModule,PortfolioModule, ContactModule, FooterModule} from './../index';
-// import {SharedModule} from '../../shared'
+import {SharedModule} from '../../shared'
 
 const routes: ModuleWithProviders = RouterModule.forChild([
   {
@@ -31,6 +31,8 @@ const routes: ModuleWithProviders = RouterModule.forChild([
     PortfolioModule,
     ContactModule,
     FooterModule,
+    SharedModule,
+
     routes
     
   ],
