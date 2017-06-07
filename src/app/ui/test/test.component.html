@@ -1,36 +1,56 @@
-<div class="np-container-large"><div class="np-border-2 np-hover-card-up info-card  card-product  np-margin-bottom-32">
-    <div class="np-flex-container product">
-        <div class="product-info np-flex-column np-flex-wrapper np-text-color-white" [style.background]="_mColorPrimary">
-            <div class="heading np-margin-bottom-12">
-                <h4 class="np-font-comfortaa np-font-14 np-font-light">appName</h4>
-            </div>
-            <div class="product-detail np-margin-bottom-20">
-                <p class="np-font-open-sans np-font-12 np-font-light np-padding-left-16">portfolio.detail</p>
-            </div>
-            <div class="product-features">
-                <h6 class="np-font-comfortaa np-font-14 np-font-light">Features</h6>
-                <ul class="np-list-vertical np-font-open-sans np-font-12 np-font-light np-padding-left-16">
-                    <li>feature</li>
-                </ul>
-            </div>
-            <div class="product-link">
-            </div>
-            <mdl-layout-spacer></mdl-layout-spacer>
-            <div class="product-company">
-                <img src="assets/img/intugine_logo.png" />
-                <h4 class="np-font-comfortaa np-font-14 np-font-light">portfolio.companyName</h4>
-            </div>
-        </div>
-        <div class="np-color-white product-canvas">
-            <div class="avatar np-flex-container">
-                <img src="assets/img/fancymonk_app-01.jpg" />
-            </div>
-            <div class="play-container np-shadow-card np-border-4 np-flex-container np-flex-align-center np-flex-justify-content">
-                <div class="play-controller np-shadow-card np-border-2 np-flex-align-center np-flex-justify-content"  [style.background]="_mColorPrimaryLight">
-                    <mdl-icon class="play-icon np-text-color-white np-shadow-card" [style.background]="_mColorPrimary">play_arrow</mdl-icon>
+<div class="np-layout-content np-padding-bottom-32" #contactContainer>
+    <div class="np-container-large">
+        <div class="np-shadow-card">
+            <div class="contact">
+                <div class="contact-form np-color-white">
+
+                    <div class="np-flex-wrapper np-flex-row">
+                        <mdl-textfield type="text" label="Name..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a name!" [(ngModel)]="text4"
+                            floating-label></mdl-textfield>
+
+                        <!--div class="mdl-cell mdl-cell--6-col">
+                            <mdl-textfield type="text" label="Mobile (optional)..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a number!"
+                                [(ngModel)]="text4" floating-label></mdl-textfield>
+                        </div-->
+                        <mdl-textfield type="text" label="Email..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not an Email!" [(ngModel)]="text4"
+                            floating-label></mdl-textfield>
+
+                        <!--div class="mdl-cell mdl-cell--6-col">
+                            <mdl-textfield type="text" label="Company Name..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not an Email!" [(ngModel)]="text4"
+                                floating-label></mdl-textfield>
+                        </div-->
+                        <mdl-textfield label="Message..." [(ngModel)]="text4" rows="3" maxrows="3" floating-label></mdl-textfield>
+
+                    </div>
+                    <mdl-layout-spacer></mdl-layout-spacer>
+                    <div class="contact-form-submit  np-flex-row np-flex-wrapper np-padding-left-16">
+                        <h4 class="np-font-comfortaa np-font-14 np-font-light np-align-vertical-middle">(We will connect back in 1 working day.)</h4>
+                        <button mdl-button mdl-button-type="mini-fab" type="submit" class="btn btn-success" mdl-colored="primary"><mdl-icon class="np-font-14">send</mdl-icon></button>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+        <div class="np-margin-20">
+
+        </div>
+
+        <div class="np-padding-20 np-color-primary">
+
+            <div class="product-link">
+                <div class="google-play np-display-table np-text-color-primary-light" mdl-ripple>
+
+                    <div class="google-play-inner np-display-table-cell">
+                        <span><img src="assets/img/google-play-white.png"/>
+                    <span class="np-margin-left-12 np-font-comfortaa np-font-12 np-font-bold">Play Store</span></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
-</div>
+
 </div>

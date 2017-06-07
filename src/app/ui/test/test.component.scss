@@ -1,129 +1,119 @@
-.card-product{
+.contact{
+}
 
-    .product{
-        flex-flow: row wrap;
-        align-items: stretch;
-        padding: 0;
-        margin: 0;
-        min-height: 200px;
-        
-        .product-info{
-            order: 0;
-            padding: 24px;
-            box-sizing: border-box;
-            h6,h4,p{
-                margin: 0;
-                line-height: 1.3;
-            }
-            .product-features{
-                ul{
-                    margin-top: 0px;
-                }
-            }
-            .product-company{
-                
-                img{
-                    height:40px;
-                    width: auto;
-                }
-                h4{
-                    display: inline-block;
-                }
-            }
+.contact-form{
+    padding: 24px;
+    .heading{
+        h4{
+            margin: 0;
         }
+    }
 
-        .product-canvas{
-            position: relative;
-            flex-grow: 1;
-            box-sizing: border-box;
-            min-width: 300px;
-            .avatar{
-                
-                position: relative;
-                height: 100%;
-                max-height: 464px;
-                max-width: 464px;
-                margin: auto;
-                img{
-                    ///width:100%;
-                    max-height:100%;
-                    //max-width: 464px;
-                    max-width: 100%;
-                    // max-height: 500px;
-                    // height: 100%;
-                    // width:auto;
-                    margin: auto;
-                }
+    .contact-form-submit{
+        
+    }
+}
+
+.contact-me{
+    padding: 24px;
+    .heading{
+        h4{
+            margin: 0;
+        }
+    }
+    .info{
+        ul{
+            margin: 0;
+        }
+        ul>li{
+            min-height: 48px;
+            mdl-icon{
+                    font-size: 16px;   
+            }
+            button{
+                text-transform: none;
             }
         }
     }
 
-}
+    .contact-social{
+        h4{
+            margin: 0;
+        }
 
+        .social {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center; 
 
-@media screen and (max-width: 660px) {
-    .card-product{
+            li {
+                display: inline-block;
+                margin: 5px auto; 
 
-        .product{
-        
-        flex-flow: row wrap;
-            .product-info{
-                padding: 20px;
-                order: 1;
-                flex-grow: 1;        
-            }
-
-            .product-canvas{
-                flex-grow: 1;
-                order: 0;
-                
-                .avatar{
-
-                    img{
-                        max-width: 100%;
-                        max-height: 400px;
-                        height: auto;
-                    }
+                button .socialicon{
+                    font-size: 12px;
+                    display: block;
                 }
             }
         }
     }
+    
 }
-
-
 
 @media screen and (min-width: 660px) {
-    .card-product{
+    
+.contact{
+ flex-flow: row nowrap;
 
-        .product{
-        
-        flex-flow: row nowrap;
-            .product-info{
-                width: 300px;     
-            }
-             .product-canvas{
-                .avatar{
-                    min-height: 300px;
-                    width: 100%;
-                }
-            }
-        }
+}
+
+.contact-form{
+    
+    min-width: 300px;
+}
+    .contact-me{
+        min-width: 232px;
+
+    }
+}
+@media screen and (max-width: 660px) {
+    .contact{
+        flex-flow: row wrap;
+    }
+    .contact-me{
+        padding: 20px;
+        flex-grow: 1;
+        order:0;
+    }
+
+    .contact-form{
+        //order: 1;
+        padding: 20px;
     }
 }
 
-.play-container{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.18);
-    top:0%;
-    width: 100%;
-    height: 100%;
-
-    .play-controller{
-        padding: 12px 20px;
-        .play-icon{
-            font-size: 32px;
-            padding: 8px;
-        }        
+.google-play{
+    position: relative;
+    cursor: pointer;
+    width: 100%; 
+    overflow: hidden;
+    top: 0;
+    //min-height: 40px;
+    left: 0;
+    user-select: none;
+    text-align: center;
+    background: rgba(0, 0, 0, .1);
+    
+    .google-play-inner{
+        line-height: 0;
+        vertical-align: middle;
+        padding: 4px 12px;
     }
+    
 
+    img{
+        height: 24px;
+        width: auto;
+    }
 }

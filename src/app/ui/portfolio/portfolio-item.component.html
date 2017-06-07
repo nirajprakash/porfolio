@@ -14,7 +14,14 @@
                 </ul>
             </div>
             <div class="product-link">
-                <button mdl-button mdl-ripple *ngIf="portfolio.appType=='android' && portfolio.appLink" (click)="onClickOpenlink(portfolio.appLink)">Play Store</button>
+
+                 <div class="google-play np-display-table np-text-color-primary-light" mdl-ripple  *ngIf="portfolio.appType=='android' && portfolio.appLink" (click)="onClickOpenlink(portfolio.appLink)">
+
+                    <div class="google-play-inner np-display-table-cell">
+                        <span><img src="assets/img/google-play-white.png"/>
+                    <span class="np-margin-left-12 np-font-comfortaa np-font-12 np-font-bold" [style.color]="portfolio.colorPrimaryLight" >Play Store</span></span>
+                    </div>
+                </div>
             </div>
             <mdl-layout-spacer></mdl-layout-spacer>
             <div class="product-company">

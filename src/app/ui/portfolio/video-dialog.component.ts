@@ -86,6 +86,7 @@ setTimeout(() =>{
     
       console.log('on space');
     this.toggleVideo();
+    event.stopPropagation();
     return false;
   }
 
@@ -93,7 +94,7 @@ setTimeout(() =>{
 
    @HostListener('window:popstate', ['$event'])
   onPopState(event):boolean {
-    console.log('Back button pressed');
+    console.log('onpop pressed');
      this.dialog.hide();
      return false;
   }

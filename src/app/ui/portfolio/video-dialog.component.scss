@@ -18,7 +18,11 @@
     }
 
     video::-internal-media-controls-download-button {
-    display:none;
+        display:none;
+    }
+
+    video::-webkit-media-controls-fullscreen-button{
+        display: none;
     }
 
     video::-webkit-media-controls-enclosure {

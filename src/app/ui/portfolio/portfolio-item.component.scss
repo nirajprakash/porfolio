@@ -133,3 +133,28 @@
     }
 
 }
+
+.google-play{
+    position: relative;
+    cursor: pointer;
+    width: 100%; 
+    overflow: hidden;
+    top: 0;
+    //min-height: 40px;
+    left: 0;
+    user-select: none;
+    text-align: center;
+    background: rgba(0, 0, 0, .1);
+    
+    .google-play-inner{
+        line-height: 0;
+        vertical-align: middle;
+        padding: 4px 12px;
+    }
+    
+
+    img{
+        height: 24px;
+        width: auto;
+    }
+}

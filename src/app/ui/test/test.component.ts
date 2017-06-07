@@ -17,8 +17,12 @@ export class TestComponent implements OnInit {
 
     nativeWindow: any;
 
-    _mColorPrimary:string="#5F2689";
-    _mColorPrimaryLight:string = "#7e51a0";
+    _mColorPrimary: string = "#5F2689";
+    _mColorPrimaryLight: string = "#7e51a0";
+
+
+    public number1: number = null;
+    public text4: number = null;
 
     constructor(
         private dialogService: MdlDialogService,
@@ -44,8 +48,4 @@ export class TestComponent implements OnInit {
         //newWindow.location = '/#/link/' + res;
         //console.log(res);
     }
-
-
-
-
 }
