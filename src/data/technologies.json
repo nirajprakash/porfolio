@@ -1,35 +1,12 @@
 [
-    {
-        "id": "101",
-        "name": "Angular",
-        "detail":"Platform for building mobile and desktop web applications...",
-        "logo":"assets/img/angular.png",
-        "link":"https://angular.io/",
-        "tab": "front-end"
-    },
-    {
-        "id": "102",
-        "name": "AngularJs",
-        "detail":"A structural framework for dynamic web applications...",
-        "logo":"assets/img/angularjs-logo.png",
-        "link":"https://angularjs.org/",
-        "tab": "front-end"
-    },
-    {
-        "id": "103",
-        "name": "Polymer",
-        "detail":"A JavaScript library for building web applications using custom HTML elements...",
-        "logo":"assets/img/polymer.png",
-        "link":"https://www.polymer-project.org/",
-        "tab": "front-end"
-    },
+    
     {
         "id": "111",
         "name": "Glide",
         "detail":"Image loading framework for Android...",
         "logo":"assets/img/glide.png",
         "link":"https://github.com/bumptech/glide/releases/tag/v3.7.0",
-        "tab": "front-end"
+        "tab": "android"
     },
     {
         "id": "112",
@@ -37,7 +14,7 @@
         "detail":"Http client for Android and Java...",
         "logo":"assets/img/square.png",
         "link":"http://square.github.io/retrofit/",
-        "tab": "front-end"
+        "tab": "android"
     },
 
     {
@@ -80,13 +57,38 @@
         "link":"http://docs.sequelizejs.com/",
         "tab": "back-end"
     },
+
+    {
+        "id": "101",
+        "name": "Angular",
+        "detail":"Platform for building mobile and desktop web applications...",
+        "logo":"assets/img/angular.png",
+        "link":"https://angular.io/",
+        "tab": "web"
+    },
+    {
+        "id": "102",
+        "name": "AngularJs",
+        "detail":"A structural framework for dynamic web applications...",
+        "logo":"assets/img/angularjs-logo.png",
+        "link":"https://angularjs.org/",
+        "tab": "web"
+    },
+    {
+        "id": "103",
+        "name": "Polymer",
+        "detail":"A JavaScript library for building web applications using custom HTML elements...",
+        "logo":"assets/img/polymer.png",
+        "link":"https://www.polymer-project.org/",
+        "tab": "web"
+    },
     {
         "id": "131",
         "name": "MaterializeCss",
         "detail":"Responsive CSS framework based on Material Design by Google ..",
         "logo":"assets/img/materialize.png",
         "link":"http://materializecss.com/",
-        "tab": "design"
+        "tab": "web"
     },
     {
         "id": "132",
@@ -94,7 +96,7 @@
         "detail":"CSS extension language...",
         "logo":"assets/img/sass.png",
         "link":"http://sass-lang.com/",
-        "tab": "design"
+        "tab": "web"
     },
     {
         "id": "133",
@@ -102,6 +104,6 @@
         "detail":"library for web developers based on Google's Material Design Philosophy...",
         "logo":"assets/img/getmdl.png",
         "link":"https://getmdl.io/",
-        "tab": "design"
+        "tab": "web"
     }
 ]

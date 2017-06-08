@@ -79,6 +79,7 @@
             ],
         "images":[],        
         "hasVideo":true,
+        "videoLink":"data/video/fancymonk_manager.mp4",
         "colorPrimary":"#009688",
         "colorPrimaryLight":"#7fcac3",
         "colorPrimaryDark":"#00796B",

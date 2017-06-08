@@ -1,16 +1,14 @@
 .contact{
+
 }
 
 .contact-form{
-    padding: 24px;
-    .heading{
-        h4{
-            margin: 0;
-        }
+    .contact-form-submit{
+        padding:16px;
     }
 
-    .contact-form-submit{
-        
+    .contact-field{
+        padding: 16px 16px 0 16px;
     }
 }
 
@@ -65,6 +63,7 @@
     
 .contact{
  flex-flow: row nowrap;
+ display: flex;
 
 }
 
@@ -80,40 +79,18 @@
 @media screen and (max-width: 660px) {
     .contact{
         flex-flow: row wrap;
+        display: flex;
     }
     .contact-me{
+        
         padding: 20px;
         flex-grow: 1;
         order:0;
     }
 
     .contact-form{
-        //order: 1;
-        padding: 20px;
-    }
-}
-
-.google-play{
-    position: relative;
-    cursor: pointer;
-    width: 100%; 
-    overflow: hidden;
-    top: 0;
-    //min-height: 40px;
-    left: 0;
-    user-select: none;
-    text-align: center;
-    background: rgba(0, 0, 0, .1);
-    
-    .google-play-inner{
-        line-height: 0;
-        vertical-align: middle;
-        padding: 4px 12px;
-    }
-    
-
-    img{
-        height: 24px;
-        width: auto;
+        flex-flow: row nowrap;
+        order: 1;
+        width: 100%;
     }
 }

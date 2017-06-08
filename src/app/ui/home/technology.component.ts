@@ -15,9 +15,9 @@ export class TechnologyComponent implements OnInit {
 
     returnUrl: string;
 
-    _mTechFrontList: Array<ModelTechnology>;
+    _mTechAndroidList: Array<ModelTechnology>;
     _mTechBackendList: Array<ModelTechnology>;
-    _mTechDesignList: Array<ModelTechnology>;
+    _mTechWebList: Array<ModelTechnology>;
     nativeWindow: any;
 
     constructor(
@@ -43,9 +43,9 @@ export class TechnologyComponent implements OnInit {
     }
 
     resetItems() {
-        this._mTechFrontList = new Array<ModelTechnology>();
+        this._mTechAndroidList = new Array<ModelTechnology>();
         this._mTechBackendList = new Array<ModelTechnology>();
-        this._mTechDesignList = new Array<ModelTechnology>();
+        this._mTechWebList = new Array<ModelTechnology>();
 
     }
 
@@ -80,12 +80,12 @@ export class TechnologyComponent implements OnInit {
         if(modelTechnologies && modelTechnologies.length>0){
             for (var i = 0; i < modelTechnologies.length; i++) {
                 var element = modelTechnologies[i];
-                if(element.tab=="front-end"){
-                    this._mTechFrontList.push(element);
+                if(element.tab=="android"){
+                    this._mTechAndroidList.push(element);
                 }else if(element.tab=="back-end"){
                     this._mTechBackendList.push(element);
-                }else if(element.tab=="design"){
-                    this._mTechDesignList.push(element);
+                }else if(element.tab=="web"){
+                    this._mTechWebList.push(element);
                 }
                 
             }

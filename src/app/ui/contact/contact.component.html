@@ -75,13 +75,13 @@
     <div class="np-container-large">
         <div class="np-shadow-card">
             <div class="np-flex-container contact">
-                <div class="contact-form np-flex-column np-flex-wrapper np-color-white">
+                <div class="contact-form np-color-white">
 
                     <div class="heading np-margin-bottom-12 np-padding-left-16">
                         <h4 class="np-font-comfortaa np-font-14 np-font-light">Send me a message</h4>
                     </div>
                     <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--6-col">
+                        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
                             <mdl-textfield type="text" label="Name..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a name!" [(ngModel)]="text4"
                                 floating-label></mdl-textfield>
                         </div>
@@ -89,7 +89,7 @@
                             <mdl-textfield type="text" label="Mobile (optional)..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a number!"
                                 [(ngModel)]="text4" floating-label></mdl-textfield>
                         </div-->
-                        <div class="mdl-cell mdl-cell--6-col">
+                        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
                             <mdl-textfield type="text" label="Email..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not an Email!" [(ngModel)]="text4"
                                 floating-label></mdl-textfield>
                         </div>
@@ -98,13 +98,14 @@
                             <mdl-textfield type="text" label="Company Name..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not an Email!" [(ngModel)]="text4"
                                 floating-label></mdl-textfield>
                         </div-->
-                        <div class="mdl-cell mdl-cell--6-col">
+                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
                             <mdl-textfield label="Message..." [(ngModel)]="text4" rows="3" maxrows="3" floating-label></mdl-textfield>
                         </div>
                     </div>
                     <mdl-layout-spacer></mdl-layout-spacer>
                     <div class="contact-form-submit  np-flex-row np-flex-wrapper np-padding-left-16">
                         <h4 class="np-font-comfortaa np-font-14 np-font-light np-align-vertical-middle">(We will connect back in 1 working day.)</h4>
+                        <mdl-layout-spacer></mdl-layout-spacer>
                         <button mdl-button mdl-button-type="mini-fab" type="submit" class="btn btn-success" mdl-colored="primary"><mdl-icon class="np-font-14">send</mdl-icon></button>
                     </div>
                 </div>

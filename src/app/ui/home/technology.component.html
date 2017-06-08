@@ -6,21 +6,21 @@
 
   <mdl-tabs mdl-ripple mdl-tab-active-index="0">
     <mdl-tab-panel>
-      <mdl-tab-panel-title class="np-font-comfortaa np-font-bold np-font-tab">
-        Android/Web
+      <mdl-tab-panel-title class="np-font-comfortaa np-font-bold np-font-tab np-cursor-pointer">
+        Android
       </mdl-tab-panel-title>
       <mdl-tab-panel-content>
         <div class="np-padding-bottom-32">
           <div class="mdl-grid">
 
-            <div class="technology-list-item mdl-cell mdl-cell--4-col-tablet mdl-cell--4-col" *ngFor="let techFront of _mTechFrontList; let i = index">
+            <div class="technology-list-item mdl-cell mdl-cell--4-col-tablet mdl-cell--4-col" *ngFor="let techAndroid of _mTechAndroidList; let i = index">
               <div class="technology-block np-text-color-default">
                 <!--h4 class="np-font-comfortaa np-font-bolder np-text-shadow">Hey!</h4-->
-                <div class="technology-logo-container"><img class="technology-logo" src="{{techFront.logo}}"> </div>
+                <div class="technology-logo-container"><img class="technology-logo" src="{{techAndroid.logo}}"> </div>
                 <h6 class="np-font-comfortaa np-text-color-dark">
-                  <!--span class="np-font-light">I'm </span-->{{techFront.name}}</h6>
-                <p class="np-font-open-sans">{{techFront.detail}} </p>
-                <button mdl-button mdl-button-type="icon" mdl-colored="primary" (click)="onClickOpenlink(techFront.link)"><mdl-icon>trending_flat</mdl-icon></button>
+                  <!--span class="np-font-light">I'm </span-->{{techAndroid.name}}</h6>
+                <p class="np-font-open-sans">{{techAndroid.detail}} </p>
+                <button mdl-button mdl-button-type="icon" mdl-colored="primary" (click)="onClickOpenlink(techAndroid.link)"><mdl-icon>trending_flat</mdl-icon></button>
               </div>
             </div>
           </div>
@@ -28,7 +28,29 @@
       </mdl-tab-panel-content>
     </mdl-tab-panel>
     <mdl-tab-panel>
-      <mdl-tab-panel-title class="np-font-comfortaa np-font-bold np-font-tab">
+      <mdl-tab-panel-title class="np-font-comfortaa np-font-bold np-font-tab np-cursor-pointer">
+        web
+      </mdl-tab-panel-title>
+      <mdl-tab-panel-content>
+        <div class="np-padding-bottom-32">
+          <div class="mdl-grid">
+
+            <div class="technology-list-item mdl-cell mdl-cell--4-col-tablet mdl-cell--4-col" *ngFor="let techWeb of _mTechWebList; let i = index">
+              <div class="technology-block np-text-color-default">
+                <!--h4 class="np-font-comfortaa np-font-bolder np-text-shadow">Hey!</h4-->
+                <div class="technology-logo-container"><img class="technology-logo" src="{{techWeb.logo}}"> </div>
+                <h6 class="np-font-comfortaa np-text-color-dark">
+                  <!--span class="np-font-light">I'm </span-->{{techWeb.name}}</h6>
+                <p class="np-font-open-sans">{{techWeb.detail}} </p>
+                <button mdl-button mdl-button-type="icon" mdl-colored="primary" (click)="onClickOpenlink(techWeb.link)"><mdl-icon>trending_flat</mdl-icon></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mdl-tab-panel-content>
+    </mdl-tab-panel>
+    <mdl-tab-panel>
+      <mdl-tab-panel-title class="np-font-comfortaa np-font-bold np-font-tab np-cursor-pointer">
         Back End
         </mdl-tab-panel-title>
       <mdl-tab-panel-content>
@@ -43,28 +65,6 @@
                   <!--span class="np-font-light">I'm </span-->{{techBack.name}}</h6>
                 <p class="np-font-open-sans">{{techBack.detail}} </p>
                 <button mdl-button mdl-button-type="icon" mdl-colored="primary" (click)="onClickOpenlink(techBack.link)"><mdl-icon>trending_flat</mdl-icon></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </mdl-tab-panel-content>
-    </mdl-tab-panel>
-    <mdl-tab-panel>
-      <mdl-tab-panel-title class="np-font-comfortaa np-font-bold np-font-tab">
-        Design
-      </mdl-tab-panel-title>
-      <mdl-tab-panel-content>
-        <div class="np-padding-bottom-32">
-          <div class="mdl-grid">
-
-            <div class="technology-list-item mdl-cell mdl-cell--4-col-tablet mdl-cell--4-col" *ngFor="let techDesign of _mTechDesignList; let i = index">
-              <div class="technology-block np-text-color-default">
-                <!--h4 class="np-font-comfortaa np-font-bolder np-text-shadow">Hey!</h4-->
-                <div class="technology-logo-container"><img class="technology-logo" src="{{techDesign.logo}}"> </div>
-                <h6 class="np-font-comfortaa np-text-color-dark">
-                  <!--span class="np-font-light">I'm </span-->{{techDesign.name}}</h6>
-                <p class="np-font-open-sans">{{techDesign.detail}} </p>
-                <button mdl-button mdl-button-type="icon" mdl-colored="primary" (click)="onClickOpenlink(techDesign.link)"><mdl-icon>trending_flat</mdl-icon></button>
               </div>
             </div>
           </div>
