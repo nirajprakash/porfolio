@@ -72,3 +72,11 @@
 .np-cursor{
     cursor: pointer;
 }
+
+.np-border-primary-right{
+    border-right: 2px solid $np-color-primary;
+}
+
+.np-border-primary-left{
+    border-left: 2px solid $np-color-primary;
+}

@@ -1,94 +1,72 @@
-<div class="np-layout-content np-padding-bottom-32" #contactContainer>
-    <div class="np-container-large">
-        <div class="np-shadow-card">
-            <div class="contact">
-                <div class="contact-form np-color-white">
-
-                    <!--div class="contact-field np-flex-wrapper np-flex-row">
-                        <mdl-textfield type="text" label="Name..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a name!" [(ngModel)]="text4"
-                            floating-label></mdl-textfield>
-
-                        <mdl-textfield type="text" label="Email..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not an Email!" [(ngModel)]="text4"
-                            floating-label></mdl-textfield>
-
-                        <mdl-textfield label="Message..." [(ngModel)]="text4" rows="3" maxrows="3" floating-label></mdl-textfield>
-
+<div class="np-color-grey">
+    <div class="np-layout-content">
+        <div class="about-card np-shadow-card np-container-large np-margin-bottom-12 np-color-white">
+            <div class="about-card-content mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--2-col-tablet mdl-cell--2-col">
+                    <!--div class="about-avatar np-flex-container">
+                        <div class="avatar-container np-layout-align-middle">
+                            <img src="assets/img/avatar.jpg">
+                        </div>
                     </div-->
-
-                     <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-                            <mdl-textfield type="text" label="Name..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a name!" [(ngModel)]="text4"
-                                floating-label></mdl-textfield>
-                        </div>
-                        <!--div class="mdl-cell mdl-cell--6-col">
-                            <mdl-textfield type="text" label="Mobile (optional)..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a number!"
-                                [(ngModel)]="text4" floating-label></mdl-textfield>
-                        </div-->
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-                            <mdl-textfield type="text" label="Email..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not an Email!" [(ngModel)]="text4"
-                                floating-label></mdl-textfield>
-                        </div>
-
-                        <!--div class="mdl-cell mdl-cell--6-col">
-                            <mdl-textfield type="text" label="Company Name..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not an Email!" [(ngModel)]="text4"
-                                floating-label></mdl-textfield>
-                        </div-->
-                        <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-                            <mdl-textfield label="Message..." [(ngModel)]="text4" rows="3" maxrows="3" floating-label></mdl-textfield>
+                    <div class="about-avatar np-flex-container">
+                        <div class="avatar-container np-margin-auto-horizontal">
+                            <img src="assets/img/avatar.jpg">
                         </div>
                     </div>
-                    <mdl-layout-spacer></mdl-layout-spacer>
-                    <div class="contact-form-submit  np-flex-row np-flex-wrapper np-padding-left-16">
-                        <h4 class="np-font-comfortaa np-font-14 np-font-light np-align-vertical-middle">(We will connect back in 1 working day.)</h4>
-                         <mdl-layout-spacer></mdl-layout-spacer>
-                         <button mdl-button mdl-button-type="mini-fab" type="submit" class="btn btn-success" mdl-colored="primary"><mdl-icon class="np-font-14">send</mdl-icon></button>
-
+                </div>
+                <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--6-col-tablet mdl-cell--4-col about-info">
+                    <div class="about-header np-padding-bottom-12">
+                        <h4 class="np-font-comfortaa np-font-18"><span>Niraj Prakash</span></h4>
+                        <!--h6 class="font-open-sans np-text-shadow "> App &amp; web developer</h6-->
+                        <h6 class="np-text-color-primary np-font-open-sans np-font-12"><span class="np-underline-small-primary_all">Android &middot; Website &middot; Server</span></h6>
+                    </div>
+                    <div class="about-detail">
+                        <p class="np-font-open-sans np-font-12 np-border-primary-left np-padding-8 mdl-color--grey-50 mdl-color-text--grey-500">I’m Android App and Web Developer specializing in front-end and back-end development. Experienced
+                            with all stages of the development cycle for dynamic web projects.
+                        </p>
                     </div>
                 </div>
 
-                <div class="contact-me np-color-primary-dark np-flex-column np-flex-wrapper np-text-color-white">
-                    <div class="heading np-margin-bottom-12 np-padding-left-16">
-                        <h4 class="np-font-comfortaa np-font-14 np-font-light">Contact Me</h4>
-                    </div>
-                    <div class="info">
-                        <ul class="np-list-vertical  np-padding-left-16">
-                            <li>
-                                <mdl-icon class="np-text-color-primary-light np-align-vertical-middle ">location_on</mdl-icon>
-                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple>Koramagala, Bangalore</button>
-                            </li>
-                            <li>
-                                <mdl-icon class="np-align-vertical-middle np-text-color-primary-light">phonelink_ring</mdl-icon>
-                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple>+91-821 786 2643</button>
-                            </li>
-                            <li>
-                                <mdl-icon class="np-align-vertical-middle np-text-color-primary-light">mail_outline</mdl-icon>
-                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple>nirajprakash13@gmail.com</button>
-                            </li>
-                        </ul>
-                    </div>
-                    <mdl-layout-spacer></mdl-layout-spacer>
-                    <div class="contact-social">
-                        <h4 class="np-font-comfortaa np-font-14 np-font-light np-padding-left-16">Find me on</h4>
-                        <ul class="social">
-                            <li>
-                                <button mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-github-circled socialicon"></i></button>
-                            </li>
-                            <li>
-                                <button mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-bitbucket socialicon"></i></button>
-                            </li>
-                            <li>
-                                <button mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-linkedin socialicon"></i></button>
-                            </li>
-                            <li>
-                                <button mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-instagram socialicon"></i></button>
-                            </li>
-                        </ul>
+
+                <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--2-offset-tablet mdl-cell--6-col-tablet mdl-cell--6-col about-info">
+                    <div class="info-items">
+                        <div class="info-work np-flex-container np-margin-bottom-20">
+                            <div class="tag">
+                                <p class="np-font-open-sans np-font-bold mdl-color-text--grey-800">Works:</p>
+                            </div>
+                            <div class="value np-font-open-sans mdl-color-text--grey-500">
+                                <p class="np-padding-bottom-4">Freelancer from 2017</p>
+                                <p>Former Android and web developer at <span class="np-text-color-primary">Fancymonk 2015-2016</span></p>
+                            </div>
+                        </div>
+                        <div class="info-alma-mater np-flex-container np-margin-bottom-12">
+
+                            <div class="tag">
+                                <p class="np-font-open-sans np-font-bold mdl-color-text--grey-800">Alma Mater:</p>
+                            </div>
+                            <div class="value np-font-open-sans mdl-color-text--grey-500">
+                                <p class="np-text-color-primary np-padding-bottom-4">IIT Kharagpur (B. Tech.)</p>
+                            </div>
+                        </div>
+                        <!--div class="info-school np-flex-container np-margin-bottom-12">
+                        
+                        <div class="tag"><p class="np-font-open-sans np-font-bold mdl-color-text--grey-800">School:</p></div>
+                        <div class="value np-font-open-sans mdl-color-text--grey-500">
+                            <p class="np-padding-bottom-4">Bal Vidya Niketan <span class="np-text-color-primary">class of 2010</span> </p>
+                        </div>
+                    </div-->
+                        <div class="info-hobby np-flex-container">
+                            <div class="tag">
+                                <p class="np-font-open-sans np-font-bold mdl-color-text--grey-800">Hobbies:</p>
+                            </div>
+                            <div class="value np-font-open-sans mdl-color-text--grey-500">
+                                <p>PC Gaming, Sketching</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
 
 </div>
