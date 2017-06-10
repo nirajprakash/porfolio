@@ -1,4 +1,147 @@
+.top-wall{
+    h4,h6,p{
+         margin: 0px;
+          line-height: 1.3;
+    }
+    h4{
+          font-size: 20px;
+      }   
+      h6{
+          font-size: 16px;
+      } 
 
+    .wall-frame{
+                flex-direction: column;
+    }
+    .wall-text{
+            display: block;
+    }
+}
+
+
+
+@media screen and (min-width:1024px){
+  .top-wall{
+    padding: 64px 0px 0px 0;
+    .wall-info-inner{
+      padding: 72px;
+    }
+    .wall-tag-inner{
+       padding: 72px 0;
+    }
+  }
+
+  
+}
+
+@media screen and (max-width:1024px){
+  .top-wall{
+     padding: 56px 0px 0px 0;
+
+      .wall-tag-inner{
+                padding: 32px;
+            }
+        .wall-info-inner{
+            padding: 32px;
+        }
+  }
+
+}
+
+
+@media screen and (min-width:660px){
+    .top-wall{
+        background-image: linear-gradient(to right, rgba(0,0,0,0.05) 20%, rgba(28, 190, 131, 1) 20%, rgba(28, 190, 131, 1) 60%,  transparent 60%);
+        background-position: 100% 100%;
+        background-size: 250% 100%;
+        transition: background-position 1.4s ease .1s;
+
+
+        &:hover{
+            background-position: 0% 100%;
+            .wall-text{
+                animation-name: fadeInUpY;
+                animation-delay: 1.4s;
+                animation-duration: 0.5s;
+                animation-fill-mode: both;
+            }
+        }
+
+        .wall-frame{
+            flex-direction: row;
+           
+        }
+
+        .wall-text{
+            opacity: 0;
+                
+        }
+
+        .wall-tag{
+            flex-basis: 50%;
+        }
+        .wall-info{
+            flex-basis: 50%;
+        }
+
+        
+    }
+
+}
+
+@media screen and (max-width:660px){
+     .top-wall{
+        background-image: linear-gradient(to right, rgba(28, 190, 131, 1) 50%, rgba(28, 190, 131, 1) 50%);
+        background-position: 100% 100%;
+        background-size: 100% 100%;
+        transition: background-position 1.4s ease .1s;
+        color: white;
+
+        .wall-tag-inner{
+            padding: 20px 20px 12px 20px;
+        }
+
+        .wall-info-inner{
+            padding: 0px 20px 20px 20px;
+        }
+
+        h6{
+            font-size: 14px;
+
+        }
+        h4{
+            font-size: 18px;
+        }
+
+        .wall-text{
+            animation-name: fadeInUpY;
+            animation-delay: 1.4s;
+            animation-duration: 0.5s;
+            animation-fill-mode: both;
+        }
+    }
+}
+
+
+@keyframes fadeInUpY{
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+
+}
+
+
+.btn-dawnload-portfolio{
+    border-left: 1px solid white;
+    background: rgba(0, 0, 0, 0.05)
+
+}
 
 /*
 
@@ -7,14 +150,7 @@
 
 }
 */
-.wall-frame{
-  background: rgba(0,0,0,0.4);
-}
-.top-wall{
-  background: url("/assets/img/3f12541.jpg") no-repeat center center;
-  
-    background-size: cover;
-}
+
 
 .code{
   min-height: 300px;
