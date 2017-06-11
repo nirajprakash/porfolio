@@ -1,0 +1,160 @@
+.top-wall{
+    h4,h6,p{
+         margin: 0px;
+          line-height: 1.3;
+    }
+    h4{
+          font-size: 20px;
+      }   
+      h6{
+          font-size: 16px;
+      } 
+
+    .wall-frame{
+                flex-direction: column;
+    }
+    .wall-text{
+            display: block;
+    }
+}
+
+
+
+@media screen and (min-width:1024px){
+  .top-wall{
+    padding: 64px 0px 0px 0;
+    .wall-info-inner{
+      padding: 72px;
+    }
+    .wall-tag-inner{
+       padding: 72px 0;
+    }
+  }
+
+  
+}
+
+@media screen and (max-width:1024px){
+  .top-wall{
+     padding: 56px 0px 0px 0;
+
+      .wall-tag-inner{
+                padding: 32px;
+            }
+        .wall-info-inner{
+            padding: 32px;
+        }
+  }
+
+}
+
+
+@media screen and (min-width:660px){
+
+    .init-top-wall{
+       background-size: 250% 100%;
+        animation: animatedBackground 2.4s ease both 0.1s;
+            .wall-text{
+                animation-name: fadeInUpY;
+                animation-delay: 2.5s;
+                animation-duration: 0.5s;
+                animation-fill-mode: both;
+            }
+        
+    }
+
+    .top-wall{
+
+
+        
+
+        .wall-frame{
+            flex-direction: row;
+           
+        }
+
+        .wall-text{
+            opacity: 0;
+                
+        }
+
+        .wall-tag{
+            flex-basis: 50%;
+        }
+        .wall-info{
+            flex-basis: 50%;
+        }
+
+        
+    }
+
+}
+
+@media screen and (max-width:660px){
+
+    .init-top-wall{
+        background-size: 200% 100%;
+        animation: animatedBackground 1.4s ease both 0.1s;
+        .wall-text{
+            animation-name: fadeInUpY;
+            animation-delay: 1.5s;
+            animation-duration: 0.5s;
+            animation-fill-mode: both;
+        }
+    }
+    .top-wall{
+        color: white;
+
+        .wall-tag-inner{
+            padding: 20px 20px 12px 20px;
+        }
+
+        .wall-info-inner{
+            padding: 0px 20px 20px 20px;
+        }
+
+        h6{
+            font-size: 14px;
+
+        }
+        h4{
+            font-size: 18px;
+        }
+
+        
+    }
+    
+
+
+}
+
+@keyframes animatedBackground{
+        from{
+        background-position: 100% 100%;
+
+    }
+    to{
+        background-position: 0% 100%;
+    }
+    }
+
+
+@keyframes fadeInUpY{
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+
+}
+
+
+.btn-dawnload-portfolio{
+    border-left: 1px solid white;
+    background: rgba(0, 0, 0, 0.05)
+
+}

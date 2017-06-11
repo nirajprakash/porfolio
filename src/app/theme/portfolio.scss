@@ -1,0 +1,17 @@
+
+
+@media screen and (min-width:660px){
+
+    .init-top-wall{
+        background-image: linear-gradient(to right, rgba(0,0,0,0.05) 20%, $np-color-primary 20%, $np-color-primary 60%,  transparent 60%);
+        
+    }
+}
+
+@media screen and (max-width:660px){
+
+    .init-top-wall{
+        
+        background-image: linear-gradient(to right,$np-color-primary 50%, transparent 50%);
+    }
+}

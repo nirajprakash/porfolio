@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 import { HomeComponent } from './home.component';
 import { TechnologyComponent} from './technology.component';
+import { TopWallComponent} from './top-wall.component';
 
 
 import {MdlModule} from "@angular-mdl/core";
@@ -33,8 +34,9 @@ const routes: ModuleWithProviders = RouterModule.forChild([
   ],
   declarations: [
     HomeComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    TopWallComponent
   ],
-  exports: [HomeComponent, TechnologyComponent]
+  exports: [HomeComponent, TechnologyComponent, TopWallComponent]
 })
 export class HomeModule {}
