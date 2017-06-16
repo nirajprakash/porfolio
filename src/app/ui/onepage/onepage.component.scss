@@ -138,3 +138,8 @@ drawer
 .np-drawer-button{
     position: fixed;
 }
+
+@media screen and (min-width:1024px){
+    .np-drawer{
+    }
+}

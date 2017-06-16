@@ -2,15 +2,15 @@
 
 @import "~@angular-mdl/core/scss/color-definitions";
 
-$color-primary: 27,120,234;
+$color-primary: 44,200,124;
 //$color-primary: $palette-grey-50;
-$color-primary-dark: 21,96,187;
+$color-primary-dark: 35,160,99;
 $color-accent: $palette-blue-700;
 $color-primary-contrast: $color-dark-contrast;
 $color-accent-contrast: $color-dark-contrast;
 
-$np-color-primary-light: #a3c9f6;
-$np-color-primary-50: #e8f1fc !default;
+$np-color-primary-light: #a7d9c0;
+$np-color-primary-50: #e9f5ef !default;
 $np-color-back-grey:  unquote("rgb(#{$palette-grey-50})");
 $np-color-back-grey-dark: unquote("rgb(#{$palette-grey-700})");
 $np-color-back-grey-dark-extra: unquote("rgb(#{$palette-grey-800})");
@@ -52,3 +52,58 @@ $np-color-back-grey-dark-extra: unquote("rgb(#{$palette-grey-800})");
 //#1560bb //21,96,187
 //#a3c9f6
 //#e8f1fc
+
+//green
+//#17C79E (23,199,158)
+//#129F7E (18,159,126)
+//#a0d8cb
+//#e7f5f2
+
+//green light
+//#2CC87C (44,200,124)
+//#23A063 (35,160,99)
+//#a7d9c0
+//#e9f5ef
+
+//purple
+//#7A1FA2 (122,31,162)
+//#611881 (97,24,129)
+//#c9a5d9
+//#f1e8f5
+
+
+//blue light
+//#2988BE (41,136,190)
+//#206C98 (32,108,152)
+//#8fb5cb
+//#e8f0f4
+
+//blue lighter
+//#2D9DCa (45,157,202)
+//#247DA1 (36,125,161)
+//#96cee4
+//#eaf5f9
+
+//red
+//#DD1C3A (221,28,58)
+//#B0162E (176,22,46)
+//#d78a96
+//#f7e7ea
+
+//green 2
+//#0DA770 (13,167,112)
+//#0A8559 (10,133,89)
+//#9edbc5
+//#e6f6f0
+
+//green 3
+//#26AC78 (38,172,120)
+//#1E8960 (30,137,96)
+//#92d5bb
+//#e9f6f1
+
+//pink
+//#FA3B7C (250,59,124)
+//#C82F63 (200,47,99)
+//#fdb0ca
+//#feebf1
