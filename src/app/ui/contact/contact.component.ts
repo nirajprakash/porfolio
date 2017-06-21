@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject, ElementRef, ViewChild } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
-
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { MdlDialogService, MdlSnackbarService } from '@angular-mdl/core';
@@ -10,12 +10,13 @@ import { ServiceWindow, ServicePortfolioApi, ModelRequestProject } from './../..
 
 import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ng2-page-scroll';
 
+const emailValidator = Validators.pattern('^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$');
 @Component({
   selector: 'contact-view',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
 
   @ViewChild('contactContainer')
   public contactContainer: ElementRef;
@@ -215,9 +216,14 @@ export class ContactComponent {
      }]*/
   };
 
+
+  public number1: number = null;
+  public text4: number = null;
+
   idBtnGPS: number = 101;
   idBtnMobile: number = 102;
   idBtnEmail: number = 103;
+
 
   public _mContactMobile: string = "+918348522963";
   public _mContactEmail: string = "nirajprakash13@gmail.com";
@@ -228,19 +234,80 @@ export class ContactComponent {
   projectBudgets: string[] = ['below 1000', '1000- 2000', '2000-5000', 'above 5000'];
 
 
-  public number1: number = null;
-  public text4: number = null;
+
+
+
+  returnUrl: string;
+
+  nativeWindow: any;
+
+
+  public _mFormGroup: FormGroup;
+
+  public name = new FormControl('', Validators.required);
+  public email = new FormControl('', [Validators.required, emailValidator]);
+
+  public message = new FormControl('', Validators.required);
+
+
   constructor(
     private dialogService: MdlDialogService,
     private datePicker: MdlDatePickerService,
     private pageScrollService: PageScrollService,
     private mdlSnackbarService: MdlSnackbarService,
+    private route: ActivatedRoute,
+    private router: Router,
+    private fb: FormBuilder,
+    private serviceWindow: ServiceWindow,
     @Inject(DOCUMENT) private document: any) {
     //this._mMapOptions.styles = this._mMapStyle;
+    this.nativeWindow = this.serviceWindow.getNativeWindow();
   }
 
-  onsubmit() {
 
+
+
+
+
+
+
+
+  ngOnInit() {
+
+    //super.ngOnInit();
+    // get return url from route parameters or default to '/'
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+
+    this._mFormGroup = this.fb.group({
+      'name': this.name,
+      'email': this.email,
+      'message': this.message,
+    });
+
+    //console.log(this.email.value);
+
+    this._mFormGroup.valueChanges
+      .map((formValues) => {
+        console.log(formValues);
+        if (formValues.name != null) {
+          formValues.name = formValues.name.toUpperCase();
+        }
+        return formValues;
+      })
+      // .filter((formValues) => this.form.valid)
+      .subscribe((formValues) => {
+        console.log(`Model Driven Form valid: ${this._mFormGroup.valid} value:`, JSON.stringify(formValues));
+      });
+
+  }
+
+  public onSubmit() {
+    let body: string = "";
+    body = "name: " + this._mFormGroup.get('name').value;
+    body += + " | " + "email: " + this._mFormGroup.get('email').value;
+
+    body += + " | " + "message: " + this._mFormGroup.get('message').value;
+    console.log(body);
   }
 
   onClickBtn(id: number) {
