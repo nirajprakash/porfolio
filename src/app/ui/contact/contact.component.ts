@@ -259,20 +259,21 @@ export class ContactComponent implements OnInit {
     private router: Router,
     private fb: FormBuilder,
     private serviceWindow: ServiceWindow,
+    private servicePortfolioApi:ServicePortfolioApi,
     @Inject(DOCUMENT) private document: any) {
     //this._mMapOptions.styles = this._mMapStyle;
     this.nativeWindow = this.serviceWindow.getNativeWindow();
+    
   }
 
 
 
 
 
-
-
-
-
   ngOnInit() {
+     
+  
+
 
     //super.ngOnInit();
     // get return url from route parameters or default to '/'
@@ -284,6 +285,7 @@ export class ContactComponent implements OnInit {
       'message': this.message,
     });
 
+   
     //console.log(this.email.value);
 
     this._mFormGroup.valueChanges
@@ -301,15 +303,39 @@ export class ContactComponent implements OnInit {
 
   }
 
-  public onSubmit() {
-    let body: string = "";
-    body = "name: " + this._mFormGroup.get('name').value;
-    body += + " | " + "email: " + this._mFormGroup.get('email').value;
+   requestServer(name:string,email:string,message:string) {
 
-    body += + " | " + "message: " + this._mFormGroup.get('message').value;
+        this.servicePortfolioApi.requestProject(name,email,message)
+            .subscribe((values: boolean) => {
+                //console.log(this);
+               console.log("requestProject: "+ values);
+            },
+            (error) => {
+
+                console.log(error);
+                //toast('Error: '+ "server side", 4000);
+
+            });
+
+    }
+
+
+ public onSubmit() {
+    let name=this._mFormGroup.get('name').value;
+    let email=this._mFormGroup.get('email').value;
+    let message= this._mFormGroup.get('message').value
+   let body: string = "";
+   
+    body = "name: " + name;
+    body += " | " + "email: " + email;
+
+    body += " | " + "message: " +message ;
+
     console.log(body);
-  }
 
+     this.requestServer(name,email,message);
+    
+  }
   onClickBtn(id: number) {
     console.log("clickBtn: ", id);
     if (Number(id)) {

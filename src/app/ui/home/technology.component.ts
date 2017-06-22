@@ -35,6 +35,7 @@ export class TechnologyComponent implements OnInit {
 
         setTimeout(() => {
             this.requestServer();
+            
         });
 
 

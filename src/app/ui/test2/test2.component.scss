@@ -1,30 +1,16 @@
+.card{
+    position: relative;
+    max-width: 212px;
+    margin: 4px;
+    min-height: 264px;
+    border-radius: 4px;
+    .btn{
+        
+        position: absolute;
+        right:    4px;
+        bottom:   4px;
 
-    .contact-form{
-        .contact-form-submit{
-            padding:16px;
-        }
-
-        .contact-field{
-            padding: 16px 16px 0 16px;
-        }
     }
-
-
-    @media screen and (min-width: 660px) {
-    
-    
-        .contact-form{   
-            min-width: 300px;
-        }
-
+   
 }
-@media screen and (max-width: 660px) {
-    
-        .contact-form{
-            flex-flow: row nowrap;
-            order: 1;
-            width: 100%;
-        }
-    
-}
-
+ 
