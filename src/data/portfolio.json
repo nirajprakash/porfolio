@@ -4,7 +4,7 @@
         "companyName": "Intugine",
         "appName": "Ble Navigation Demo App",
         "appType":"android",
-        "detail":"Bluetooth enabled app for navigaiton.",
+        "detail":"This is research oriented app in IoT. Used for location detection of the mobile while navigating in those area where more than 3 BluetoothLEs are present.",
         "features": [
             "Bluetooth low energy"
             ],
@@ -23,7 +23,7 @@
         "companyName": "Fancymonk",
         "appName": "Table booking & waiterless App",
         "appType":"android",
-        "detail":"Pre-book restaurant table. Real time waiter-less order system. Integrated menu of restaurant.",
+        "detail":"Material designed easy to use native android app for Pre-book restaurant table, real time waiter-less system in restaurant.",
         "features": [
             "Near By GPS Search",
             "Payment System RazorPay",
@@ -50,7 +50,7 @@
         "companyName": "Fancymonk",
         "appName": "waiterless Manager App",
         "appType":"web",
-        "detail":"Real time waiter-less system for restaurant manager. ",
+        "detail":"A fully responsive, multi-platform admin panel with real time waiter-less system for restaurant manager. ",
         "features": [
             "Messaging",
             "FCM Notification",
@@ -72,10 +72,11 @@
         "companyName": "Fancymonk",
         "appName": "Restaurant Manager App",
         "appType":"android",
-        "detail":"Restaurant Manager app for restaurant. ",
+        "detail":"Android app for restaurant to add/update menus and manage basics infos, data and other stuff.",
         "features": [
             "Google Map",
-            "Account Manager"
+            "Account Manager",
+            "Menu management sytem"
             ],
         "images":[],        
         "hasVideo":true,
