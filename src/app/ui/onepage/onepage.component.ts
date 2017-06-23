@@ -19,7 +19,7 @@ import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ng2-pag
 })
 export class OnepageComponent {
 
-    title = 'Niraj Prakash';
+    title = 'TheDroid';
 
  @ViewChild('mainLayout')
   public mainLayout:MdlLayoutComponent;
