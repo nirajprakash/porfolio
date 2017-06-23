@@ -7,7 +7,7 @@
           font-size: 28px;
       }   
       h6{
-          font-size: 16px;
+          font-size: 20px;
       } 
 
     .wall-frame{
@@ -104,13 +104,18 @@
 
     .init-top-wall{
         background-size: 200% 100%;
-        animation: animatedBackground 1.4s ease both 0.1s;
+        
+        //animation: animatedBackground 1.4s ease both 0.1s;
         .wall-text{
             animation-name: fadeInUpY;
             animation-delay: 1.5s;
             animation-duration: 0.5s;
             animation-fill-mode: both;
         }
+    }
+      .top-wall-image{ 
+        background: #a0a0a0 url('../../../assets/img/protfolio_wall2-01.png') center center no-repeat;
+  background-size: cover;
     }
     .top-wall{
         color: white;

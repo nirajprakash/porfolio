@@ -14,7 +14,7 @@ export class ServiceClipboard {
     // CAUTION: This service is tightly couped to the browser DOM (Document Object Model).
     // But, by injecting the "document" reference rather than trying to reference it
     // globally, we can at least pretend that we are trying to lower the tight coupling.
-    constructor( @Inject( DOCUMENT ) dom: Document ) {
+    constructor( @Inject( DOCUMENT ) dom: any ) {
 
         this.dom = dom;
 
