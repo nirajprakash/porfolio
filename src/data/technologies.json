@@ -35,7 +35,7 @@
      {
         "id": "115",
         "name": "Dagger",
-        "detail":"Compile-time dependency injection framework for both Java and Android....",
+        "detail":"Compile-time dependency injection framework....",
         "logo":"assets/img/dagger-logo.png",
         "link":"https://google.github.io/dagger/",
         "tab": "android"

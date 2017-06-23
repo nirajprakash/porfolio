@@ -5,6 +5,7 @@ import { MdlLayoutComponent} from '@angular-mdl/core';
 
 import { MdlDatePickerService } from '@angular-mdl/datepicker/datepicker.service';
 import * as moment from 'moment';
+import { ServiceWindow } from './../../services'
 
 
 
@@ -29,11 +30,26 @@ export class OnepageComponent {
     idNavAbout: number = 103;
     idNavContanct: number = 104;
     _mToolbarOffset: number = 20;
-
+    
+    nativeWindow: any;
+     _mSocialLink:any={
+        github: "https://github.com/nirajprakash",
+        linkedIn: "https://www.linkedin.com/in/niraj-prakash-3317674b/",
+        instagram: "https://www.instagram.com/niraj_prakash/"
+    };
     
     constructor(
+        private serviceWindow: ServiceWindow,
         private pageScrollService: PageScrollService,
-        @Inject(DOCUMENT) private document: any) { }
+        @Inject(DOCUMENT) private document: any
+        ) 
+        { this.nativeWindow = this.serviceWindow.getNativeWindow();
+        }
+
+        onClickOpenlink(link:string){
+    this.nativeWindow.open(link);
+
+}
 
     onClickNavDrawer(id:number){
         this.onClickNav(id);
