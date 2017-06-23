@@ -21,7 +21,7 @@
         "link": "https://angular.io/",
         "detail": [
             "A BCI (Brain computer Interface) software was developed to receive informations from a human brain (EEGs signals) and perform task by detecting pattern after processing.",
-            "Neurosky mindwave device was used for recording EEG signals of brain, after processing and pattern detection of eye blinks’ and other events was used to control computer."
+            "Neurosky mindwave device was used for recording EEG signals of brain, after processing then pattern detection of eye blinks’ and other events was used to control computer."
         ]
     },
     {

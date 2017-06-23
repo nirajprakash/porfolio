@@ -17,6 +17,8 @@ export class AboutComponent implements OnInit {
 
     nativeWindow: any;
 
+    _mAboutMyself: string= "I’m Designer, Android App and Web Developer specializing in front-end and back-end development. Worked on all stages of the development cycle for dynamic android/web projects.";
+
     constructor(
         private dialogService: MdlDialogService,
         private datePicker: MdlDatePickerService,
