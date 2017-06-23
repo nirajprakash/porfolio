@@ -35,22 +35,18 @@
             <div class="nav-bottom">
                 <ul class="social">
                     <li>
-                        <button mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
+                        <button (click)="onClickOpenlink(_mSocialLink.github)" mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
                         <i class="icon-github-circled socialicon"></i>
                     </button>
                     </li>
+                    
                     <li>
-                        <button mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
-                        <i class="icon-bitbucket socialicon"></i>
-                    </button>
-                    </li>
-                    <li>
-                        <button mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
+                        <button (click)="onClickOpenlink(_mSocialLink.linkedIn)" mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
                         <i class="icon-linkedin socialicon"></i>
                     </button>
                     </li>
                     <li>
-                        <button mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
+                        <button (click)="onClickOpenlink(_mSocialLink.instagram)" mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
                         <i class="icon-instagram socialicon"></i>
                     </button>
                     </li>

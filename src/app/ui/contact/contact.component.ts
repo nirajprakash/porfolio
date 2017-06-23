@@ -18,6 +18,15 @@ const emailValidator = Validators.pattern('^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5
 })
 export class ContactComponent implements OnInit {
 
+  nativeWindow: any;
+
+  _mSocialLink: any = {
+    github: "https://github.com/nirajprakash",
+    linkedIn: "https://www.linkedin.com/in/niraj-prakash-3317674b/",
+    instagram: "https://www.instagram.com/niraj_prakash/"
+  };
+
+
   @ViewChild('contactContainer')
   public contactContainer: ElementRef;
 
@@ -239,7 +248,7 @@ export class ContactComponent implements OnInit {
 
   returnUrl: string;
 
-  nativeWindow: any;
+
 
 
   public _mFormGroup: FormGroup;
@@ -259,20 +268,24 @@ export class ContactComponent implements OnInit {
     private router: Router,
     private fb: FormBuilder,
     private serviceWindow: ServiceWindow,
-    private servicePortfolioApi:ServicePortfolioApi,
+    private servicePortfolioApi: ServicePortfolioApi,
+
     @Inject(DOCUMENT) private document: any) {
     //this._mMapOptions.styles = this._mMapStyle;
     this.nativeWindow = this.serviceWindow.getNativeWindow();
-    
+
   }
 
 
 
 
+  onClickOpenlink(link: string) {
+    this.nativeWindow.open(link);
+  }
 
   ngOnInit() {
-     
-  
+
+
 
 
     //super.ngOnInit();
@@ -285,7 +298,7 @@ export class ContactComponent implements OnInit {
       'message': this.message,
     });
 
-   
+
     //console.log(this.email.value);
 
     this._mFormGroup.valueChanges
@@ -303,38 +316,39 @@ export class ContactComponent implements OnInit {
 
   }
 
-   requestServer(name:string,email:string,message:string) {
+  requestServer(name: string, email: string, message: string) {
 
-        this.servicePortfolioApi.requestProject(name,email,message)
-            .subscribe((values: boolean) => {
-                //console.log(this);
-               console.log("requestProject: "+ values);
-            },
-            (error) => {
+    this.servicePortfolioApi.requestProject(name, email, message)
+      .subscribe((values: boolean) => {
+        //console.log(this);
+        console.log("requestProject: " + values);
+      },
+      (error) => {
 
-                console.log(error);
-                //toast('Error: '+ "server side", 4000);
+        console.log(error);
+        //toast('Error: '+ "server side", 4000);
 
-            });
+      });
 
-    }
+  }
 
 
- public onSubmit() {
-    let name=this._mFormGroup.get('name').value;
-    let email=this._mFormGroup.get('email').value;
-    let message= this._mFormGroup.get('message').value
-   let body: string = "";
-   
+
+  public onSubmit() {
+    let name = this._mFormGroup.get('name').value;
+    let email = this._mFormGroup.get('email').value;
+    let message = this._mFormGroup.get('message').value
+    let body: string = "";
+
     body = "name: " + name;
     body += " | " + "email: " + email;
 
-    body += " | " + "message: " +message ;
+    body += " | " + "message: " + message;
 
     console.log(body);
 
-     this.requestServer(name,email,message);
-    
+    this.requestServer(name, email, message);
+
   }
   onClickBtn(id: number) {
     console.log("clickBtn: ", id);

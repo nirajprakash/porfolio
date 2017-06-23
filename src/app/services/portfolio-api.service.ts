@@ -33,16 +33,16 @@ export class ServicePortfolioApi {
             });
     }
 
-    requestProject(name: string,email: string,  message: string): Observable<boolean> {
+    requestProject(pName: string,pEmail: string,  pMessage: string): Observable<boolean> {
         /*let params = new URLSearchParams();
 
         params.set('email', email);
         params.set('name', name);
         params.set('message', message);*/
         let params = {
-            name: name,
-            email: email,
-            message: message
+            name: pName,
+            email: pEmail,
+            message: pMessage
         };
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions(
