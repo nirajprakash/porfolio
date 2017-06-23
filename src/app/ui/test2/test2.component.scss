@@ -4,12 +4,27 @@
     margin: 4px;
     min-height: 264px;
     border-radius: 4px;
+    overflow:hidden;
+    
     .btn{
         
         position: absolute;
         right:    4px;
         bottom:   4px;
+        cursor: pointer;
 
+       
+
+    }
+     .expanded-button{
+        position: absolute;
+        max-width: 212px;
+        
+        min-height: 64px;
+        
+        left:    0px;
+        bottom:   0px;
+    
     }
    
 }
