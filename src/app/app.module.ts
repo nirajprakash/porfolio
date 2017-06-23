@@ -17,7 +17,7 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import { SampleModule } from './ui/sample/sample.module';
 import {ServicePortfolioApi, ServiceWindow, ServiceClipboard} from './services';
 const routes:  Routes = [
-  { path: '', redirectTo: '/onepage', pathMatch: 'full'},
+  { path: '', redirectTo: '/test', pathMatch: 'full'},
   { path: 'onepage', loadChildren: './ui/onepage/onepage.module#OnepageModule' },
 /*  { path: 'footer', loadChildren: './ui/footer/footer.module#FooterModule' },
   { path: 'sample', loadChildren: './ui/sample/sample.module#SampleModule' },
@@ -26,7 +26,7 @@ const routes:  Routes = [
   { path: 'portfolio', loadChildren: './ui/portfolio/portfolio.module#PortfolioModule' },
   { path: 'about', loadChildren: './ui/about/about.module#AboutModule' },
   { path: 'contact', loadChildren: './ui/contact/contact.module#ContactModule' },*/
-//  { path: 'test', loadChildren: './ui/test/test.module#TestModule' },
+  { path: 'test', loadChildren: './ui/test/test.module#TestModule' },
 //  { path: 'test2', loadChildren: './ui/test2/test2.module#Test2Module' }
 //{ path: 'sample', loadChildren: ()=> SampleModule }
 ];
