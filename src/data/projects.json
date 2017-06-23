@@ -3,36 +3,38 @@
         "id": "101",
         "name": "Speaker Identifiction System",
         "info": "Mfcc feature extraction, LBGVQ",
-        "year":"2015",
-        "logo":"assets/img/speaker.jpg",
-        "link":"https://angular.io/",
-        "detail":[
-            "Platform for building mobile and desktop web applications..."]
+        "year": "2015",
+        "logo": "assets/img/speaker.jpg",
+        "link": "",
+        "detail": [
+            "Indentification Software was developed for the recognition of Speaker from the database based on their individual speech characteristics.",
+            "Feature Extraction was performed using MFCC and after that LBGVQ method was used for Feature Matching in training and testing purpose."
+        ]
     },
     {
         "id": "102",
         "name": "Brain Computer Interface Design for EEG signal",
-        "location":"G.S. Sanyal School of Telecommunications",
+        "location": "G.S. Sanyal School of Telecommunications",
         "info": "Blink Detection form neurosky device.",
         "year": "2014",
-        "logo":"assets/img/neurosky_eeg.png",
-        "link":"https://angular.io/",
+        "logo": "assets/img/neurosky_eeg.png",
+        "link": "https://angular.io/",
         "detail": [
-            "Designed a BCI application (in JAVA), which was used as a user-interface for computer application.",
-            "Studied EEG signals of brain, and detected eye blinks’ signal.",
-            "Blinks signal were used for controlling computer software like Adobe Reader, Microsoft PowerPoint, VLC media player."
+            "A BCI (Brain computer Interface) software was developed to receive informations from a human brain (EEGs signals) and perform task by detecting pattern after processing.",
+            "Neurosky mindwave device was used for recording EEG signals of brain, and detected eye blinks’ signal and other pattern was used to control computer."
         ]
     },
     {
         "id": "103",
         "name": "Simulation Android App for Mechanics problems.",
-        "location":"MHRD, India",
+        "location": "MHRD, India",
         "info": "OpenGLES, Box2d Physics",
         "year": "2013",
-        "logo":"assets/img/box2d-logo.png",
-        "link":"https://angular.io/",
-        "detail":[
-            "Used openGL ES 2.0 API for 2D Graphical Simulation and BOX2D API for Physics Engine."
+        "logo": "assets/img/box2d-logo.png",
+        "link": "https://angular.io/",
+        "detail": [
+            "This app development work was done for visualizing real life simple mechanics events easily on android phone by inbuild simulation engine.",
+            "This work was done with the help of openGL ES 2.0 API for 2D Graphical Simulation and BOX2D API for Physics Engine."
         ]
     }
 ]
