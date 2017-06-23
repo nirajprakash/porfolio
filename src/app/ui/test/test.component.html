@@ -1,16 +1,16 @@
 <div class="np-layout-content">
     <div class="np-layout-container">
-       <div class="trigger">
-  <i class="ion-plus"></i>  
-</div>
-<div class="toolbar">
-  <div>
-    <button class="close">Close</button>
-  </div>
-  <div class="pseudo-circle">
-    <div class="dialog"></div>
-  </div>
-</div>
+        <div (click)="onClickBtn(_idBtnTrigger)" class="trigger">
+            <i class="ion-plus"></i>
+        </div>
+        <div class="toolbar">
+            <div>
+                <button (click)="onClickBtn(_idBtnClose)" class="close">Close</button>
+            </div>
+            <div class="pseudo-circle">
+                <div class="dialog"></div>
+            </div>
+        </div>
 
 
 
