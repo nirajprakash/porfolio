@@ -7,7 +7,7 @@
         "logo": "assets/img/speaker.jpg",
         "link": "",
         "detail": [
-            "Indentification Software was developed for the recognition of Speaker from the database based on their individual speech characteristics.",
+            "Indentification Software was developed for the recognition of the current speaker from the database of different speakers, based on their individual speech characteristics.",
             "Feature Extraction was performed using MFCC and after that LBGVQ method was used for Feature Matching in training and testing purpose."
         ]
     },
@@ -21,7 +21,7 @@
         "link": "https://angular.io/",
         "detail": [
             "A BCI (Brain computer Interface) software was developed to receive informations from a human brain (EEGs signals) and perform task by detecting pattern after processing.",
-            "Neurosky mindwave device was used for recording EEG signals of brain, and detected eye blinks’ signal and other pattern was used to control computer."
+            "Neurosky mindwave device was used for recording EEG signals of brain, after processing and pattern detection of eye blinks’ and other events was used to control computer."
         ]
     },
     {
