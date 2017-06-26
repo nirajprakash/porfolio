@@ -28,6 +28,7 @@ const routes:  Routes = [
   { path: 'about', loadChildren: './ui/about/about.module#AboutModule' },
   { path: 'contact', loadChildren: './ui/contact/contact.module#ContactModule' },*/
   { path: 'test', loadChildren: './ui/test/test.module#TestModule' },
+  { path: 'test1', loadChildren: './ui/test1/test1.module#Test1Module' },
   { path: 'test2', loadChildren: './ui/test2/test2.module#Test2Module' }
 //{ path: 'sample', loadChildren: ()=> SampleModule }
 ];
