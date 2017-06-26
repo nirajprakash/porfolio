@@ -1,31 +1,38 @@
-.card{
-    position: relative;
-    max-width: 212px;
-    margin: 4px;
-    min-height: 264px;
-    border-radius: 4px;
-    overflow:hidden;
-    
-    .btn{
-        
-        position: absolute;
-        right:    4px;
-        bottom:   4px;
-        cursor: pointer;
 
-       
-
-    }
-     .expanded-button{
-        position: absolute;
-        max-width: 212px;
-        
-        min-height: 64px;
-        
-        left:    0px;
-        bottom:   0px;
-    
-    }
-   
+.material {
+  width: 300px;
+  height: 300px;
+  padding: 16px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
+.material:hover {
+  box-shadow: 0 2px 4px 4px rgba(80, 80, 80, 0.2);
+}
+
+.material .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  transition: width 0.3s ease, height 0.3s ease, border-radius 0.4s ease, top 0.3s ease, left 0.3s ease;
+  border-radius: 50%;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background: #F44336;
+}
+
+.material .circle:hover {
+  width: 145%;
+  height: 145%;
+  left: 50%;
+  top: -20%;
  
+}
+
+
