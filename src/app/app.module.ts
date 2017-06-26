@@ -27,8 +27,8 @@ const routes:  Routes = [
   { path: 'portfolio', loadChildren: './ui/portfolio/portfolio.module#PortfolioModule' },
   { path: 'about', loadChildren: './ui/about/about.module#AboutModule' },
   { path: 'contact', loadChildren: './ui/contact/contact.module#ContactModule' },*/
-//  { path: 'test', loadChildren: './ui/test/test.module#TestModule' },
-//  { path: 'test2', loadChildren: './ui/test2/test2.module#Test2Module' }
+  { path: 'test', loadChildren: './ui/test/test.module#TestModule' },
+  { path: 'test2', loadChildren: './ui/test2/test2.module#Test2Module' }
 //{ path: 'sample', loadChildren: ()=> SampleModule }
 ];
 const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: false, enableTracing: false });
