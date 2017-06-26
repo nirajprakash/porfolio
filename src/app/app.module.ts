@@ -17,8 +17,9 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import { SampleModule } from './ui/sample/sample.module';
 import {ServicePortfolioApi, ServiceWindow, ServiceClipboard} from './services';
 const routes:  Routes = [
-  { path: '', redirectTo: '/onepage', pathMatch: 'full'},
-  { path: 'onepage', loadChildren: './ui/onepage/onepage.module#OnepageModule' },
+  //{ path: '', redirectTo: '/onepage', pathMatch: 'full'},
+  { path: '', loadChildren: './ui/onepage/onepage.module#OnepageModule'},
+  //{ path: 'onepage', loadChildren: './ui/onepage/onepage.module#OnepageModule' },
 /*  { path: 'footer', loadChildren: './ui/footer/footer.module#FooterModule' },
   { path: 'sample', loadChildren: './ui/sample/sample.module#SampleModule' },
   { path: 'profile', loadChildren: './ui/profile/profile.module#ProfileModule' },
@@ -30,7 +31,7 @@ const routes:  Routes = [
 //  { path: 'test2', loadChildren: './ui/test2/test2.module#Test2Module' }
 //{ path: 'sample', loadChildren: ()=> SampleModule }
 ];
-const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true, enableTracing: true });
+const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: false, enableTracing: false });
 @NgModule({
   declarations: [
     AppComponent
