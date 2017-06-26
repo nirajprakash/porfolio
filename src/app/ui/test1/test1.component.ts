@@ -21,15 +21,8 @@ export class Test1Component implements OnInit, AfterContentInit {
     _mColorPrimaryLight: string = "#7e51a0";
 
 
-    public number1: number = null;
-    public text4: number = null;
-
-    _mElementTrigger: any;
-    _mElementPseudoClass: any;
     _mFab:any;
 
-    _idBtnTrigger: number = 102;
-    _idBtnClose: number = 103;
     _idBtnOpen:number = 104;
 
     _mIsFabOpen:boolean = false;
@@ -57,20 +50,6 @@ export class Test1Component implements OnInit, AfterContentInit {
 
     ngAfterContentInit(): void {
         setTimeout(() => {
-            var triggers: any[] = this.el.nativeElement.getElementsByClassName('trigger');
-            console.log(triggers);
-            if (triggers && triggers.length > 0) {
-                //this.renderer.addClass(triggers[0], 'init-top-wall');
-                this._mElementTrigger = triggers[0];
-                //this.cdr.detectChanges();
-            }
-
-            var pseudoClasses: any[] = this.el.nativeElement.getElementsByClassName('pseudo-circle');
-            console.log(pseudoClasses);
-            if (pseudoClasses && pseudoClasses.length > 0) {
-                this._mElementPseudoClass = pseudoClasses[0];
-            }
-
             var fabs: any[] = this.el.nativeElement.getElementsByClassName('fab');
             console.log(fabs);
             if (fabs && fabs.length > 0) {
@@ -85,13 +64,6 @@ export class Test1Component implements OnInit, AfterContentInit {
         if (Number(viewId)) {
             switch (viewId) {
 
-                case this._idBtnTrigger:
-                    // code...
-                    this.openBottom();
-                    break;
-                case this._idBtnClose:
-                    this.closeBottom();
-
                 case this._idBtnOpen:
                     this.toggleFab();
                 default:
@@ -99,31 +71,6 @@ export class Test1Component implements OnInit, AfterContentInit {
                     break;
             }
         }
-    }
-
-    openBottom() {
-
-        if (this._mElementPseudoClass == null || this._mElementTrigger == null) {
-
-            console.log("null openbotom");
-            return;
-        }
-        this.renderer.addClass(this._mElementPseudoClass, "open");
-
-        this.renderer.addClass(this._mElementTrigger, "open");
-        this.cdr.detectChanges();
-    }
-    closeBottom() {
-
-        if (this._mElementPseudoClass == null || this._mElementTrigger == null) {
-
-            console.log("null closebotom");
-            return;
-        } 
-        this.renderer.removeClass(this._mElementPseudoClass, "open");
-
-        this.renderer.removeClass(this._mElementTrigger, "open");
-        this.cdr.detectChanges();
     }
 
     toggleFab(){
