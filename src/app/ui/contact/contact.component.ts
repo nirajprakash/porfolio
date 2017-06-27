@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, AfterContentInit, Inject, ElementRef, ChangeDetectorRef, Renderer2, ViewChild } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -16,8 +16,10 @@ const emailValidator = Validators.pattern('^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent implements OnInit, AfterContentInit {
 
+
+  returnUrl: string;
   nativeWindow: any;
 
   _mSocialLink: any = {
@@ -225,13 +227,18 @@ export class ContactComponent implements OnInit {
      }]*/
   };
 
-
-  public number1: number = null;
-  public text4: number = null;
-
   idBtnGPS: number = 101;
   idBtnMobile: number = 102;
   idBtnEmail: number = 103;
+
+
+  _mFabAnim: any;
+  _mFab: any;
+  _mContactMessageReply: any;
+
+  _idBtnFabOpen: number = 104;
+
+  _mIsFabOpen: boolean = false;
 
 
   public _mContactMobile: string = "+918348522963";
@@ -245,8 +252,6 @@ export class ContactComponent implements OnInit {
 
 
 
-
-  returnUrl: string;
 
 
 
@@ -267,6 +272,9 @@ export class ContactComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private fb: FormBuilder,
+    private el: ElementRef,
+    private cdr: ChangeDetectorRef,
+    private renderer: Renderer2,
     private serviceWindow: ServiceWindow,
     private servicePortfolioApi: ServicePortfolioApi,
 
@@ -303,7 +311,7 @@ export class ContactComponent implements OnInit {
 
     this._mFormGroup.valueChanges
       .map((formValues) => {
-        console.log(formValues);
+        //console.log(formValues);
         if (formValues.name != null) {
           formValues.name = formValues.name.toUpperCase();
         }
@@ -311,26 +319,34 @@ export class ContactComponent implements OnInit {
       })
       // .filter((formValues) => this.form.valid)
       .subscribe((formValues) => {
-        console.log(`Model Driven Form valid: ${this._mFormGroup.valid} value:`, JSON.stringify(formValues));
+        //console.log(`Model Driven Form valid: ${this._mFormGroup.valid} value:`, JSON.stringify(formValues));
       });
 
   }
+  ngAfterContentInit(): void {
+    setTimeout(() => {
+      var fabsAmin: any[] = this.el.nativeElement.getElementsByClassName('contact-fab-anim');
+      //console.log(fabsAmin);
+      if (fabsAmin && fabsAmin.length > 0) {
+        this._mFabAnim = fabsAmin[0];
+      }
+      var fabs: any[] = this.el.nativeElement.getElementsByClassName('contact-fab');
+      //console.log(fabs);
+      if (fabs && fabs.length > 0) {
+        this._mFab = fabs[0];
+      }
 
-  requestServer(name: string, email: string, message: string) {
 
-    this.servicePortfolioApi.requestProject(name, email, message)
-      .subscribe((values: boolean) => {
-        //console.log(this);
-        console.log("requestProject: " + values);
-      },
-      (error) => {
 
-        console.log(error);
-        //toast('Error: '+ "server side", 4000);
-
-      });
+      var messageReplys: any[] = this.el.nativeElement.getElementsByClassName('contact-message-reply');
+      //console.log(fabs);
+      if (messageReplys && messageReplys.length > 0) {
+        this._mContactMessageReply = messageReplys[0];
+      }
+    });
 
   }
+
 
 
 
@@ -345,7 +361,7 @@ export class ContactComponent implements OnInit {
 
     body += " | " + "message: " + message;
 
-    console.log(body);
+    //console.log(body);
 
     this.requestServer(name, email, message);
 
@@ -356,10 +372,12 @@ export class ContactComponent implements OnInit {
       switch (id) {
         case this.idBtnGPS:
           // code...
-          console.log("click locateGPS", this.document);
+          //console.log("click locateGPS", this.document);
           let pageScrollInstance: PageScrollInstance = PageScrollInstance.simpleInstance(this.document, '#map-section');
           this.pageScrollService.start(pageScrollInstance);
           break;
+        case this._idBtnFabOpen:
+          this.toggleFab();
 
         default:
           // code...
@@ -368,9 +386,56 @@ export class ContactComponent implements OnInit {
     }
   }
 
+
+  toggleFab() {
+    if (this._mIsFabOpen) {
+      this._mIsFabOpen = false;
+      this._mFormGroup.reset();
+      this.renderer.removeClass(this._mFabAnim, "contact-fab-anim-open");
+      this.renderer.removeClass(this._mFab, "contact-fab-hide");
+      this.renderer.removeClass(this._mContactMessageReply, "contact-message-reply-show");
+    } else {
+      this._mIsFabOpen = true;
+      this.renderer.addClass(this._mFabAnim, "contact-fab-anim-open");
+      this.renderer.addClass(this._mFab, "contact-fab-hide");
+      this.renderer.addClass(this._mContactMessageReply, "contact-message-reply-show");
+    }
+
+    this.cdr.detectChanges();
+
+
+
+
+  }
+
   onCopied(value: string) {
     this.mdlSnackbarService.showToast(value + "   copied", 4000);
   }
+
+
+  requestServer(name: string, email: string, message: string) {
+
+    this.servicePortfolioApi.requestProject(name, email, message)
+      .subscribe((values: boolean) => {
+        //console.log(this);
+        //console.log("requestProject: " + values);
+        if (values == true) {
+
+          this.toggleFab();
+        } else {
+          this.mdlSnackbarService.showToast("Unable to send Message", 4000);
+
+        }
+      },
+      (error) => {
+        this.mdlSnackbarService.showToast("Error |" + error, 4000);
+        //console.log(error);
+        //toast('Error: '+ "server side", 4000);
+
+      });
+
+  }
+
 
 
 }

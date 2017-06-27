@@ -58,7 +58,7 @@ export class ServicePortfolioApi {
 
                 let data = response.json();
                
-                if (data!==null && Array.isArray(data) && data.length>0 ) {
+                if (data!==null && data.isMessageSaved ) {
                     //console.log("http response: restaurant data: ");
                     //console.log(data);
                     return true;

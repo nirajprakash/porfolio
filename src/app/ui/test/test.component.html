@@ -1,18 +1,99 @@
 <div class="np-layout-content">
-    <div class="np-layout-container">
-        <div (click)="onClickBtn(_idBtnTrigger)" class="trigger">
-            <i class="ion-plus"></i>
-        </div>
-        <div class="toolbar">
-            <div>
-                <button (click)="onClickBtn(_idBtnClose)" class="close">Close</button>
+    <div class="np-container-large">
+
+        <div class="np-shadow-card">
+            <div class="np-flex-container contact">
+                <div class="contact-form np-color-white">
+                    <div class="contact-form-container">
+
+                        <div class="heading np-margin-bottom-12 np-padding-left-16">
+                            <h4 class="np-font-comfortaa np-font-14 np-font-light">Send me a message</h4>
+                        </div>
+
+
+                        <form [formGroup]="_mFormGroup">
+                            <div class="mdl-grid">
+                                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+                                    <mdl-textfield disableNativeValidityChecking type="text" label="Name..." formControlName="name" error-msg="Input is not a name!"
+                                        floating-label></mdl-textfield>
+                                </div>
+                                <!--div class="mdl-cell mdl-cell--6-col">
+                            <mdl-textfield type="text" label="Mobile (optional)..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not a number!"
+                                [(ngModel)]="text4" floating-label></mdl-textfield>
+                        </div-->
+                                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+                                    <mdl-textfield [class.is-invalid]="email.invalid && email.value" disableNativeValidityChecking type="text" label="Email..."
+                                        formControlName="email" [error-msg]="'Input is not an Email!'" floating-label></mdl-textfield>
+                                </div>
+
+                                <!--div class="mdl-cell mdl-cell--6-col">
+                            <mdl-textfield type="text" label="Company Name..." pattern="-?[0-9]*(\.[0-9]+)?" error-msg="Input is not an Email!" [(ngModel)]="text4"
+                                floating-label></mdl-textfield>
+                        </div-->
+                                <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                                    <mdl-textfield disableNativeValidityChecking label="Message..." formControlName="message" rows="3" maxrows="3" floating-label></mdl-textfield>
+                                </div>
+                            </div>
+                            <mdl-layout-spacer></mdl-layout-spacer>
+                            <div class="contact-form-submit  np-flex-row np-flex-wrapper np-padding-left-16">
+                                <h4 class="np-font-comfortaa np-font-14 np-font-light np-align-vertical-middle">(We will connect back soon.)</h4>
+                                <mdl-layout-spacer></mdl-layout-spacer>
+                                <button mdl-button (click)="onSubmit()" mdl-button-type="mini-fab" type="submit" class="btn btn-success contact-fab" mdl-colored="primary"
+                                    [disabled]="!_mFormGroup.valid"><mdl-icon class="np-font-14">send</mdl-icon></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-form-anim">
+                        <div class="contact-message-reply np-text-align-center np-text-color-white" (click)="onClickBtn(_idBtnFabOpen)">
+                            <h6>Thanks For your message.</h6>
+                            <h4><mdl-icon>done</mdl-icon></h4>
+                        </div>
+                        <div class="contact-fab-anim np-color-primary-dark" (click)="onClickBtn(_idBtnFabOpen)">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-me np-color-primary-dark np-flex-column np-flex-wrapper np-text-color-white">
+                    <div class="heading np-margin-bottom-12 np-padding-left-16">
+                        <h4 class="np-font-comfortaa np-font-14 np-font-light">Contact Me</h4>
+                    </div>
+                    <div class="info">
+                        <ul class="np-list-vertical  np-padding-left-16">
+                            <li>
+                                <mdl-icon class="np-text-color-primary-light np-align-vertical-middle ">location_on</mdl-icon>
+                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple [mdl-tooltip]="_mLocateOnMap"
+                                    (click)="onClickBtn(idBtnGPS)">Koramagala, Bangalore</button>
+                            </li>
+                            <li>
+                                <mdl-icon class="np-align-vertical-middle np-text-color-primary-light">phonelink_ring</mdl-icon>
+                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple [mdl-tooltip]="_mCopyToClipboard"
+                                    clipboard="{{_mContactMobile}}" (clipboardCopy)="onCopied(_mContactMobile)">+91-821 786 2643</button>
+                            </li>
+                            <li>
+                                <mdl-icon class="np-align-vertical-middle np-text-color-primary-light">mail_outline</mdl-icon>
+                                <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple [mdl-tooltip]="_mCopyToClipboard"
+                                    clipboard="{{_mContactEmail}}" (clipboardCopy)="onCopied(_mContactEmail)">nirajprakash13@gmail.com</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <mdl-layout-spacer></mdl-layout-spacer>
+                    <div class="contact-social">
+                        <h4 class="np-font-comfortaa np-font-14 np-font-light np-padding-left-16">Find me on</h4>
+                        <ul class="social">
+                            <li>
+                                <button (click)="onClickOpenlink(_mSocialLink.github)" mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-github-circled socialicon"></i></button>
+                            </li>
+
+                            <li>
+                                <button (click)="onClickOpenlink(_mSocialLink.linkedIn)" mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-linkedin socialicon"></i></button>
+                            </li>
+                            <li>
+                                <button (click)="onClickOpenlink(_mSocialLink.instagram)" mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-instagram socialicon"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="pseudo-circle">
-                <div class="dialog"></div>
-            </div>
         </div>
-
-
-
     </div>
 </div>

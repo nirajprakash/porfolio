@@ -21,6 +21,7 @@ export class Test1Component implements OnInit, AfterContentInit {
     _mColorPrimaryLight: string = "#7e51a0";
 
 
+    _mFabAnim:any;
     _mFab:any;
 
     _idBtnOpen:number = 104;
@@ -50,7 +51,12 @@ export class Test1Component implements OnInit, AfterContentInit {
 
     ngAfterContentInit(): void {
         setTimeout(() => {
-            var fabs: any[] = this.el.nativeElement.getElementsByClassName('fab');
+            var fabsAmin: any[] = this.el.nativeElement.getElementsByClassName('contact-fab-anim');
+            console.log(fabsAmin);
+            if (fabsAmin && fabsAmin.length > 0) {
+                this._mFabAnim = fabsAmin[0];
+            }
+            var fabs: any[] = this.el.nativeElement.getElementsByClassName('contact-fab');
             console.log(fabs);
             if (fabs && fabs.length > 0) {
                 this._mFab = fabs[0];
@@ -76,10 +82,12 @@ export class Test1Component implements OnInit, AfterContentInit {
     toggleFab(){
       if(this._mIsFabOpen){
           this._mIsFabOpen = false;
-          this.renderer.removeClass(this._mFab, "open");
+          this.renderer.removeClass(this._mFabAnim, "contact-fab-anim-open");
+          this.renderer.removeClass(this._mFab, "contact-fab-hide");
       }  else{
           this._mIsFabOpen = true;
-          this.renderer.addClass(this._mFab, "open");
+          this.renderer.addClass(this._mFabAnim, "contact-fab-anim-open");
+          this.renderer.addClass(this._mFab, "contact-fab-hide");
       }
 
       this.cdr.detectChanges();

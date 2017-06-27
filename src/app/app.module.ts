@@ -18,7 +18,7 @@ import { SampleModule } from './ui/sample/sample.module';
 import {ServicePortfolioApi, ServiceWindow, ServiceClipboard} from './services';
 const routes:  Routes = [
   //{ path: '', redirectTo: '/onepage', pathMatch: 'full'},
-  { path: '', loadChildren: './ui/onepage/onepage.module#OnepageModule'},
+  { path: '', loadChildren: './ui/onepage/onepage.module#OnepageModule',  pathMatch: 'full'}
   //{ path: 'onepage', loadChildren: './ui/onepage/onepage.module#OnepageModule' },
 /*  { path: 'footer', loadChildren: './ui/footer/footer.module#FooterModule' },
   { path: 'sample', loadChildren: './ui/sample/sample.module#SampleModule' },
@@ -26,10 +26,10 @@ const routes:  Routes = [
   { path: 'home', loadChildren: './ui/home/home.module#HomeModule' },
   { path: 'portfolio', loadChildren: './ui/portfolio/portfolio.module#PortfolioModule' },
   { path: 'about', loadChildren: './ui/about/about.module#AboutModule' },
-  { path: 'contact', loadChildren: './ui/contact/contact.module#ContactModule' },*/
+  { path: 'contact', loadChildren: './ui/contact/contact.module#ContactModule' },
   { path: 'test', loadChildren: './ui/test/test.module#TestModule' },
   { path: 'test1', loadChildren: './ui/test1/test1.module#Test1Module' },
-  { path: 'test2', loadChildren: './ui/test2/test2.module#Test2Module' }
+  { path: 'test2', loadChildren: './ui/test2/test2.module#Test2Module' }*/
 //{ path: 'sample', loadChildren: ()=> SampleModule }
 ];
 const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: false, enableTracing: false });
