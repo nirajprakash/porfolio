@@ -1,7 +1,7 @@
 # Portfolio: A working Example in Latest Angular Framewok.
 
 This project is a realistic example of Material Design Lite provided by `https://github.com/mseemann/angular2-mdl`.
-To see the working model visit `[http://thedroid.io/]`.
+To see the working model visit [thedroid].
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
@@ -17,4 +17,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # porfolio
 
-[http://thedroid.io/]: <http://thedroid.io/>
+[thedroid]: <http://thedroid.io/>
