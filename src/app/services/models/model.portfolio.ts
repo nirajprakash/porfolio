@@ -2,6 +2,7 @@ export class ModelPortfolio{
     public id: number;
     public appName: string;
     public appType: string;
+    public companyName:string;
     public detail: string;
     public features: string[];
     public images: string[];

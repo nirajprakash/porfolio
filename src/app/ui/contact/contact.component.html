@@ -135,7 +135,7 @@
                             <li>
                                 <mdl-icon class="np-text-color-primary-light np-align-vertical-middle ">location_on</mdl-icon>
                                 <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple [mdl-tooltip]="_mLocateOnMap"
-                                    (click)="onClickBtn(idBtnGPS)">Koramagala, Bangalore</button>
+                                    (click)="onClickBtn(idBtnGPS)">Koramangala, Bangalore</button>
                             </li>
                             <li>
                                 <mdl-icon class="np-align-vertical-middle np-text-color-primary-light">phonelink_ring</mdl-icon>
@@ -145,7 +145,7 @@
                             <li>
                                 <mdl-icon class="np-align-vertical-middle np-text-color-primary-light">mail_outline</mdl-icon>
                                 <button class="np-font-open-sans np-font-12 np-font-light np-text-color-white" mdl-button mdl-ripple [mdl-tooltip]="_mCopyToClipboard"
-                                    clipboard="{{_mContactEmail}}" (clipboardCopy)="onCopied(_mContactEmail)">nirajprakash13@gmail.com</button>
+                                    clipboard="{{_mContactEmail}}" (clipboardCopy)="onCopied(_mContactEmail)">{{_mContactEmail}}</button>
                             </li>
                         </ul>
                     </div>
@@ -162,6 +162,9 @@
                             </li>
                             <li>
                                 <button (click)="onClickOpenlink(_mSocialLink.instagram)" mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-instagram socialicon"></i></button>
+                            </li>
+                            <li>
+                                <button (click)="onClickOpenlink(_mSocialLink.behance)" mdl-button mdl-button-type="icon" class="np-selector-text-primary-light-to-white"><i class="icon-behance socialicon"></i></button>
                             </li>
                         </ul>
                     </div>

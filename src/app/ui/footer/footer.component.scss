@@ -4,6 +4,11 @@
 .footer{
         border-top: 1px solid #dedede;
 }
+
+.share-link{
+  user-select: none;
+  cursor: pointer;
+}
 .footer-content{
   padding: 12px;
   margin: auto;

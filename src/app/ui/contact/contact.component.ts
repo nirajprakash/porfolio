@@ -10,7 +10,7 @@ import { ServiceWindow, ServicePortfolioApi, ModelRequestProject } from './../..
 
 import { PageScrollConfig, PageScrollService, PageScrollInstance } from 'ng2-page-scroll';
 
-const emailValidator = Validators.pattern('^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$');
+const emailValidator = Validators.pattern(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/);
 @Component({
   selector: 'contact-view',
   templateUrl: './contact.component.html',
@@ -25,7 +25,8 @@ export class ContactComponent implements OnInit, AfterContentInit {
   _mSocialLink: any = {
     github: "https://github.com/nirajprakash",
     linkedIn: "https://www.linkedin.com/in/niraj-prakash-3317674b/",
-    instagram: "https://www.instagram.com/niraj_prakash/"
+    instagram: "https://www.instagram.com/niraj_prakash/",
+    behance: "https://www.behance.net/nirajpraka6038"
   };
 
 
@@ -241,8 +242,8 @@ export class ContactComponent implements OnInit, AfterContentInit {
   _mIsFabOpen: boolean = false;
 
 
-  public _mContactMobile: string = "+918348522963";
-  public _mContactEmail: string = "nirajprakash13@gmail.com";
+  public _mContactMobile: string = "+918217862643";
+  public _mContactEmail: string = "niraj@thedroid.io";
   public _mCopyToClipboard: string = "copy to clipboard";
   public _mLocateOnMap: string = "locate on map";
 

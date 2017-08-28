@@ -1,6 +1,6 @@
 <div class="np-border-2 np-hover-card-up info-card  card-product  np-margin-bottom-32" *ngFor="let portfolio of _mPortfolioList; let i = index">
     <div class="np-flex-container product">
-        <div class="product-info np-flex-column np-flex-wrapper np-text-color-white" [style.background]="portfolio.colorPrimary">
+        <div class="product-info np-flex-column np-flex-wrapper np-text-color-white mdl-color--grey-700">
             <div class="heading np-margin-bottom-12">
                 <h4 class="np-font-comfortaa np-font-14 np-font-light">{{portfolio.appName}}</h4>
             </div>
@@ -19,12 +19,12 @@
 
                     <div class="google-play-inner np-display-table-cell">
                         <span><img src="assets/img/google-play-white.png"/>
-                    <span class="np-margin-left-12 np-font-comfortaa np-font-12 np-font-bold" [style.color]="portfolio.colorPrimaryLight" >Play Store</span></span>
+                    <span class="np-margin-left-12 np-font-comfortaa np-font-12 np-font-bold mdl-color-text--grey-50">Play Store</span></span>
                     </div>
                 </div>
             </div>
             <mdl-layout-spacer></mdl-layout-spacer>
-            <div class="product-company">
+            <div class="product-company" *ngIf="portfolio.companyName">
                 <img src="{{portfolio.logo}}" />
                 <h4 class="np-font-comfortaa np-font-14 np-font-light">{{portfolio.companyName}}</h4>
             </div>

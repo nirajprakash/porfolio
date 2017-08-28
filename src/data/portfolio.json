@@ -1,4 +1,26 @@
 [
+    {
+        "id": "104",
+        "companyName": "Sensify",
+        "appName": "Sensify App",
+        "appType":"android",
+        "detail":"App for reading and processing data from sensors built inside android phone. This project is currently under development.",
+        "features": [
+            "Synced Cloud Storage",
+            "Authentication System",
+            "Integrated real-time Graph",
+            "Local database system"
+            ],
+        "images":[],        
+        "hasVideo":false,
+        "appLink":"https://play.google.com/store/apps/details?id=io.sensify.sensor",
+        "colorPrimary":"#942D89",
+        "colorPrimaryLight":"#f4eaf3",
+        "colorPrimaryDark":"#76246d",
+        "wall":"/assets/img/sensify_android.jpg",
+        "year": "2017",
+        "logo":"/assets/img/sensify_white-01.png"
+    },
  
     {
         "id": "103",
@@ -26,7 +48,30 @@
         "year": "2016-2017",
         "logo":"/assets/img/ic_fancy_monk_white_128.png",
         "link":"https://fancymonk.com/"
+    },{
+        "id": "101",
+        "companyName": "Fancymonk",
+        "appName": "Restaurant Manager App",
+        "appType":"android",
+        "detail":"Android app for restaurant to add/update menus and manage basics infos, data and other stuff.",
+        "features": [
+            "Google Map",
+            "Account Manager",
+            "Menu management system"
+            ],
+        "images":[],        
+        "hasVideo":true,
+        "videoLink":"data/video/fancymonk_manager.mp4",
+        "colorPrimary":"#009688",
+        "colorPrimaryLight":"#7fcac3",
+        "colorPrimaryDark":"#00796B",
+        "wall":"/assets/img/fancymonk_manager.jpg",
+        "year": "2016",
+        "logo":"/assets/img/ic_fancy_monk_white_128.png",
+        "link":"https://fancymonk.com/"
     },
+        
+        
     {
         "id": "102",
         "companyName": "Fancymonk",
@@ -48,28 +93,7 @@
         "year": "2017",
         "logo":"/assets/img/ic_fancy_monk_white_128.png",
         "link":"https://fancymonk.com/"
-    },
-    {
-        "id": "101",
-        "companyName": "Fancymonk",
-        "appName": "Restaurant Manager App",
-        "appType":"android",
-        "detail":"Android app for restaurant to add/update menus and manage basics infos, data and other stuff.",
-        "features": [
-            "Google Map",
-            "Account Manager",
-            "Menu management sytem"
-            ],
-        "images":[],        
-        "hasVideo":true,
-        "videoLink":"data/video/fancymonk_manager.mp4",
-        "colorPrimary":"#009688",
-        "colorPrimaryLight":"#7fcac3",
-        "colorPrimaryDark":"#00796B",
-        "wall":"/assets/img/fancymonk_manager.jpg",
-        "year": "2016",
-        "logo":"/assets/img/ic_fancy_monk_white_128.png",
-        "link":"https://fancymonk.com/"
     }
+
 
 ]

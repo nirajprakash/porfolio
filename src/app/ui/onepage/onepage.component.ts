@@ -1,7 +1,7 @@
-import { Component, Inject, ElementRef, ViewChild} from '@angular/core';
+import { Component, Inject, ElementRef, ViewChild } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 import { MdlDialogService } from '@angular-mdl/core';
-import { MdlLayoutComponent} from '@angular-mdl/core';
+import { MdlLayoutComponent } from '@angular-mdl/core';
 
 import { MdlDatePickerService } from '@angular-mdl/datepicker/datepicker.service';
 import * as moment from 'moment';
@@ -21,8 +21,8 @@ export class OnepageComponent {
 
     title = 'TheDroid';
 
- @ViewChild('mainLayout')
-  public mainLayout:MdlLayoutComponent;
+    @ViewChild('mainLayout')
+    public mainLayout: MdlLayoutComponent;
 
 
     idNavHome: number = 101;
@@ -30,28 +30,29 @@ export class OnepageComponent {
     idNavAbout: number = 103;
     idNavContanct: number = 104;
     _mToolbarOffset: number = 20;
-    
+
     nativeWindow: any;
-     _mSocialLink:any={
+    _mSocialLink: any = {
         github: "https://github.com/nirajprakash",
         linkedIn: "https://www.linkedin.com/in/niraj-prakash-3317674b/",
-        instagram: "https://www.instagram.com/niraj_prakash/"
+        instagram: "https://www.instagram.com/niraj_prakash/",
+        behance: "https://www.behance.net/nirajpraka6038"
     };
-    
+
     constructor(
         private serviceWindow: ServiceWindow,
         private pageScrollService: PageScrollService,
         @Inject(DOCUMENT) private document: any
-        ) 
-        { this.nativeWindow = this.serviceWindow.getNativeWindow();
-        }
+    ) {
+    this.nativeWindow = this.serviceWindow.getNativeWindow();
+    }
 
-        onClickOpenlink(link:string){
-    this.nativeWindow.open(link);
+    onClickOpenlink(link: string) {
+        this.nativeWindow.open(link);
 
-}
+    }
 
-    onClickNavDrawer(id:number){
+    onClickNavDrawer(id: number) {
         this.onClickNav(id);
         this.mainLayout.closeDrawer();
 

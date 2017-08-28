@@ -13,10 +13,11 @@ main {
     display: inline-block;
     height: 62px;
     line-height: 69px;
-    color: #757575;
+    color: #323232;
     background-color: transparent !important;
     border-bottom: 2px solid transparent;
-  }
+}
+
 .main-header-row .is-active{
       border-bottom: 2px solid #000;
 }
@@ -31,8 +32,6 @@ footer {
   background: #37474f;
 }
 
-
-
 .app-main-content {
   display: flex;
   flex-direction: column;
@@ -44,9 +43,6 @@ footer {
   align-items: stretch;
   flex-grow: 1;
 }
-
-
-
 
 .icon svg {
   display: inline-block;
@@ -140,6 +136,9 @@ drawer
 }
 
 @media screen and (min-width:1024px){
+    .header-title{
+        font-size: 24px;
+    }
     .np-drawer{
     }
 }

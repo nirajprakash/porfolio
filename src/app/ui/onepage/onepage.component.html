@@ -2,7 +2,7 @@
     <mdl-layout-header class="main-header" npWaterfall="{{_mToolbarOffset}}" npWaterfallActive="np-shadow-card" npWaterfallReference="main-page">
         <mdl-layout-header-row class="main-header-row" >
 
-            <mdl-layout-title class="np-text-color-grey-dark-extra np-font-open-sans">{{title}}</mdl-layout-title>
+            <mdl-layout-title class="header-title np-text-color-grey-dark-extra np-font-open-sans">{{title}}</mdl-layout-title>
             <mdl-layout-spacer></mdl-layout-spacer>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="np-font-open-sans mdl-navigation mdl-layout--large-screen-only">
@@ -48,6 +48,11 @@
                     <li>
                         <button (click)="onClickOpenlink(_mSocialLink.instagram)" mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
                         <i class="icon-instagram socialicon"></i>
+                    </button>
+                    </li>
+                    <li>
+                        <button (click)="onClickOpenlink(_mSocialLink.behance)" mdl-button mdl-button-type="icon" class="np-selector-text-grey-to-primary">
+                        <i class="icon-behance socialicon"></i>
                     </button>
                     </li>
                 </ul>
