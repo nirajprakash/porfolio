@@ -3,8 +3,16 @@
 This project is a realistic example of Material Design Lite provided by [angular2-mdl](https://github.com/mseemann/angular2-mdl).
 To see the working model visit [thedroid].
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
 
+### Getting Started
+1.	Installation process
+    ```
+    npm i -g @angular/cli
+    ```
+    ```
+    npm install
+    ````
 
 ## Development server
 

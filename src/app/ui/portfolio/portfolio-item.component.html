@@ -1,40 +1,42 @@
 <div class="np-border-2 np-hover-card-up info-card  card-product  np-margin-bottom-32" *ngFor="let portfolio of _mPortfolioList; let i = index">
     <div class="np-flex-container product">
-        <div class="product-info np-flex-column np-flex-wrapper np-text-color-white mdl-color--grey-700">
-            <div class="heading np-margin-bottom-12">
-                <h4 class="np-font-comfortaa np-font-14 np-font-light">{{portfolio.appName}}</h4>
+        <div class="product-info np-flex-column np-flex-wrapper mdl-color-text--grey-600 np-color-white">
+            <div class="heading np-margin-bottom-8">
+                <h4 class="np-font-comfortaa mdl-color-text--grey-900 np-font-14">{{portfolio.appName}}</h4>
             </div>
             <div class="product-detail np-margin-bottom-20">
-                <p class="np-font-open-sans np-font-12 np-font-light np-padding-left-16">{{portfolio.detail}}</p>
+                <p class="np-font-open-sans np-font-12 np-font">{{portfolio.detail}}</p>
             </div>
             <div class="product-features">
-                <h6 class="np-font-comfortaa np-font-14 np-font-light">Features</h6>
-                <ul class="np-list-vertical np-font-open-sans np-font-12 np-font-light np-padding-left-16">
+                <h6 class="np-font-comfortaa mdl-color-text--grey-900 np-font-14">Features</h6>
+                <ul class="np-list-vertical np-font-open-sans np-font-12 np-padding-left-0">
                     <li *ngFor="let feature of portfolio.features; let j = index">{{feature}}</li>
                 </ul>
             </div>
-            <div class="product-link">
+            <div class="product-link" *ngIf="portfolio.appLink">
 
-                 <div class="google-play np-display-table np-text-color-primary-light" mdl-ripple  *ngIf="portfolio.appType=='android' && portfolio.appLink" (click)="onClickOpenlink(portfolio.appLink)">
+                <div class="google-play" *ngIf="portfolio.appType=='android'" (click)="onClickOpenlink(portfolio.appLink)">
 
-                    <div class="google-play-inner np-display-table-cell">
-                        <span><img src="assets/img/google-play-white.png"/>
-                    <span class="np-margin-left-12 np-font-comfortaa np-font-12 np-font-bold mdl-color-text--grey-50">Play Store</span></span>
-                    </div>
+                    <img src="assets/img/google-play-badge.png"/>
+                    <!-- <div class="google-play-inner np-display-table-cell">
+                        <span>
+                    <span class="np-margin-left-12 np-font-comfortaa np-font-12 np-font-bold np-text-color-primary">Play Store</span> 
+                        </span>
+                    </div> -->
                 </div>
             </div>
             <mdl-layout-spacer></mdl-layout-spacer>
-            <div class="product-company" *ngIf="portfolio.companyName">
+            <div class="product-company np-padding-top-12" *ngIf="portfolio.companyName">
                 <img src="{{portfolio.logo}}" />
-                <h4 class="np-font-comfortaa np-font-14 np-font-light">{{portfolio.companyName}}</h4>
+                <h4 class="np-font-comfortaa mdl-color-text--grey-900 np-font-16 np-font-light">{{portfolio.companyName}}</h4>
             </div>
         </div>
         <div class="np-color-white product-canvas">
             <div class="avatar np-flex-wrapper np-flex-column">
                 <img src="{{portfolio.wall}}" />
             </div>
-             <div *ngIf="portfolio.hasVideo==true" class="play-container np-shadow-card np-flex-container np-flex-align-end np-flex-justify-content-right">
-                <div class="play-controller np-shadow-card-thin np-border-4 np-flex-align-center np-flex-justify-content"  (click)="showVideoDialog($event,portfolio.videoLink)">
+            <div *ngIf="portfolio.hasVideo==true" class="play-container np-flex-container np-flex-align-end np-flex-justify-content-right">
+                <div class="play-controller np-shadow-card-thin np-border-4 np-flex-align-center np-flex-justify-content" (click)="showVideoDialog($event,portfolio.videoLink)">
                     <mdl-icon class="play-icon np-text-color-white np-shadow-card  np-border-4 np-text-shadow-decent" [style.background]="portfolio.colorPrimary">play_arrow</mdl-icon>
                 </div>
             </div>

@@ -19,7 +19,7 @@
         "colorPrimaryDark":"#76246d",
         "wall":"/assets/img/sensify_android.jpg",
         "year": "2017",
-        "logo":"/assets/img/sensify_white-01.png"
+        "logo":"/assets/img/sensify-logo.png"
     },
  
     {
@@ -46,7 +46,7 @@
         "colorPrimaryDark":"#a41834",
         "wall":"/assets/img/fancymonk_app-01.jpg",
         "year": "2016-2017",
-        "logo":"/assets/img/ic_fancy_monk_white_128.png",
+        "logo":"/assets/img/ic_fancy_monk.png",
         "link":"https://fancymonk.com/"
     },{
         "id": "101",
@@ -67,7 +67,7 @@
         "colorPrimaryDark":"#00796B",
         "wall":"/assets/img/fancymonk_manager.jpg",
         "year": "2016",
-        "logo":"/assets/img/ic_fancy_monk_white_128.png",
+        "logo":"/assets/img/ic_fancy_monk.png",
         "link":"https://fancymonk.com/"
     },
         
@@ -91,7 +91,7 @@
         "colorPrimaryDark":"#00796B",
         "wall":"/assets/img/fancymonk_waiterless.jpg",
         "year": "2017",
-        "logo":"/assets/img/ic_fancy_monk_white_128.png",
+        "logo":"/assets/img/ic_fancy_monk.png",
         "link":"https://fancymonk.com/"
     }
 

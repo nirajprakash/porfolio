@@ -32,7 +32,6 @@ const routes: ModuleWithProviders = RouterModule.forChild([
     ContactModule,
     FooterModule,
     SharedModule,
-
     routes
     
   ],

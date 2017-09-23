@@ -9,7 +9,7 @@
         
         .product-info{
             order: 0;
-            padding: 24px;
+            padding: 32px;
             box-sizing: border-box;
             h6,h4,p{
                 margin: 0;
@@ -145,18 +145,15 @@
     //min-height: 40px;
     left: 0;
     user-select: none;
-    text-align: center;
-    background: rgba(0, 0, 0, .1);
     
     .google-play-inner{
         line-height: 0;
         vertical-align: middle;
-        padding: 4px 12px;
     }
     
 
     img{
-        height: 24px;
+        height: 40px;
         width: auto;
     }
 }
