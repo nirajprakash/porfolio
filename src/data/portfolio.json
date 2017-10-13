@@ -33,7 +33,7 @@
             "Payment System RazorPay",
             "Messaging",
             "Faceook/Google login",
-            "FCM Notification",
+            "Firebase Notification",
             "Google Map",
             "Real Time"
             ],
@@ -48,7 +48,29 @@
         "year": "2016-2017",
         "logo":"/assets/img/ic_fancy_monk.png",
         "link":"https://fancymonk.com/"
-    },{
+    },
+    {
+        "id": "105",
+        "companyName": "Intugine",
+        "appName": "Intugine Track Webapp",
+        "appType":"web",
+        "detail":"A fully responsive, multi-platform admin panel to manage GPS-tracking devices in real time.",
+        "features": [
+            "Firebase Notification",
+            "Integrated TCP server",
+            "Real Time"
+            ],
+        "images":[],        
+        "hasVideo":false, 
+        "colorPrimary":"#1b78ea",
+        "colorPrimaryLight":"#a3c9f6",
+        "colorPrimaryDark":"#1560bb",
+        "wall":"/assets/img/intugine_track.jpg",
+        "year": "2017",
+        "logo":"/assets/img/intugine-logo.png",
+        "link":"https://intugine.net/"
+    },
+    {
         "id": "101",
         "companyName": "Fancymonk",
         "appName": "Restaurant Manager App",
